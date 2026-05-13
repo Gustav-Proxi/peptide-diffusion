@@ -1,473 +1,473 @@
 spectrum_id,true_sequence,predicted_sequence,true_clean,pred_clean,aa_recall,pep_correct,score
-0,"['G', 'F', 'E', 'T', 'P', 'T', 'I', 'N', 'E', 'L', 'S', 'Y', 'R']",TGFEPTLNELSYR,,TGFEPTLNELSYR,0.0,0,-16.858304977416992
-1,"['G', 'P', 'T', 'L', 'T', 'E', 'I', 'L', 'E', 'G', 'L', 'K']",GPTLTEILEGLK,,GPTLTEILEGLK,0.0,0,-3.5148162841796875
-2,"['L', 'L', 'S', 'P', 'E', 'V', 'A', 'N', 'D', 'K']",ILSPEVANDK,,ILSPEVANDK,0.0,0,-0.47543612122535706
-3,"['N', 'E', 'A', 'P', 'L', 'G', 'I', 'V', 'Y', 'G', 'S', 'D', 'A', 'V', 'A', 'S', 'K']",[UNIMOD:5]EAPLGLVYSNEAVASK,,EAPLGLVYSNEAVASK,0.0,0,-23.078929901123047
-4,"['T', 'S', 'H', 'I', 'T', 'V', 'V', 'V', 'S', 'D', 'R']",TSHLTVVVSDR,,TSHLTVVVSDR,0.0,0,-0.24917811155319214
-5,"['S', 'L', 'A', 'T', 'A', 'A', 'G', 'A', 'V', 'A', 'G', 'G', 'V', 'A', 'G', 'Q', 'G', 'V', 'Q', 'S', 'A', 'M', 'N', 'K']",GAGKSLATAAGAAAGGAGVQSAM[UNIMOD:35]NK,,GAGKSLATAAGAAAGGAGVQSAMNK,0.0,0,-22.142662048339844
-6,"['L', 'A', 'L', 'P', 'P', 'D', 'Q', 'A', 'A', 'E', 'K']",LALPPDQAAEK,,LALPPDQAAEK,0.0,0,-1.0219676494598389
-7,"['T', 'G', 'Q', 'A', 'V', 'E', 'L', 'F', 'N', 'Q', 'L', 'P', 'Q', 'E', 'L', 'N', 'D', 'A', 'Q', 'R']",SAQAVELFNQIPQELNDAQR,,SAQAVELFNQIPQELNDAQR,0.0,0,-2.873715400695801
-8,"['A', 'D', 'S', 'V', 'A', 'S', 'A', 'L', 'I', 'T', 'Q', 'G', 'V', 'D', 'A', 'S', 'R']",ADSVASALLTEGVDWK,,ADSVASALLTEGVDWK,0.0,0,-2.345811128616333
-9,"['L', 'E', 'N', 'E', 'I', 'Q', 'T', 'Y', 'R']",LENEIQTYR,,LENEIQTYR,0.0,0,-0.9317585825920105
-10,"['N', 'I', 'E', 'F', 'F', 'E', 'A', 'R']",NIEFFEAR,,NIEFFEAR,0.0,0,-0.037377044558525085
-11,"['V', 'M', 'I', 'L', 'D', 'S', 'G', 'D', 'P', 'N', 'G', 'P', 'L', 'S', 'R']",LVMLDSGDPNGPLSR,,LVMLDSGDPNGPLSR,0.0,0,-16.69071388244629
-12,"['I', 'A', 'G', 'I', 'N', 'I', 'P', 'D', 'H', 'K']",AIGLGGIPDHK,,AIGLGGIPDHK,0.0,0,-7.7534356117248535
-13,"['S', 'S', 'F', 'N', 'N', 'I', 'N', 'A', 'S', 'I', 'S', 'S', 'I', 'N', 'A', 'Y', 'K']",SSFNNLNASLSSLNAYK,,SSFNNLNASLSSLNAYK,0.0,0,-3.007234811782837
-14,"['E', 'G', 'T', 'D', 'L', 'F', 'L', 'K']",EGTDLFIK,,EGTDLFIK,0.0,0,-0.4052835702896118
-15,"['N', 'G', 'N', 'P', 'S', 'G', 'E', 'G', 'F', 'T', 'S', 'G', 'V', 'T', 'N', 'N', 'G', 'R']",NGNPSGEGFTSGVSQNGR,,NGNPSGEGFTSGVSQNGR,0.0,0,-1.4072729349136353
-16,"['V', 'A', 'I', 'A', 'N', 'V', 'L', 'K']",VAIANVIK,,VAIANVIK,0.0,0,-0.7361432313919067
-17,"['I', 'E', 'G', 'V', 'P', 'E', 'S', 'N', 'I', 'S', 'R']",LEGVPESNLSR,,LEGVPESNLSR,0.0,0,-0.44987571239471436
-18,"['W', 'S', 'D', 'G', 'T', 'P', 'V', 'T', 'A', 'Q', 'D', 'F', 'V', 'Y', 'S', 'W', 'Q', 'R']",EGSSWPVTAQDFVYSWQR,,EGSSWPVTAQDFVYSWQR,0.0,0,-1.1618057489395142
-19,"['L', 'G', 'L', 'M', 'A', 'G', 'Y', 'Q', 'E', 'S', 'R']",LGLMAGYQESR,,LGLMAGYQESR,0.0,0,-0.04582606628537178
-20,"['Y', 'F', 'A', 'T', 'G', 'A', 'A', 'T', 'P', 'G', 'A', 'A', 'N', 'A', 'D', 'A', 'T', 'F', 'K']",YFATQATPGAANADATFK,,YFATQATPGAANADATFK,0.0,0,-2.3492119312286377
-21,"['L', 'Q', 'E', 'L', 'G', 'A', 'T', 'R']",LQELGATR,,LQELGATR,0.0,0,-0.507656991481781
-22,"['V', 'I', 'L', 'A', 'G', 'E', 'V', 'T', 'T', 'P', 'V', 'T', 'V', 'R']",LVLAGEVTTPVTVR,,LVLAGEVTTPVTVR,0.0,0,-1.6659752130508423
-23,"['A', 'S', 'T', 'T', 'M', 'D', 'V', 'Q', 'S', 'A', 'A', 'D', 'D', 'T', 'G', 'L', 'P', 'M', 'L', 'V', 'V', 'R']",SATTMDVQSAADDTGLPMLVVR,,SATTMDVQSAADDTGLPMLVVR,0.0,0,-0.36401596665382385
-24,"['K', 'V', 'P', 'Q', 'V', 'S', 'T', 'P', 'T', 'L', 'V', 'E', 'V', 'S', 'R']",KVPQVSTPTLVEVSR,,KVPQVSTPTLVEVSR,0.0,0,-0.06323057413101196
-25,"['Q', 'N', 'L', 'E', 'A', 'S', 'G', 'V', 'R']",QNLEASGVR,,QNLEASGVR,0.0,0,-1.2811152935028076
-26,"['F', 'G', 'S', 'E', 'L', 'L', 'A', 'K']",FGSELLAK,,FGSELLAK,0.0,0,-0.1796579360961914
-27,"['Q', 'N', 'N', 'M', 'T', 'L', 'D', 'Q', 'M', 'R']",QNNMTLDQMR,,QNNMTLDQMR,0.0,0,-0.03861398249864578
-28,"['F', 'L', 'L', 'Q', 'E', 'V', 'L', 'E', 'K']",FLLQEVLEK,,FLLQEVLEK,0.0,0,-0.16715417802333832
-29,"['Q', 'Y', 'G', 'N', 'I', 'P', 'K']",QYGNIPK,,QYGNIPK,0.0,0,-0.008728626184165478
-30,"['L', 'A', 'N', 'E', 'L', 'S', 'D', 'A', 'A', 'E', 'N', 'K']",LANEISDAAENK,,LANEISDAAENK,0.0,0,-0.5704308152198792
-31,"['V', 'Y', 'V', 'E', 'G', 'A', 'W', 'N', 'R']",VYVEGAWNR,,VYVEGAWNR,0.0,0,-0.052127718925476074
-32,"['V', 'L', 'A', 'L', 'D', 'M', 'G', 'A', 'L', 'V', 'A', 'G', 'A', 'K']",VLAIDMGALVAGAK,,VLAIDMGALVAGAK,0.0,0,-0.6216719150543213
-33,"['A', 'N', 'L', 'T', 'A', 'Q', 'I', 'N', 'K']",[UNIMOD:385]QADSNVLGGK,,QADSNVLGGK,0.0,0,-17.631715774536133
-34,"['G', 'E', 'S', 'A', 'P', 'T', 'T', 'A', 'F', 'G', 'A', 'A', 'V', 'V', 'G', 'G', 'D', 'N', 'G', 'R']",GESAPTTAFGAAVVGGDNGR,,GESAPTTAFGAAVVGGDNGR,0.0,0,-1.4755761623382568
-35,"['D', 'A', 'L', 'P', 'L', 'M', 'E', 'N', 'A', 'Y', 'R']",DALPLMENAYR,,DALPLMENAYR,0.0,0,-0.03582363203167915
-36,"['A', 'L', 'I', 'A', 'Q', 'E', 'P', 'L', 'L', 'G', 'A', 'K']",ALIAQEPLLGAK,,ALIAQEPLLGAK,0.0,0,-0.7038929462432861
-37,"['G', 'T', 'C', 'Q', 'T', 'Y', 'I', 'L', 'G', 'Q', 'R']",GTC[UNIMOD:4]QTYILGQR,,GTCQTYILGQR,0.0,0,-0.22784492373466492
-38,"['L', 'S', 'E', 'I', 'T', 'Y', 'S', 'Q', 'N', 'G', 'K']",LSELTYSQNGK,,LSELTYSQNGK,0.0,0,-0.5699032545089722
-39,"['G', 'D', 'Q', 'V', 'A', 'V', 'M', 'A', 'N', 'G', 'Q', 'A', 'P', 'G', 'L', 'P', 'N', 'G', 'F', 'K']",[UNIMOD:385]GAGDQAMAVDKDPGLPNGFK,,GAGDQAMAVDKDPGLPNGFK,0.0,0,-32.94820785522461
-40,"['T', 'V', 'Q', 'V', 'D', 'D', 'S', 'S', 'Q', 'S', 'A', 'H', 'F', 'P', 'L', 'Q', 'V', 'R']",GTGGATHFPNILR,,GTGGATHFPNILR,0.0,0,-14.611988067626953
-41,"['G', 'A', 'S', 'G', 'Y', 'L', 'P', 'E', 'H', 'T', 'L', 'P', 'A', 'K']",GASGYLPEHTLPAK,,GASGYLPEHTLPAK,0.0,0,-4.924595355987549
-42,"['A', 'E', 'Y', 'T', 'P', 'H', 'V', 'D', 'T', 'G', 'D', 'Y', 'I', 'I', 'V', 'L', 'N', 'A', 'D', 'K']",[UNIMOD:385]AAELVPHVDGSEYLLVINADK,,AAELVPHVDGSEYLLVINADK,0.0,0,-27.663970947265625
-43,"['D', 'T', 'N', 'A', 'T', 'A', 'Q', 'G', 'S', 'V', 'A', 'E', 'S', 'N', 'A', 'T', 'G', 'N', 'P', 'V', 'N', 'L', 'L', 'D', 'G', 'K']",[UNIMOD:385]QGKDTNATAQASSQGSSSPVNLLDGK,,QGKDTNATAQASSQGSSSPVNLLDGK,0.0,0,-30.88182830810547
-44,"['N', 'L', 'S', 'L', 'L', 'Q', 'A', 'R']",NLSLLQAR,,NLSLLQAR,0.0,0,-0.3262585997581482
-45,"['A', 'M', 'A', 'Y', 'A', 'Q', 'G', 'A', 'D', 'Y', 'L', 'E', 'Q', 'D', 'L', 'V', 'M', 'T', 'K']",[UNIMOD:1]AAMAQQDYYAQQDLVMTK,,AAMAQQDYYAQQDLVMTK,0.0,0,-28.37212562561035
-46,"['R', 'D', 'D', 'E', 'V', 'I', 'V', 'L', 'T', 'G', 'K']",STVLAPTTVVTR,,STVLAPTTVVTR,0.0,0,-0.16081561148166656
-47,"['A', 'T', 'L', 'K', 'P', 'E', 'G', 'Q', 'A', 'A', 'L', 'D', 'Q', 'L', 'Y', 'S', 'Q', 'L', 'S', 'N', 'L', 'D', 'P', 'K']",ATATKVHDEIYTALDQYSNEVPK,,ATATKVHDEIYTALDQYSNEVPK,0.0,0,-17.852872848510742
-48,"['L', 'Y', 'F', 'E', 'G', 'E', 'L', 'I', 'D', 'A', 'A', 'T', 'N', 'K', 'P', 'V', 'I', 'K']",IYFEGEILDAATNKPVLK,,IYFEGEILDAATNKPVLK,0.0,0,-2.753171682357788
-49,"['T', 'I', 'V', 'D', 'Q', 'E', 'L', 'L', 'P', 'Y', 'V', 'Q', 'V', 'K']",[UNIMOD:385]ELVDQETLPYVQVK,,ELVDQETLPYVQVK,0.0,0,-36.28446960449219
-50,"['W', 'Q', 'S', 'T', 'S', 'V', 'N', 'D', 'V', 'L', 'R']",WQSTSVNDVIR,,WQSTSVNDVIR,0.0,0,-0.04102262854576111
-51,"['T', 'E', 'Q', 'A', 'Q', 'L', 'A', 'R']",ASPAEAQVK,,ASPAEAQVK,0.0,0,-10.480904579162598
-52,"['R', 'V', 'E', 'I', 'E', 'V', 'K']",RVELEVK,,RVELEVK,0.0,0,-0.35330092906951904
-53,"['G', 'V', 'G', 'E', 'D', 'I', 'S', 'D', 'G', 'G', 'N', 'A', 'I', 'S', 'G', 'A', 'A', 'T', 'K']",M[UNIMOD:35]KIGMGAAAVAISGAATK,,MKIGMGAAAVAISGAATK,0.0,0,-11.796494483947754
-54,"['G', 'I', 'D', 'I', 'S', 'A', 'P', 'R']",GLDLSAPR,,GLDLSAPR,0.0,0,-0.47488144040107727
-55,"['Q', 'I', 'L', 'L', 'Q', 'I', 'D', 'S', 'L', 'S', 'S', 'G', 'G', 'A', 'A', 'A', 'Q', 'S', 'T', 'S', 'G', 'D', 'Q', 'S', 'G', 'A', 'A', 'A', 'S', 'T', 'T', 'P', 'T', 'A', 'D', 'A', 'G', 'T', 'A', 'N', 'A', 'G', 'A', 'P', 'V', 'K']",DDDEELAEEKQIILQLDSLAAGANTPTADAGTANAGAPVK,,DDDEELAEEKQIILQLDSLAAGANTPTADAGTANAGAPVK,0.0,0,-32.15129089355469
-56,"['I', 'I', 'S', 'L', 'A', 'P', 'E', 'V', 'L']",ILSLAPEVL,,ILSLAPEVL,0.0,0,-0.5171428918838501
-57,"['L', 'E', 'N', 'E', 'I', 'Q', 'T', 'Y', 'R']",LENEIQTYR,,LENEIQTYR,0.0,0,-0.13825726509094238
-58,"['D', 'W', 'Y', 'V', 'V', 'D', 'A', 'T', 'G', 'K']",DWYVVDATGK,,DWYVVDATGK,0.0,0,-0.008836733177304268
-59,"['L', 'P', 'S', 'D', 'A', 'G', 'S', 'N', 'I', 'T', 'Y', 'R']",LPSDAGSNITYR,,LPSDAGSNITYR,0.0,0,-0.21878063678741455
-60,"['V', 'Q', 'F', 'I', 'D', 'E', 'P', 'V', 'K']",VQFLDEPVK,,VQFLDEPVK,0.0,0,-0.04570562392473221
-61,"['V', 'D', 'D', 'L', 'A', 'V', 'D', 'L', 'V', 'E', 'R']",[UNIMOD:385]GAVDLAVDLVER,,GAVDLAVDLVER,0.0,0,-27.405229568481445
-62,"['V', 'T', 'T', 'E', 'N', 'G', 'E', 'V', 'F', 'L', 'M', 'G', 'L', 'V', 'T', 'E', 'R']",VTVTEDGQFLMGLVTER,,VTVTEDGQFLMGLVTER,0.0,0,-5.26998233795166
-63,"['L', 'A', 'T', 'L', 'P', 'T', 'Y', 'E', 'E', 'A', 'I', 'A', 'R']",LATLPTYEEALAR,,LATLPTYEEALAR,0.0,0,-0.7676795125007629
-64,"['A', 'L', 'D', 'A', 'I', 'I', 'A', 'S', 'V', 'T', 'E', 'S', 'L', 'K']",AIDAIIASVTESIK,,AIDAIIASVTESIK,0.0,0,-0.5641613602638245
-65,"['A', 'D', 'I', 'D', 'Y', 'N', 'T', 'S', 'E', 'A', 'H', 'T', 'T', 'Y', 'G', 'V', 'I', 'G', 'V', 'K']",SKADLDYNTAHTTYGVIGVK,,SKADLDYNTAHTTYGVIGVK,0.0,0,-21.43830680847168
-66,"['T', 'Q', 'F', 'T', 'G', 'D', 'T', 'A', 'S', 'L', 'L', 'V', 'E', 'N', 'G', 'R']",TQFTGDTASLLVENGR,,TQFTGDTASLLVENGR,0.0,0,-0.03716789186000824
-67,"['T', 'I', 'N', 'D', 'Y', 'G', 'A', 'L', 'T', 'P', 'K']",TADNDVLVTPK,,TADNDVLVTPK,0.0,0,-15.605184555053711
-68,"['Q', 'V', 'Q', 'G', 'F', 'E', 'I', 'N', 'G', 'N', 'T', 'G', 'S', 'L', 'T', 'A', 'N', 'P', 'D', 'C', 'V', 'I', 'N', 'R']",QVQGFAGGEPEELVTANPDC[UNIMOD:4]VLNR,,QVQGFAGGEPEELVTANPDCVLNR,0.0,0,-8.157662391662598
-69,"['T', 'G', 'I', 'A', 'F', 'D', 'D', 'S', 'P', 'V', 'P', 'A', 'Q', 'N', 'R']",TAVAFDDSPVPAGGGAR,,TAVAFDDSPVPAGGGAR,0.0,0,-7.876992225646973
-70,"['S', 'W', 'T', 'G', 'L', 'I', 'S', 'T', 'G', 'I', 'T', 'Y', 'K']",TGLSWLSTGLTYK,,TGLSWLSTGLTYK,0.0,0,-13.91446304321289
-71,"['I', 'V', 'D', 'E', 'Q', 'P', 'G', 'A', 'E', 'C', 'Q', 'L', 'I', 'G', 'T', 'A', 'T', 'G', 'K']",LVDEQPGAEC[UNIMOD:4]QLLGTATGK,,LVDEQPGAECQLLGTATGK,0.0,0,-0.19943006336688995
-72,"['A', 'D', 'S', 'V', 'A', 'S', 'A', 'L', 'I', 'T', 'Q', 'G', 'V', 'D', 'A', 'S', 'R']",ADSVASALLTQGVDASR,,ADSVASALLTQGVDASR,0.0,0,-0.3131694197654724
-73,"['G', 'P', 'L', 'Y', 'F', 'P', 'P', 'A', 'D', 'K']",GSQGPLPPADK,,GSQGPLPPADK,0.0,0,-14.148459434509277
-74,"['G', 'E', 'G', 'F', 'Q', 'Q', 'A', 'V', 'A', 'A', 'H', 'K']",GEGFQQAVAAHK,,GEGFQQAVAAHK,0.0,0,-0.018345799297094345
-75,"['V', 'A', 'N', 'L', 'E', 'A', 'Q', 'L', 'A', 'E', 'A', 'Q', 'T', 'R']",[UNIMOD:1]GGAAVQAQLAESAAAR,,GGAAVQAQLAESAAAR,0.0,0,-35.249961853027344
-76,"['T', 'G', 'T', 'P', 'A', 'A', 'Q', 'I', 'G', 'L', 'K']",TGTPAAQLGLK,,TGTPAAQLGLK,0.0,0,-0.0998530164361
-77,"['A', 'A', 'A', 'D', 'V', 'Q', 'L', 'R']",AAADVQLR,,AAADVQLR,0.0,0,-0.2258378118276596
-78,"['V', 'I', 'G', 'T', 'A', 'T', 'S', 'E', 'N', 'G', 'A', 'Q', 'A', 'I', 'S', 'D', 'Y', 'L', 'G', 'A', 'N', 'G', 'K']",SGALVGDKDSGYYSDYLGANGK,,SGALVGDKDSGYYSDYLGANGK,0.0,0,-30.872926712036133
-79,"['A', 'Y', 'S', 'G', 'E', 'G', 'A', 'I', 'A', 'D', 'D', 'A', 'G', 'N', 'V', 'S', 'R']",AYSGEGALADDAGNVSR,,AYSGEGALADDAGNVSR,0.0,0,-1.5417059659957886
-80,"['D', 'G', 'S', 'V', 'V', 'V', 'L', 'G', 'Y', 'T', 'D', 'R']",DGSVVVLGYTDR,,DGSVVVLGYTDR,0.0,0,-0.23158130049705505
-81,"['Y', 'T', 'N', 'G', 'G', 'L', 'T', 'V', 'T', 'P', 'G', 'I', 'G', 'V', 'Q', 'W', 'N', 'S', 'E', 'N', 'Q', 'N', 'E', 'Y', 'Y', 'Y', 'G', 'V', 'S', 'R']",[UNIMOD:385]GPGLGVQNSLPGLGVQWDSQGWNEYYYGVSR,,GPGLGVQNSLPGLGVQWDSQGWNEYYYGVSR,0.0,0,-23.557331085205078
-82,"['K', 'P', 'L', 'D', 'D', 'V', 'K']",[UNIMOD:385]AADVLPSR,,AADVLPSR,0.0,0,-24.622072219848633
-83,"['V', 'M', 'N', 'M', 'Q', 'A', 'K']",SPVHPGSIVHR,,SPVHPGSIVHR,0.0,0,-13.546707153320312
-84,"['S', 'V', 'A', 'N', 'S', 'Q', 'D', 'I', 'D', 'L', 'V', 'V', 'D', 'A', 'N', 'A', 'V', 'A', 'Y', 'N', 'S', 'S', 'D', 'V', 'K']",GAGDAGLSVANSQDIDLVAYNSSDVK,,GAGDAGLSVANSQDIDLVAYNSSDVK,0.0,0,-24.050710678100586
-85,"['T', 'I', 'V', 'S', 'D', 'G', 'K', 'P', 'Q', 'T', 'D', 'N', 'D', 'T', 'G', 'M', 'I', 'S', 'Y', 'K']",TIVSDGKPQSSYEMELSYK,,TIVSDGKPQSSYEMELSYK,0.0,0,-3.876924753189087
-86,"['E', 'P', 'Q', 'G', 'F', 'V', 'A', 'D', 'A', 'T', 'I', 'N', 'T', 'P', 'N', 'G', 'V', 'L', 'V', 'A', 'S', 'G', 'K']",[UNIMOD:1]GSTLTGKEPQGFVPNGVLVASGK,,GSTLTGKEPQGFVPNGVLVASGK,0.0,0,-31.494333267211914
-87,"['A', 'E', 'Y', 'T', 'P', 'H', 'V', 'D', 'T', 'G', 'D', 'Y', 'I', 'I', 'V', 'L', 'N', 'A', 'D', 'K']",AGIDSVPHVDEGDYLVINADK,,AGIDSVPHVDEGDYLVINADK,0.0,0,-16.593549728393555
-88,"['V', 'N', 'Y', 'G', 'V', 'T', 'V', 'L', 'P', 'T', 'F', 'K']",VNYGVTVLPTFK,,VNYGVTVLPTFK,0.0,0,-0.06612690538167953
-89,"['G', 'G', 'W', 'T', 'V', 'I', 'Q', 'N', 'R']",GGWTVIQNR,,GGWTVIQNR,0.0,0,-0.03692542389035225
-90,"['L', 'T', 'G', 'L', 'E', 'G', 'E', 'Q', 'L', 'G', 'I', 'V', 'S', 'L', 'R']",LTGLEGEQLGLVSLR,,LTGLEGEQLGLVSLR,0.0,0,-0.2902936637401581
-91,"['V', 'A', 'F', 'Q', 'A', 'V', 'I', 'K']",VAFQAVLK,,VAFQAVLK,0.0,0,-0.03523893654346466
-92,"['G', 'L', 'G', 'G', 'G', 'Y', 'Y', 'L', 'W', 'N', 'D', 'A', 'T', 'D', 'K']",GIGGGYYIWNDATDK,,GIGGGYYIWNDATDK,0.0,0,-7.822528839111328
-93,"['V', 'P', 'L', 'P', 'P', 'L', 'T', 'E', 'E', 'R']",[UNIMOD:385]LPLPPITEER,,LPLPPITEER,0.0,0,-27.96770477294922
-94,"['L', 'A', 'A', 'T', 'I', 'A', 'Q', 'L', 'P', 'D', 'Q', 'I', 'G', 'A', 'K']",GALALAATLPDQLAGK,,GALALAATLPDQLAGK,0.0,0,-13.956966400146484
-95,"['V', 'D', 'Q', 'L', 'S', 'N', 'D', 'V', 'N', 'A', 'M', 'R']",VDQLSNDSVEQK,,VDQLSNDSVEQK,0.0,0,-1.9911024570465088
-96,"['L', 'V', 'I', 'W', 'I', 'N', 'G', 'D', 'K']",VILWLNGDK,,VILWLNGDK,0.0,0,-0.7739212512969971
-97,"['A', 'V', 'V', 'T', 'P', 'L', 'P', 'R']",[UNIMOD:385]GLGLHLTR,,GLGLHLTR,0.0,0,-24.634475708007812
-98,"['N', 'F', 'L', 'V', 'P', 'Q', 'G', 'K']",NFLVPQGK,,NFLVPQGK,0.0,0,-0.37103143334388733
-99,"['V', 'A', 'I', 'N', 'E', 'A', 'I', 'E', 'L', 'A', 'K']",[UNIMOD:1]AVAGGEAIELAK,,AVAGGEAIELAK,0.0,0,-31.855369567871094
-100,"['D', 'Y', 'S', 'S', 'Y', 'P', 'Y', 'Q', 'T', 'V', 'K']",DYSSYPYQTVK,,DYSSYPYQTVK,0.0,0,-2.9534189701080322
-101,"['V', 'A', 'I', 'A', 'N', 'V', 'L', 'K']",VAIANVIK,,VAIANVIK,0.0,0,-0.9789353609085083
-102,"['G', 'N', 'N', 'L', 'T', 'V', 'S', 'A', 'D', 'L', 'Y', 'K']",GNNITVSADIYK,,GNNITVSADIYK,0.0,0,-1.3349515199661255
-103,"['G', 'E', 'G', 'F', 'Q', 'Q', 'A', 'V', 'A', 'A', 'H', 'K']",GEGFQQAVAAHK,,GEGFQQAVAAHK,0.0,0,-1.0349855422973633
-104,"['F', 'L', 'L', 'Q', 'E', 'V', 'L', 'E', 'K']",FLLQEVLEK,,FLLQEVLEK,0.0,0,-0.1032896339893341
-105,"['Q', 'G', 'G', 'A', 'L', 'V', 'T', 'S', 'T', 'A', 'A', 'T', 'V', 'T', 'G', 'I', 'N', 'R']",QGGALVTSTAATVSALNR,,QGGALVTSTAATVSALNR,0.0,0,-2.514388084411621
-106,"['T', 'D', 'S', 'A', 'Q', 'V', 'A', 'E', 'I', 'V', 'A', 'V', 'M', 'G', 'N', 'A', 'S', 'V', 'A', 'S', 'R']",TDSAQVEALVAVMGNASVASR,,TDSAQVEALVAVMGNASVASR,0.0,0,-0.6087200045585632
-107,"['A', 'V', 'G', 'D', 'S', 'L', 'E', 'A', 'Q', 'Q', 'Y', 'G', 'I', 'A', 'F', 'P', 'K']",AVGDSLEAQQYGIAFPK,,AVGDSLEAQQYGIAFPK,0.0,0,-2.8559343814849854
-108,"['W', 'E', 'L', 'L', 'Q', 'Q', 'V', 'D', 'T', 'S', 'T', 'R']",WELLQQVDTTSR,,WELLQQVDTTSR,0.0,0,-0.7430405616760254
-109,"['K', 'D', 'D', 'G', 'N', 'T', 'I', 'M', 'V', 'V', 'Q', 'K']",[UNIMOD:385]KDDNTSVMVVQK,,KDDNTSVMVVQK,0.0,0,-25.80189323425293
-110,"['G', 'A', 'S', 'A', 'V', 'P', 'L', 'V', 'G', 'R']",GASAVPLVGR,,GASAVPLVGR,0.0,0,-0.2863697409629822
-111,"['E', 'E', 'P', 'S', 'S', 'F', 'A', 'S', 'Y', 'G', 'T', 'W', 'A', 'R']",EEPSSFASYSAWAR,,EEPSSFASYSAWAR,0.0,0,-1.72877037525177
-112,"['L', 'L', 'D', 'L', 'A', 'A', 'P', 'D', 'I', 'I', 'V', 'R']",LLDLAAPDLLVR,,LLDLAAPDLLVR,0.0,0,-0.35797587037086487
-113,"['I', 'A', 'T', 'M', 'G', 'S', 'T', 'G', 'T', 'S', 'S', 'T', 'R']",MEMEEPATPAR,,MEMEEPATPAR,0.0,0,-5.167568206787109
-114,"['T', 'L', 'L', 'A', 'V', 'E', 'I', 'K']",TILAVELK,,TILAVELK,0.0,0,-0.6314651966094971
-115,"['G', 'L', 'D', 'S', 'S', 'Y', 'T', 'L', 'I', 'L', 'V', 'D', 'G', 'K']",GIDSSYTLILVDGK,,GIDSSYTLILVDGK,0.0,0,-0.4013097882270813
-116,"['A', 'V', 'A', 'A', 'G', 'M', 'N', 'P', 'M', 'D', 'L', 'K']",AVAAGMNPMDIK,,AVAAGMNPMDIK,0.0,0,-0.12820857763290405
-117,"['Y', 'A', 'G', 'H', 'T', 'A', 'S', 'D', 'E', 'V', 'F', 'E', 'K']",[UNIMOD:385]AVTHTSFGDGHEEGSEMFEK,,AVTHTSFGDGHEEGSEMFEK,0.0,0,-28.64252471923828
-118,"['I', 'N', 'L', 'L', 'D', 'D', 'N', 'Q', 'F', 'T', 'R']",INLLDDNQFTR,,INLLDDNQFTR,0.0,0,-0.45683878660202026
-119,"['V', 'I', 'N', 'V', 'I', 'N', 'G', 'K']",VINVLNGK,,VINVLNGK,0.0,0,-0.36856362223625183
-120,"['A', 'M', 'Q', 'W', 'M', 'P', 'I', 'S', 'Q', 'K']",AMQWMPISQK,,AMQWMPISQK,0.0,0,-0.01653110794723034
-121,"['T', 'S', 'H', 'I', 'T', 'V', 'V', 'V', 'S', 'D', 'R']",STHITVVVSDR,,STHITVVVSDR,0.0,0,-2.074432134628296
-122,"['F', 'T', 'L', 'V', 'S', 'A', 'Q', 'Q', 'L', 'S', 'M', 'A', 'K']",[UNIMOD:385]TGFTLAETAISM[UNIMOD:35]AK,,TGFTLAETAISMAK,0.0,0,-36.97587966918945
-123,"['G', 'G', 'Y', 'F', 'P', 'V', 'P', 'P', 'V', 'D', 'S', 'A', 'Q', 'D', 'I', 'R']",C[UNIMOD:4]GGGSLYNSQWVSAAH,,CGGGSLYNSQWVSAAH,0.0,0,-6.278232574462891
-124,"['L', 'G', 'E', 'H', 'N', 'I', 'D', 'V', 'L', 'E', 'G', 'N', 'E', 'Q', 'F', 'I', 'N', 'A', 'A', 'K']",LGEHNIDVLEGNEQFINAAK,,LGEHNIDVLEGNEQFINAAK,0.0,0,-0.08352509886026382
-125,"['T', 'T', 'L', 'P', 'D', 'S', 'A', 'H', 'V', 'A', 'S', 'A', 'S', 'T', 'I', 'P', 'N', 'R']",TTLPDSAHVASASTLPNR,,TTLPDSAHVASASTLPNR,0.0,0,-0.1418563574552536
-126,"['V', 'G', 'F', 'F', 'N', 'P', 'I', 'A', 'S', 'E', 'K']",VGFFNPLASEK,,VGFFNPLASEK,0.0,0,-0.5083386301994324
-127,"['I', 'L', 'D', 'A', 'T', 'N', 'N', 'Q', 'L', 'P', 'Q', 'D', 'R']",LLDATNNQLPQDR,,LLDATNNQLPQDR,0.0,0,-0.6816688776016235
-128,"['I', 'I', 'T', 'H', 'P', 'N', 'F', 'N', 'G', 'N', 'T', 'L', 'D', 'N', 'D', 'I', 'M', 'L', 'I', 'K']",IITHPNFNGNTLDNDIMLIK,,IITHPNFNGNTLDNDIMLIK,0.0,0,-0.05081341788172722
-129,"['A', 'L', 'M', 'E', 'Y', 'D', 'E', 'S', 'L', 'R']",ALMEYDESLR,,ALMEYDESLR,0.0,0,-0.6427608728408813
-130,"['A', 'M', 'Q', 'W', 'M', 'P', 'I', 'S', 'Q', 'K']",AMQWMPISQK,,AMQWMPISQK,0.0,0,-0.022877659648656845
-131,"['I', 'P', 'V', 'V', 'S', 'S', 'P', 'K']",LPVVSSPK,,LPVVSSPK,0.0,0,-0.009657032787799835
-132,"['F', 'W', 'V', 'E', 'S', 'E', 'K']",EVLGVLPR,,EVLGVLPR,0.0,0,-10.983034133911133
-133,"['T', 'G', 'Q', 'A', 'V', 'E', 'L', 'F', 'N', 'Q', 'L', 'P', 'Q', 'E', 'L', 'N', 'D', 'A', 'Q', 'R']",TGQAVELFNQIPQELNDAQR,,TGQAVELFNQIPQELNDAQR,0.0,0,-1.5125757455825806
-134,"['Q', 'A', 'T', 'F', 'E', 'E', 'M', 'I', 'A', 'R']",QATFEEMLAR,,QATFEEMLAR,0.0,0,-0.13373570144176483
-135,"['I', 'S', 'E', 'L', 'S', 'E', 'G', 'Q', 'I', 'D', 'T', 'L', 'R']",ISELSEGQIDTLR,,ISELSEGQIDTLR,0.0,0,-0.7524881362915039
-136,"['S', 'L', 'S', 'D', 'T', 'L', 'E', 'E', 'V', 'L', 'S', 'S', 'S', 'G', 'E', 'K']",SLSSELEEVLSSSGEK,,SLSSELEEVLSSSGEK,0.0,0,-4.6218390464782715
-137,"['L', 'I', 'D', 'Q', 'A', 'T', 'A', 'E', 'I', 'V', 'E', 'T', 'A', 'K']",LIDQATAELVETAK,,LIDQATAELVETAK,0.0,0,-8.60302448272705
-138,"['G', 'E', 'V', 'V', 'S', 'H', 'I', 'A', 'S', 'D', 'N', 'V', 'L', 'G', 'G', 'K']",GEVVSHIASDNVLGGK,,GEVVSHIASDNVLGGK,0.0,0,-2.043409585952759
-139,"['V', 'I', 'E', 'L', 'Q', 'G', 'I', 'A', 'G', 'T', 'S', 'A', 'A', 'R']",VLELQGIAGTSAAR,,VLELQGIAGTSAAR,0.0,0,-0.09267758578062057
-140,"['S', 'M', 'Q', 'D', 'P', 'I', 'A', 'D', 'M', 'L', 'T', 'R']",SMQDPIADMITR,,SMQDPIADMITR,0.0,0,-0.6469162702560425
-141,"['S', 'G', 'E', 'G', 'L', 'Y', 'F', 'I', 'D', 'K']",SGEGLYFIDK,,SGEGLYFIDK,0.0,0,-0.31816717982292175
-142,"['N', 'D', 'V', 'S', 'D', 'L', 'I', 'D', 'Y', 'D', 'D', 'H', 'T', 'L', 'K']",LTLPLVTPEQLPEQH,,LTLPLVTPEQLPEQH,0.0,0,-13.527817726135254
-143,"['D', 'T', 'V', 'E', 'I', 'Q', 'G', 'E', 'V', 'D', 'K']",DTVELQGEVDK,,DTVELQGEVDK,0.0,0,-1.9200621843338013
-144,"['D', 'Y', 'S', 'S', 'Y', 'P', 'Y', 'Q', 'T', 'V', 'K']",DYSSYPYQTVK,,DYSSYPYQTVK,0.0,0,-0.9772370457649231
-145,"['T', 'V', 'I', 'N', 'Q', 'V', 'T', 'Y', 'L', 'P', 'I', 'A', 'S', 'E', 'V', 'T', 'D', 'V', 'N', 'R']",[UNIMOD:5]VGGQLLSVYAPLASEVTDVNR,,VGGQLLSVYAPLASEVTDVNR,0.0,0,-25.538217544555664
-146,"['F', 'N', 'G', 'Q', 'Y', 'E', 'L', 'R']",FNGQYELK,,FNGQYELK,0.0,0,-7.4135308265686035
-147,"['V', 'A', 'N', 'L', 'E', 'A', 'Q', 'L', 'A', 'E', 'A', 'Q', 'T', 'R']",VANIGYTNADIEAQLAEGRDK,,VANIGYTNADIEAQLAEGRDK,0.0,0,-7.166167736053467
-148,"['Y', 'Q', 'W', 'Q', 'N', 'Y', 'G', 'A', 'A', 'N', 'E', 'N', 'E', 'W', 'D', 'G', 'Y', 'R']",[UNIMOD:5]QQSIYQATANYQEWDGYR,,QQSIYQATANYQEWDGYR,0.0,0,-32.57602310180664
-149,"['F', 'L', 'A', 'D', 'D', 'P', 'Q', 'A', 'V', 'A', 'D', 'L', 'S', 'R']",FLDADPQAVADLSR,,FLDADPQAVADLSR,0.0,0,-5.1504998207092285
-150,"['N', 'Q', 'G', 'T', 'A', 'Q', 'N', 'I', 'Q', 'L', 'E', 'L', 'Q', 'D', 'D', 'S', 'G', 'N', 'T', 'L', 'N', 'T', 'G', 'A', 'T', 'K']",VTNQGTAQNLQLELQDGTNINTGATK,,VTNQGTAQNLQLELQDGTNINTGATK,0.0,0,-17.375831604003906
-151,"['M', 'A', 'N', 'Q', 'A', 'N', 'I', 'P', 'V', 'I', 'T', 'L', 'D', 'R']",MANQANLPVITLDR,,MANQANLPVITLDR,0.0,0,-0.04881749674677849
-152,"['S', 'A', 'G', 'T', 'Y', 'V', 'Q', 'I', 'V', 'A', 'R']",SAGTYVQLVAR,,SAGTYVQLVAR,0.0,0,-0.1507682204246521
-153,"['T', 'I', 'L', 'N', 'L', 'V', 'N', 'A', 'G', 'N', 'S', 'A', 'S', 'G', 'L', 'A', 'T', 'S', 'G', 'K']",STLLNIINIANSGIATSGK,,STLLNIINIANSGIATSGK,0.0,0,-26.749290466308594
-154,"['E', 'F', 'G', 'V', 'N', 'L', 'A', 'K']",EFGVNLAK,,EFGVNLAK,0.0,0,-0.04268062487244606
-155,"['A', 'D', 'S', 'V', 'A', 'S', 'A', 'L', 'I', 'T', 'Q', 'G', 'V', 'D', 'A', 'S', 'R']",[UNIMOD:1]ADSVASAALTQGVDASR,,ADSVASAALTQGVDASR,0.0,0,-20.9118595123291
-156,"['F', 'S', 'G', 'N', 'Y', 'G', 'N', 'M', 'T', 'E', 'V', 'S', 'Y', 'Q', 'V', 'A', 'K']",FSGNYSGNYGFSYQVAK,,FSGNYSGNYGFSYQVAK,0.0,0,-12.433136940002441
-157,"['Q', 'N', 'T', 'F', 'F', 'V', 'T', 'N', 'S', 'G', 'V', 'Q', 'N', 'R']",QNTFFVTNSGVQNR,,QNTFFVTNSGVQNR,0.0,0,-0.06667160242795944
-158,"['A', 'P', 'L', 'P', 'T', 'P', 'L', 'P']",APLPTPIP,,APLPTPIP,0.0,0,-0.799430787563324
-159,"['N', 'K', 'P', 'G', 'V', 'Y', 'T', 'K']",NKPGVYTK,,NKPGVYTK,0.0,0,-0.04100721329450607
-160,"['V', 'V', 'N', 'P', 'E', 'L', 'H', 'K']",VVLPEIHK,,VVLPEIHK,0.0,0,-2.6776986122131348
-161,"['A', 'D', 'L', 'T', 'L', 'V', 'P', 'V', 'Q', 'Q', 'T', 'A', 'V', 'P', 'V', 'Q', 'A', 'S', 'G', 'G', 'A', 'T', 'T', 'T', 'V', 'P', 'S', 'T', 'S', 'P', 'T', 'Q', 'V', 'N', 'P', 'S', 'S', 'A', 'V', 'P', 'A', 'P', 'T', 'Q', 'Y']",QPVQAGTAVPALDTLVEPSTPTSQVGGPTSTPVQPAPTQY,,QPVQAGTAVPALDTLVEPSTPTSQVGGPTSTPVQPAPTQY,0.0,0,-28.082611083984375
-162,"['V', 'V', 'N', 'I', 'A', 'S', 'Y', 'Q', 'V', 'S', 'P', 'N', 'D', 'V', 'V', 'S', 'I', 'R']",VVNIASYQVSPNDVVSLR,,VVNIASYQVSPNDVVSLR,0.0,0,-1.0194880962371826
-163,"['Q', 'N', 'V', 'S', 'S', 'V', 'I', 'I', 'D', 'L', 'R']",QNVSSVLLDLR,,QNVSSVLLDLR,0.0,0,-0.39536258578300476
-164,"['F', 'G', 'G', 'Y', 'A', 'Q', 'S', 'G', 'L', 'L', 'A', 'E', 'I', 'T', 'P', 'D', 'K']",FGGYAQSGLLAELTPDK,,FGGYAQSGLLAELTPDK,0.0,0,-2.013052225112915
-165,"['E', 'V', 'P', 'G', 'V', 'Q', 'L', 'T', 'N', 'E', 'G', 'D', 'N', 'R']",EVPGVQITNEGDNR,,EVPGVQITNEGDNR,0.0,0,-0.33844783902168274
-166,"['D', 'P', 'L', 'D', 'N', 'T', 'Y', 'T', 'R']",LPLDNTYTR,,LPLDNTYTR,0.0,0,-12.366044998168945
-167,"['V', 'A', 'I', 'N', 'E', 'A', 'I', 'E', 'L', 'A', 'K']",GSTAVAAANLNNVNILGR,,GSTAVAAANLNNVNILGR,0.0,0,-22.012100219726562
-168,"['F', 'N', 'A', 'I', 'G', 'E', 'A', 'V', 'K']",FNALGEAVK,,FNALGEAVK,0.0,0,-0.022144636139273643
-169,"['N', 'G', 'A', 'G', 'I', 'E', 'N', 'Y', 'N', 'F', 'I', 'T', 'T', 'A', 'G', 'L', 'K']",GVAKNGAGYNFLTTAGIK,,GVAKNGAGYNFLTTAGIK,0.0,0,-22.392955780029297
-170,"['N', 'Q', 'G', 'T', 'A', 'Q', 'N', 'I', 'Q', 'L', 'E', 'L', 'Q', 'D', 'D', 'S', 'G', 'N', 'T', 'L', 'N', 'T', 'G', 'A', 'T', 'K']",GQELNQSANQLELQLQNTINTGATK,,GQELNQSANQLELQLQNTINTGATK,0.0,0,-30.228256225585938
-171,"['A', 'L', 'I', 'A', 'Q', 'E', 'P', 'L', 'L', 'G', 'A', 'K']",ALIAQEPLLGAK,,ALIAQEPLLGAK,0.0,0,-1.429487705230713
-172,"['D', 'Q', 'L', 'I', 'A', 'G', 'V', 'Q', 'D', 'A', 'F', 'A', 'D', 'K']",QLDIAGVQDAFADK,,QLDIAGVQDAFADK,0.0,0,-14.74417495727539
-173,"['T', 'D', 'G', 'D', 'Q', 'V', 'Q', 'I', 'N', 'N', 'V', 'N', 'I', 'L', 'G', 'R']",VTPGIGVQVNNVNIIGR,,VTPGIGVQVNNVNIIGR,0.0,0,-8.634795188903809
-174,"['V', 'A', 'N', 'L', 'G', 'S', 'L', 'G', 'D', 'Q', 'V', 'N', 'V', 'K']",VANLGSLGDQVNVK,,VANLGSLGDQVNVK,0.0,0,-0.7411442399024963
-175,"['Y', 'A', 'G', 'H', 'T', 'A', 'S', 'D', 'E', 'V', 'F', 'E', 'K']",YAGHATSEDVFEK,,YAGHATSEDVFEK,0.0,0,-5.5474348068237305
-176,"['L', 'M', 'D', 'L', 'G', 'C', 'Y', 'R']",LMDLGC[UNIMOD:4]YR,,LMDLGCYR,0.0,0,-0.06470916420221329
-177,"['S', 'I', 'V', 'V', 'A', 'I', 'E', 'R']",[UNIMOD:385]DVVVALQR,,DVVVALQR,0.0,0,-36.36308670043945
-178,"['L', 'Y', 'F', 'E', 'G', 'E', 'L', 'I', 'D', 'A', 'A', 'T', 'N', 'K', 'P', 'V', 'I', 'K']",[UNIMOD:385]ELYFEGELDAATNKPVLK,,ELYFEGELDAATNKPVLK,0.0,0,-27.434289932250977
-179,"['K', 'G', 'D', 'V', 'I', 'I', 'G', 'A', 'N', 'Q', 'Q', 'A', 'V', 'K']",KGDVILGANQQAVK,,KGDVILGANQQAVK,0.0,0,-1.2583591938018799
-180,"['N', 'M', 'A', 'G', 'S', 'L', 'V', 'R']",NMAGSIVR,,NMAGSIVR,0.0,0,-0.27041295170783997
-181,"['V', 'L', 'L', 'V', 'G', 'Q', 'S', 'P', 'N', 'A', 'E', 'L', 'S', 'A', 'R']",[UNIMOD:385]TVIVLTSPNAELSAR,,TVIVLTSPNAELSAR,0.0,0,-31.38191795349121
-182,"['V', 'S', 'Q', 'A', 'L', 'D', 'I', 'L', 'T', 'Y', 'T', 'N', 'K']",VSQALDLITYTNK,,VSQALDLITYTNK,0.0,0,-0.46799203753471375
-183,"['E', 'Q', 'I', 'I', 'F', 'P', 'E', 'I', 'D', 'Y', 'D', 'K']",EQILFPELDYDK,,EQILFPELDYDK,0.0,0,-0.7663918137550354
-184,"['D', 'V', 'V', 'T', 'Q', 'P', 'Q', 'A']",DVVTQPQA,,DVVTQPQA,0.0,0,-0.13701231777668
-185,"['T', 'G', 'V', 'S', 'N', 'T', 'L', 'E', 'N', 'E', 'F', 'K']",TGGSDQIENEFK,,TGGSDQIENEFK,0.0,0,-5.6121320724487305
-186,"['L', 'S', 'D', 'E', 'V', 'T', 'D', 'S', 'P', 'M', 'V', 'D', 'K']",LSDEVTDSPM[UNIMOD:35]VDK,,LSDEVTDSPMVDK,0.0,0,-0.044528938829898834
-187,"['T', 'V', 'N', 'N', 'D', 'T', 'L', 'T', 'I', 'R']",TVNNDTLTLR,,TVNNDTLTLR,0.0,0,-0.38771939277648926
-188,"['V', 'Y', 'L', 'Q', 'C', 'F', 'D', 'A', 'D', 'E', 'L', 'K']",VYLQC[UNIMOD:4]FDADELK,,VYLQCFDADELK,0.0,0,-0.3040086328983307
-189,"['V', 'T', 'V', 'P', 'L', 'F', 'E', 'G', 'V', 'Q', 'K']",VTVPLFEGVQK,,VTVPLFEGVQK,0.0,0,-0.08474665135145187
-190,"['E', 'A', 'G', 'V', 'Y', 'M', 'R']",EAGVYMR,,EAGVYMR,0.0,0,-0.041564829647541046
-191,"['D', 'D', 'E', 'V', 'I', 'V', 'L', 'T', 'G', 'K']",DDEVIVLTGK,,DDEVIVLTGK,0.0,0,-0.013329572975635529
-192,"['T', 'G', 'T', 'P', 'A', 'A', 'Q', 'I', 'G', 'L', 'K']",TGTPAAQLGLK,,TGTPAAQLGLK,0.0,0,-0.05380351096391678
-193,"['D', 'M', 'T', 'C', 'Q', 'E', 'F', 'I', 'D', 'L', 'N', 'P', 'K']",LTC[UNIMOD:4]QESFFDLNPK,,LTCQESFFDLNPK,0.0,0,-10.278264045715332
-194,"['V', 'S', 'Q', 'A', 'L', 'D', 'I', 'L', 'T', 'Y', 'T', 'N', 'K']",VSQALDLITYTNK,,VSQALDLITYTNK,0.0,0,-0.5822373628616333
-195,"['T', 'I', 'N', 'D', 'Y', 'G', 'A', 'L', 'T', 'P', 'K']",TINDYGALTPK,,TINDYGALTPK,0.0,0,-0.07399743795394897
-196,"['V', 'A', 'F', 'T', 'A', 'L', 'V', 'E', 'K']",AVFTALVEK,,AVFTALVEK,0.0,0,-3.777017593383789
-197,"['I', 'A', 'H', 'W', 'V', 'G', 'Q', 'G', 'A', 'T', 'I', 'S', 'D', 'R']",LAHWALVGATISDR,,LAHWALVGATISDR,0.0,0,-9.336623191833496
-198,"['Q', 'D', 'L', 'Q', 'A', 'L', 'L', 'G', 'K']",LLNLEQAGK,,LLNLEQAGK,0.0,0,-0.11308671534061432
-199,"['A', 'E', 'A', 'A', 'P', 'A', 'A', 'T', 'G', 'G', 'G', 'I', 'P', 'G', 'M', 'L', 'P', 'W', 'P', 'K']",AEAAPAAPAATPGMLPWPK,,AEAAPAAPAATPGMLPWPK,0.0,0,-6.287688732147217
-200,"['V', 'A', 'F', 'T', 'A', 'L', 'V', 'E', 'K']",VAFTALVEK,,VAFTALVEK,0.0,0,-0.48710179328918457
-201,"['K', 'G', 'D', 'V', 'I', 'I', 'G', 'A', 'N', 'Q', 'Q', 'A', 'V', 'K']",GKGDVILANQQAVK,,GKGDVILANQQAVK,0.0,0,-19.509445190429688
-202,"['A', 'G', 'V', 'N', 'G', 'L', 'F', 'T', 'D', 'F', 'P', 'D', 'K']",AGVGNLFTDFPDK,,AGVGNLFTDFPDK,0.0,0,-2.176074504852295
-203,"['I', 'Q', 'L', 'G', 'P', 'F', 'A', 'S', 'K']",IDALYLPR,,IDALYLPR,0.0,0,-0.7963197827339172
-204,"['V', 'Y', 'L', 'Q', 'C', 'F', 'D', 'A', 'D', 'E', 'L', 'K']",VYIQC[UNIMOD:4]FDADELK,,VYIQCFDADELK,0.0,0,-4.06654167175293
-205,"['N', 'A', 'P', 'P', 'P', 'T', 'K', 'P', 'V', 'E', 'T', 'Q', 'T', 'Q', 'S', 'T', 'V', 'P', 'D', 'K']",NAPPPTKPVETQTQTSVPDK,,NAPPPTKPVETQTQTSVPDK,0.0,0,-3.7245912551879883
-206,"['S', 'L', 'S', 'T', 'E', 'A', 'T', 'A', 'K']",VSTEVATAK,,VSTEVATAK,0.0,0,-9.075451850891113
-207,"['T', 'S', 'H', 'I', 'T', 'V', 'V', 'V', 'S', 'D', 'R']",TSHLTVVVSDR,,TSHLTVVVSDR,0.0,0,-0.9823261499404907
-208,"['I', 'A', 'H', 'W', 'V', 'G', 'Q', 'G', 'A', 'T', 'I', 'S', 'D', 'R']",[UNIMOD:5]SVSVSDTLR,,SVSVSDTLR,0.0,0,-19.12789535522461
-209,"['G', 'Q', 'H', 'F', 'D', 'I', 'Y', 'Q', 'G', 'I', 'G', 'P', 'E', 'A', 'G', 'H', 'R']",QGLGQHFDLYGPEAGHR,,QGLGQHFDLYGPEAGHR,0.0,0,-6.655642509460449
-210,"['A', 'L', 'D', 'I', 'R', 'P', 'P', 'A', 'Q', 'P', 'L', 'A', 'L', 'V', 'S', 'G', 'A', 'R']",ALDLRPPAQPLALVSQR,,ALDLRPPAQPLALVSQR,0.0,0,-1.1433486938476562
-211,"['N', 'K', 'P', 'G', 'V', 'Y', 'T', 'K']",NKPGVYTK,,NKPGVYTK,0.0,0,-0.004633904434740543
-212,"['V', 'I', 'E', 'L', 'Q', 'G', 'I', 'A', 'G', 'T', 'S', 'A', 'A', 'R']",VLELQGLAGTSAAR,,VLELQGLAGTSAAR,0.0,0,-0.6736297607421875
-213,"['V', 'D', 'D', 'Y', 'I', 'I', 'K']",VDDYLLK,,VDDYLLK,0.0,0,-3.1211912631988525
-214,"['S', 'D', 'V', 'M', 'V', 'V', 'G', 'F', 'D', 'G', 'T', 'P', 'D', 'G', 'E', 'K']",ASTSSVLGFDSAPDGEK,,ASTSSVLGFDSAPDGEK,0.0,0,-8.642736434936523
-215,"['Y', 'T', 'N', 'G', 'G', 'L', 'T', 'V', 'T', 'P', 'G', 'I', 'G', 'V', 'Q', 'W', 'N', 'S', 'E', 'N', 'Q', 'N', 'E', 'Y', 'Y', 'Y', 'G', 'V', 'S', 'R']",GIGVQNSLWTPGIGVQNSENQNEYYYGVSR,,GIGVQNSLWTPGIGVQNSENQNEYYYGVSR,0.0,0,-13.905169486999512
-216,"['S', 'T', 'V', 'L', 'A', 'P', 'T', 'T', 'V', 'V', 'T', 'R']",FFATGAYPMREDSTFK,,FFATGAYPMREDSTFK,0.0,0,-16.201019287109375
-217,"['S', 'W', 'T', 'G', 'L', 'I', 'S', 'T', 'G', 'I', 'T', 'Y', 'K']",SWTGILSTGLTYK,,SWTGILSTGLTYK,0.0,0,-1.7106825113296509
-218,"['N', 'L', 'N', 'G', 'Q', 'N', 'G', 'T', 'I', 'S', 'L', 'R']",NLDGQNTAVSLR,,NLDGQNTAVSLR,0.0,0,-3.220871686935425
-219,"['Q', 'S', 'G', 'F', 'L', 'D', 'P', 'V', 'N', 'Y', 'R']",DALPLMEANYR,,DALPLMEANYR,0.0,0,-4.5878376960754395
-220,"['V', 'D', 'R', 'P', 'T', 'A', 'E', 'C', 'A', 'A', 'A', 'L', 'D', 'K']",VRDTPAEC[UNIMOD:4]AAALDK,,VRDTPAECAAALDK,0.0,0,-1.4070920944213867
-221,"['E', 'E', 'V', 'P', 'D', 'N', 'P', 'P', 'N', 'E', 'I', 'Y', 'A', 'T', 'A', 'Q', 'Q', 'K']",[UNIMOD:385]EEDPDNPPNELYATAQQK,,EEDPDNPPNELYATAQQK,0.0,0,-16.14114761352539
-222,"['S', 'G', 'E', 'G', 'L', 'Y', 'F', 'I', 'D', 'K']",SGEGLYFIDK,,SGEGLYFIDK,0.0,0,-0.07444676011800766
-223,"['Y', 'D', 'S', 'S', 'A', 'T', 'L', 'D', 'E', 'M', 'K']",GTYDETADEMK,,GTYDETADEMK,0.0,0,-14.639836311340332
-224,"['T', 'I', 'V', 'S', 'D', 'G', 'K', 'P', 'Q', 'T', 'D', 'N', 'D', 'T', 'G', 'M', 'I', 'S', 'Y', 'K']",GIETAVAVGKPDVGDEYQAPK,,GIETAVAVGKPDVGDEYQAPK,0.0,0,-4.998814582824707
-225,"['V', 'T', 'L', 'D', 'P', 'L', 'R']",PSLDLLR,,PSLDLLR,0.0,0,-0.32048457860946655
-226,"['F', 'G', 'Q', 'G', 'E', 'A', 'A', 'P', 'V', 'V', 'A', 'P', 'A', 'P', 'A', 'P', 'A', 'P', 'E', 'V', 'Q', 'T', 'K']",VAGAFGQEAPVPAPAPAPEVQTK,,VAGAFGQEAPVPAPAPAPEVQTK,0.0,0,-16.080862045288086
-227,"['D', 'I', 'Y', 'P', 'I', 'S', 'A', 'K']",DIYPISAK,,DIYPISAK,0.0,0,-0.40072116255760193
-228,"['T', 'I', 'V', 'S', 'D', 'G', 'K', 'P', 'Q', 'T', 'D', 'N', 'D', 'T', 'G', 'M', 'I', 'S', 'Y', 'K']",TIVSDGKPQTDNDTGMLSYK,,TIVSDGKPQTDNDTGMLSYK,0.0,0,-0.4618851840496063
-229,"['F', 'W', 'V', 'E', 'S', 'E', 'K']",FWVESEK,,FWVESEK,0.0,0,-0.0041747791692614555
-230,"['L', 'V', 'I', 'E', 'S', 'G', 'D', 'S', 'A', 'Q', 'S', 'R']",LVIESGDSAQSR,,LVIESGDSAQSR,0.0,0,-3.1057968139648438
-231,"['G', 'T', 'N', 'T', 'V', 'I', 'V', 'L', 'P', 'I', 'G', 'I', 'G', 'Q', 'L', 'G', 'K']",LVGTNTVLPLGLGQLGK,,LVGTNTVLPLGLGQLGK,0.0,0,-14.130264282226562
-232,"['L', 'I', 'G', 'S', 'D', 'D', 'Q', 'S', 'D', 'I', 'A', 'L', 'L', 'Q', 'I', 'Q', 'N', 'P', 'S', 'K']",GSDDGSDDSGLAILQIQNPSK,,GSDDGSDDSGLAILQIQNPSK,0.0,0,-11.024152755737305
-233,"['R', 'D', 'D', 'E', 'V', 'I', 'V', 'L', 'T', 'G', 'K']",DRDEVLVLTGK,,DRDEVLVLTGK,0.0,0,-1.6471775770187378
-234,"['D', 'Q', 'F', 'V', 'Q', 'P', 'V', 'V', 'K']",DQFVQPVVK,,DQFVQPVVK,0.0,0,-0.002701925113797188
-235,"['K', 'D', 'D', 'G', 'N', 'T', 'I', 'M', 'V', 'V', 'Q', 'K']",KDDGNTIMVVQK,,KDDGNTIMVVQK,0.0,0,-0.19566401839256287
-236,"['Y', 'S', 'G', 'F', 'L', 'N', 'N', 'Y', 'S', 'D', 'L', 'K']",YSGLINNYSDLK,,YSGLINNYSDLK,0.0,0,-5.378366947174072
-237,"['G', 'N', 'E', 'S', 'I', 'Y', 'L', 'L', 'M', 'R']",ENLNIDGSHLYLLMR,,ENLNIDGSHLYLLMR,0.0,0,-15.47377872467041
-238,"['D', 'M', 'T', 'C', 'Q', 'E', 'F', 'I', 'D', 'L', 'N', 'P', 'K']",DM[UNIMOD:35]TC[UNIMOD:4]QEFLDLNPK,,DMTCQEFLDLNPK,0.0,0,-0.30470263957977295
-239,"['V', 'A', 'Q', 'E', 'M', 'Q', 'K']",VAQEMQK,,VAQEMQK,0.0,0,-4.938623428344727
-240,"['Y', 'D', 'S', 'S', 'A', 'T', 'L', 'D', 'E', 'M', 'K']",YDPSQTYVEDGYDQR,,YDPSQTYVEDGYDQR,0.0,0,-2.6858277320861816
-241,"['V', 'S', 'Q', 'A', 'L', 'D', 'I', 'L', 'T', 'Y', 'T', 'N', 'K']",VSQALDLITYTNK,,VSQALDLITYTNK,0.0,0,-0.7272558212280273
-242,"['A', 'E', 'E', 'A', 'G', 'V', 'D', 'L', 'V', 'E', 'I', 'S', 'P', 'N', 'A', 'E', 'P', 'P', 'V', 'C', 'R']",AEEAGVDLVELSPNAEPPVC[UNIMOD:4]R,,AEEAGVDLVELSPNAEPPVCR,0.0,0,-1.3513529300689697
-243,"['I', 'L', 'A', 'D', 'I', 'A', 'V', 'F', 'D', 'K']",LLADLAVFDK,,LLADLAVFDK,0.0,0,-0.23737597465515137
-244,"['S', 'A', 'Q', 'G', 'T', 'A', 'G', 'P', 'D', 'F', 'R']",[UNIMOD:385]SATTQAPSTMK,,SATTQAPSTMK,0.0,0,-25.239164352416992
-245,"['L', 'T', 'N', 'T', 'D', 'L', 'S', 'F', 'G', 'P', 'F', 'K']",LTNTDISFGPFK,,LTNTDISFGPFK,0.0,0,-1.0511983633041382
-246,"['K', 'V', 'P', 'Q', 'V', 'S', 'T', 'P', 'T', 'L', 'V', 'E', 'V', 'S', 'R']",[UNIMOD:385]QVPQVSTTVPEEIAR,,QVPQVSTTVPEEIAR,0.0,0,-31.63568115234375
-247,"['A', 'V', 'L', 'E', 'V', 'A', 'G', 'V', 'H', 'N', 'V', 'L', 'A', 'K']",AVLEVAGVHNVLAK,,AVLEVAGVHNVLAK,0.0,0,-0.09558457136154175
-248,"['I', 'L', 'L', 'I', 'N', 'P', 'T', 'D', 'S', 'D', 'A', 'V', 'G', 'N', 'A', 'V', 'K']",IILLNPTDSDAVGNAVK,,IILLNPTDSDAVGNAVK,0.0,0,-0.38094326853752136
-249,"['S', 'T', 'E', 'T', 'N', 'P', 'L', 'Y', 'W', 'L', 'R']",STETNPIYWLR,,STETNPIYWLR,0.0,0,-0.1740967035293579
-250,"['A', 'A', 'V', 'E', 'E', 'G', 'V', 'V', 'A', 'G', 'G', 'G', 'V', 'A', 'L', 'I', 'R']",AAVEEGVVAGAAAALLR,,AAVEEGVVAGAAAALLR,0.0,0,-0.9121488332748413
-251,"['L', 'P', 'I', 'V', 'V', 'Y', 'T', 'P', 'D', 'N', 'V', 'D', 'V', 'K']",[UNIMOD:385]VLVVDNYPDNVDVK,,VLVVDNYPDNVDVK,0.0,0,-26.63251495361328
-252,"['L', 'T', 'L', 'M', 'S', 'D', 'D', 'L', 'T', 'N', 'V', 'T', 'V', 'K']",LTLM[UNIMOD:35]SDDLTNVTVK,,LTLMSDDLTNVTVK,0.0,0,-0.40142741799354553
-253,"['S', 'V', 'D', 'V', 'G', 'T', 'W', 'I', 'A', 'G', 'V', 'G', 'Y', 'R']",SVDVGTWLAGVGYR,,SVDVGTWLAGVGYR,0.0,0,-0.1378629356622696
-254,"['E', 'F', 'I', 'D', 'S', 'S', 'Q', 'P', 'P', 'L', 'S', 'E', 'V', 'N', 'Q', 'E', 'K']",GAFLDSSEPPLSEVNQEK,,GAFLDSSEPPLSEVNQEK,0.0,0,-24.297080993652344
-255,"['A', 'V', 'A', 'A', 'V', 'N', 'G', 'P', 'I', 'A', 'Q', 'A', 'L', 'I', 'G', 'K']",[UNIMOD:385]GAAGAAVAAAVLGAAALGK,,GAAGAAVAAAVLGAAALGK,0.0,0,-43.55839920043945
-256,"['S', 'G', 'N', 'A', 'N', 'T', 'D', 'Y', 'N', 'A', 'A', 'I', 'A', 'L', 'V', 'Q', 'D', 'K']",SGQDTSGNANAAIALVQDK,,SGQDTSGNANAAIALVQDK,0.0,0,-19.763774871826172
-257,"['Q', 'A', 'I', 'T', 'Q', 'L', 'E', 'A', 'L', 'D', 'N', 'R']",VVVTQLEALDNR,,VVVTQLEALDNR,0.0,0,-7.050718307495117
-258,"['Q', 'G', 'E', 'F', 'Q', 'Y', 'P', 'I', 'Y', 'R']",QGEFQYPIYR,,QGEFQYPIYR,0.0,0,-0.7173354625701904
-259,"['N', 'D', 'T', 'Y', 'L', 'E', 'Y', 'E', 'A', 'F', 'A', 'K']",NDTYLEYEAFAK,,NDTYLEYEAFAK,0.0,0,-0.06917130947113037
-260,"['N', 'A', 'I', 'P', 'S', 'G', 'I', 'P', 'D', 'E', 'S', 'V', 'P', 'L', 'Y', 'L', 'Q', 'R']",NALPSGLPDESVPLYLQR,,NALPSGLPDESVPLYLQR,0.0,0,-1.7052688598632812
-261,"['R', 'P', 'D', 'G', 'S', 'V', 'I', 'R']",PDSGVIFR,,PDSGVIFR,0.0,0,-21.980234146118164
-262,"['M', 'Q', 'Q', 'L', 'D', 'S', 'I', 'I', 'S', 'A', 'K']",[UNIMOD:385]AAEAERMQQLDSLLSAK,,AAEAERMQQLDSLLSAK,0.0,0,-22.606891632080078
-263,"['N', 'L', 'T', 'S', 'Q', 'M', 'V', 'E', 'Y', 'G', 'Q', 'V', 'K']",NLEYGQVK,,NLEYGQVK,0.0,0,-2.6488072872161865
-264,"['V', 'V', 'L', 'A', 'S', 'N', 'G', 'S', 'Q', 'V', 'T', 'V', 'S', 'P', 'R']",VVLASNGSQVTVSPR,,VVLASNGSQVTVSPR,0.0,0,-0.06361708045005798
-265,"['V', 'V', 'Y', 'R', 'P', 'D', 'I', 'N', 'Q', 'G', 'N', 'Y', 'L', 'T', 'A', 'N', 'D', 'V', 'S', 'K']",GYTANDVVANLEAQISRPDSK,,GYTANDVVANLEAQISRPDSK,0.0,0,-19.7556209564209
-266,"['N', 'Y', 'I', 'T', 'E', 'S', 'G', 'K']",NYLTESGK,,NYLTESGK,0.0,0,-3.702744245529175
-267,"['S', 'L', 'D', 'L', 'D', 'S', 'I', 'I', 'A', 'E', 'V', 'K']",SLDLDSIIAEVK,,SLDLDSIIAEVK,0.0,0,-0.587660014629364
-268,"['M', 'Q', 'A', 'A', 'S', 'G', 'Q', 'L', 'Q', 'Q', 'S', 'H', 'L', 'L', 'K']",MQAASGQLQQSHIIK,,MQAASGQLQQSHIIK,0.0,0,-0.2242899239063263
-269,"['N', 'L', 'T', 'S', 'Q', 'M', 'V', 'E', 'Y', 'G', 'Q', 'V', 'K']",NLTSQMVEYGQVK,,NLTSQMVEYGQVK,0.0,0,-0.010136336088180542
-270,"['Q', 'I', 'V', 'L', 'N', 'C', 'G', 'E', 'E', 'P', 'S', 'V', 'V', 'A', 'N', 'T', 'V', 'K']",QIVVNC[UNIMOD:4]GEEPSVVANTVK,,QIVVNCGEEPSVVANTVK,0.0,0,-2.812889575958252
-271,"['D', 'G', 'A', 'Y', 'D', 'L', 'V', 'V', 'P', 'S', 'T', 'Y', 'Y', 'V', 'D', 'K']",[UNIMOD:385]DDGAYDLVPSTYYVDK,,DDGAYDLVPSTYYVDK,0.0,0,-27.779569625854492
-272,"['I', 'G', 'S', 'D', 'A', 'Y', 'N', 'Q', 'G', 'L', 'S', 'E', 'R']",STAALSTSVSNEYNQGLSER,,STAALSTSVSNEYNQGLSER,0.0,0,-20.91297149658203
-273,"['A', 'N', 'L', 'T', 'A', 'Q', 'I', 'N', 'K']",ANITAQLNK,,ANITAQLNK,0.0,0,-2.39658784866333
-274,"['A', 'V', 'I', 'V', 'I', 'M', 'G', 'D', 'D', 'P', 'K']",AVLVLMGDDPK,,AVLVLMGDDPK,0.0,0,-0.5945389866828918
-275,"['S', 'I', 'L', 'S', 'E', 'L', 'V', 'R']",SILSELVR,,SILSELVR,0.0,0,-0.3101150393486023
-276,"['A', 'P', 'V', 'V', 'V', 'P', 'A', 'G', 'V', 'D', 'V', 'K']",VAPVVPAGVDVK,,VAPVVPAGVDVK,0.0,0,-12.153100967407227
-277,"['Y', 'T', 'A', 'A', 'I', 'T', 'G', 'A', 'E', 'G', 'K']",YTAAITGAEGK,,YTAAITGAEGK,0.0,0,-0.11667673289775848
-278,"['V', 'E', 'G', 'D', 'T', 'K', 'P', 'E', 'L', 'E', 'L', 'T', 'L', 'K']",GLDITKPEIEITLK,,GLDITKPEIEITLK,0.0,0,-15.363626480102539
-279,"['I', 'N', 'L', 'L', 'D', 'D', 'N', 'Q', 'F', 'T', 'R']",INLLDDNQFTR,,INLLDDNQFTR,0.0,0,-0.49272316694259644
-280,"['S', 'G', 'P', 'C', 'V', 'E', 'G', 'G', 'P', 'D', 'N', 'V', 'A', 'Q', 'Q', 'F', 'Y', 'D', 'Y', 'R']",GEIPDPC[UNIMOD:4]GSQQAQQFYDYR,,GEIPDPCGSQQAQQFYDYR,0.0,0,-18.161314010620117
-281,"['N', 'A', 'D', 'L', 'P', 'L', 'A', 'Q', 'A', 'A', 'I', 'D', 'R']",NADLPLAQAALDR,,NADLPLAQAALDR,0.0,0,-0.6201924085617065
-282,"['L', 'Q', 'L', 'T', 'D', 'S', 'Y', 'Q', 'L', 'L', 'E', 'K']",LQLTDSYQLLEK,,LQLTDSYQLLEK,0.0,0,-2.457451105117798
-283,"['K', 'V', 'P', 'Q', 'V', 'S', 'T', 'P', 'T', 'L', 'V', 'E', 'V', 'S', 'R']",KVPQVSTPTLVEVSR,,KVPQVSTPTLVEVSR,0.0,0,-0.11534350365400314
-284,"['S', 'I', 'V', 'V', 'A', 'I', 'E', 'R']",SIVVAIER,,SIVVAIER,0.0,0,-1.143999695777893
-285,"['A', 'Q', 'Y', 'D', 'T', 'V', 'L', 'A', 'N', 'E', 'V', 'T', 'A', 'R']",AQAQQFLANEVTAR,,AQAQQFLANEVTAR,0.0,0,-8.922266960144043
-286,"['Q', 'G', 'V', 'D', 'A', 'D', 'I', 'N', 'G', 'L', 'R']",[UNIMOD:385]QGVEADINGLR,,QGVEADINGLR,0.0,0,-12.376530647277832
-287,"['E', 'V', 'P', 'A', 'A', 'I', 'Q', 'K']",EVPAAIQK,,EVPAAIQK,0.0,0,-0.1559295654296875
-288,"['E', 'A', 'G', 'V', 'Y', 'M', 'R']",EAGVYMR,,EAGVYMR,0.0,0,-0.014146135188639164
-289,"['S', 'D', 'E', 'E', 'Q', 'T', 'S', 'T', 'T', 'T', 'D', 'T', 'P', 'A', 'T', 'P', 'A', 'R']",[UNIMOD:385]GASTTSTTSTTTDTPATPAR,,GASTTSTTSTTTDTPATPAR,0.0,0,-20.352113723754883
-290,"['N', 'I', 'G', 'I', 'Y', 'P', 'E', 'I', 'K']",NIGIYPEIK,,NIGIYPEIK,0.0,0,-0.026796597987413406
-291,"['A', 'Q', 'Q', 'Y', 'Q', 'Q', 'Q', 'L', 'G', 'Q', 'K']",AQQYQQQLGQK,,AQQYQQQLGQK,0.0,0,-1.1685248613357544
-292,"['E', 'F', 'Y', 'E', 'K', 'P', 'T', 'T', 'E', 'R']",EFYEKGQPSSK,,EFYEKGQPSSK,0.0,0,-0.23376800119876862
-293,"['A', 'L', 'V', 'S', 'P', 'E', 'A', 'I', 'G', 'S', 'L', 'I', 'V', 'T', 'K']",ALVSPEALGSLIVTK,,ALVSPEALGSLIVTK,0.0,0,-0.864969789981842
-294,"['L', 'V', 'A', 'D', 'L', 'I', 'R']",LVADLIR,,LVADLIR,0.0,0,-0.8994892835617065
-295,"['I', 'Y', 'A', 'D', 'V', 'N', 'G', 'F', 'L', 'D', 'P', 'V', 'D', 'F', 'R']",YIYNGEYADPVDFR,,YIYNGEYADPVDFR,0.0,0,-14.016677856445312
-296,"['W', 'T', 'L', 'E', 'G', 'I', 'E', 'T', 'R']",WTLEGIETR,,WTLEGIETR,0.0,0,-0.11546126753091812
-297,"['N', 'D', 'T', 'Y', 'L', 'E', 'Y', 'E', 'A', 'F', 'A', 'K']",NDTYLEYEAFAK,,NDTYLEYEAFAK,0.0,0,-0.05539707466959953
-298,"['Q', 'L', 'D', 'Q', 'T', 'T', 'Q', 'R']",QLDQTTQR,,QLDQTTQR,0.0,0,-0.015347323380410671
-299,"['F', 'E', 'N', 'M', 'G', 'A', 'Q', 'M', 'V', 'K']",FENMGAQMVK,,FENMGAQMVK,0.0,0,-0.024220196530222893
-300,"['I', 'F', 'S', 'S', 'A', 'A', 'Y', 'N', 'A', 'G', 'P', 'G', 'R']",LFSSAAYNAGPGR,,LFSSAAYNAGPGR,0.0,0,-0.2638799250125885
-301,"['V', 'E', 'D', 'A', 'L', 'H', 'A', 'T', 'R']",[UNIMOD:385]LENAIHATR,,LENAIHATR,0.0,0,-17.699386596679688
-302,"['V', 'A', 'F', 'Q', 'A', 'V', 'I', 'K']",VAFQAVLK,,VAFQAVLK,0.0,0,-0.07022594660520554
-303,"['S', 'T', 'E', 'T', 'N', 'P', 'L', 'Y', 'W', 'L', 'R']",STETNPLYWLR,,STETNPLYWLR,0.0,0,-0.3382771909236908
-304,"['F', 'L', 'A', 'D', 'D', 'P', 'Q', 'A', 'V', 'A', 'D', 'L', 'S', 'R']",FLDADPQAVADLSR,,FLDADPQAVADLSR,0.0,0,-0.7773906588554382
-305,"['T', 'G', 'Q', 'A', 'V', 'E', 'L', 'F', 'N', 'Q', 'L', 'P', 'Q', 'E', 'L', 'N', 'D', 'A', 'Q', 'R']",TGQAVELFNQIPQELNDAQR,,TGQAVELFNQIPQELNDAQR,0.0,0,-1.7041975259780884
-306,"['N', 'I', 'G', 'I', 'Y', 'P', 'E', 'I', 'K']",NIGIYPEIK,,NIGIYPEIK,0.0,0,-0.02354983612895012
-307,"['S', 'A', 'L', 'V', 'I', 'Q', 'T', 'L', 'A', 'N', 'G', 'A', 'V', 'R']",MTMNPVTGLVLQGQLAREK,,MTMNPVTGLVLQGQLAREK,0.0,0,-14.509056091308594
-308,"['L', 'A', 'L', 'D', 'L', 'L', 'E', 'Q', 'I', 'K']",LALDLLEQLK,,LALDLLEQLK,0.0,0,-0.9561089277267456
-309,"['N', 'Q', 'Y', 'Y', 'G', 'I', 'T', 'A', 'G', 'P', 'A', 'Y', 'R']",NQYYGLTAGPAYR,,NQYYGLTAGPAYR,0.0,0,-0.0329112783074379
-310,"['V', 'D', 'G', 'L', 'H', 'Y', 'F', 'S', 'D', 'N', 'K']",AVPADFNGSGFGR,,AVPADFNGSGFGR,0.0,0,-2.105945587158203
-311,"['I', 'L', 'N', 'Y', 'T', 'N', 'T', 'E', 'M', 'K']",ILNYTNTEMK,,ILNYTNTEMK,0.0,0,-0.1119394302368164
-312,"['I', 'V', 'E', 'L', 'E', 'A', 'P', 'Q', 'L', 'P', 'R']",LVELEAPQLPR,,LVELEAPQLPR,0.0,0,-1.7993454933166504
-313,"['T', 'Q', 'G', 'L', 'G', 'P', 'A', 'N', 'P', 'I', 'A', 'S', 'N', 'S', 'T', 'A', 'E', 'G', 'K']",TQGAVMSTAEGK,,TQGAVMSTAEGK,0.0,0,-3.752019166946411
-314,"['D', 'I', 'T', 'A', 'D', 'V', 'L', 'K']",DITADVLK,,DITADVLK,0.0,0,-0.3955049216747284
-315,"['G', 'I', 'W', 'N', 'H', 'G', 'S', 'P', 'L', 'F', 'M', 'E', 'I', 'E', 'P', 'R']",DLNQHGSPLFMELEPR,,DLNQHGSPLFMELEPR,0.0,0,-4.277309894561768
-316,"['F', 'V', 'L', 'E', 'S', 'V', 'N', 'G', 'K', 'P', 'V', 'T', 'S', 'D', 'K']",FVLESVNGKPVTSDK,,FVLESVNGKPVTSDK,0.0,0,-2.064136505126953
-317,"['I', 'E', 'P', 'G', 'E', 'L', 'Y', 'N', 'G', 'T', 'K']",IEPGELYNGTK,,IEPGELYNGTK,0.0,0,-0.6101745367050171
-318,"['S', 'L', 'A', 'T', 'A', 'A', 'G', 'A', 'V', 'A', 'G', 'G', 'V', 'A', 'G', 'Q', 'G', 'V', 'Q', 'S', 'A', 'M', 'N', 'K']",[UNIMOD:1]GAAGAAGSLGAGAAAGGAGVQSAM[UNIMOD:35]NK,,GAAGAAGSLGAGAAAGGAGVQSAMNK,0.0,0,-35.29920196533203
-319,"['L', 'V', 'A', 'D', 'S', 'I', 'T', 'S', 'Q', 'L', 'E', 'R']",LVADSLTSQLER,,LVADSLTSQLER,0.0,0,-0.616448163986206
-320,"['A', 'A', 'V', 'T', 'M', 'P', 'S', 'S', 'K']",AAVTMPSSK,,AAVTMPSSK,0.0,0,-0.03228415548801422
-321,"['Y', 'I', 'E', 'V', 'H', 'N', 'P', 'L', 'S', 'T', 'T', 'E', 'A', 'Q', 'F', 'E', 'G', 'Q', 'E', 'I', 'V', 'P', 'I', 'T', 'L', 'T', 'K']",[UNIMOD:385]TSPLTPKIYEVHNPLTTVNAQVPLTLTK,,TSPLTPKIYEVHNPLTTVNAQVPLTLTK,0.0,0,-42.188533782958984
-322,"['D', 'A', 'Q', 'S', 'A', 'L', 'T', 'V', 'S', 'E', 'T', 'T', 'F', 'G', 'R']",DAQSALTVSETTFGR,,DAQSALTVSETTFGR,0.0,0,-0.39571601152420044
-323,"['T', 'Q', 'G', 'L', 'G', 'P', 'A', 'N', 'P', 'I', 'A', 'S', 'N', 'S', 'T', 'A', 'E', 'G', 'K']",TQGPGPQGPLAAC[UNIMOD:4]ATAEGK,,TQGPGPQGPLAACATAEGK,0.0,0,-7.505476474761963
-324,"['I', 'V', 'Q', 'V', 'P', 'F', 'A', 'E', 'L', 'V', 'K']",LVQVPFAEIVK,,LVQVPFAEIVK,0.0,0,-0.3739369511604309
-325,"['S', 'L', 'E', 'Q', 'Y', 'F', 'G', 'R']",SLEQYFGR,,SLEQYFGR,0.0,0,-0.122597336769104
-326,"['S', 'G', 'E', 'T', 'E', 'D', 'A', 'T', 'I', 'A', 'D', 'L', 'A', 'V', 'G', 'T', 'A', 'A', 'G', 'Q', 'I', 'K']",SGETEDAVIADLAVGTAAGQLK,,SGETEDAVIADLAVGTAAGQLK,0.0,0,-2.0105886459350586
-327,"['T', 'G', 'D', 'T', 'V', 'N', 'D', 'E', 'D', 'I', 'S', 'N', 'T', 'I', 'R']",TGDTVNDEDLSSQLR,,TGDTVNDEDLSSQLR,0.0,0,-0.43576425313949585
-328,"['F', 'N', 'S', 'S', 'L', 'S', 'E', 'D', 'G', 'Q', 'R']",FNSSLSEDGQR,,FNSSLSEDGQR,0.0,0,-0.29024234414100647
-329,"['N', 'Y', 'T', 'I', 'T', 'Q', 'R']",NYTLTQR,,NYTLTQR,0.0,0,-0.2845596373081207
-330,"['E', 'L', 'A', 'N', 'V', 'Q', 'D', 'L', 'T', 'V', 'R']",ELANVQDLTVR,,ELANVQDLTVR,0.0,0,-0.42300480604171753
-331,"['I', 'P', 'L', 'D', 'A', 'D', 'L', 'R']",LPLDADIR,,LPLDADIR,0.0,0,-0.7157146334648132
-332,"['A', 'A', 'A', 'F', 'E', 'G', 'E', 'L', 'I', 'P', 'A', 'S', 'Q', 'I', 'D', 'R']",AAAFEGELLPASQLDR,,AAAFEGELLPASQLDR,0.0,0,-0.46843376755714417
-333,"['S', 'N', 'N', 'T', 'E', 'P', 'T', 'W', 'F', 'P', 'D', 'S', 'Q', 'N', 'L', 'A', 'F', 'T', 'S', 'D', 'Q', 'A', 'G', 'R', 'P', 'Q', 'V', 'Y', 'K']",GASNNTPTWFPDSQNLAFTSDAQGRPNLYK,,GASNNTPTWFPDSQNLAFTSDAQGRPNLYK,0.0,0,-14.131168365478516
-334,"['F', 'N', 'Q', 'I', 'G', 'S', 'L', 'T', 'E', 'T', 'L', 'A', 'A', 'I', 'K']",[UNIMOD:1]TLFNQITETLAAIK,,TLFNQITETLAAIK,0.0,0,-26.70607566833496
-335,"['D', 'Y', 'D', 'T', 'D', 'V', 'Y', 'P', 'V', 'P', 'V', 'I', 'N', 'Y', 'E', 'G', 'D', 'N', 'F', 'W', 'F', 'R']",VDYDTDYPVPVINYEGDNFWFR,,VDYDTDYPVPVINYEGDNFWFR,0.0,0,-18.188640594482422
-336,"['E', 'F', 'G', 'V', 'N', 'L', 'A', 'K']",EFGVNLAK,,EFGVNLAK,0.0,0,-0.051938045769929886
-337,"['A', 'A', 'A', 'F', 'E', 'G', 'E', 'L', 'I', 'P', 'A', 'S', 'Q', 'I', 'D', 'R']",AAAAAAFESLPASQDLR,,AAAAAAFESLPASQDLR,0.0,0,-14.330275535583496
-338,"['G', 'A', 'E', 'Q', 'I', 'Y', 'I', 'P', 'V', 'L', 'I', 'K']",GAEQIYLPVIIK,,GAEQIYLPVIIK,0.0,0,-8.096531867980957
-339,"['L', 'G', 'E', 'T', 'G', 'D', 'A', 'I', 'A', 'K']",LGETGDALAK,,LGETGDALAK,0.0,0,-2.686391830444336
-340,"['Y', 'E', 'Y', 'S', 'V', 'A', 'E', 'Y', 'Y', 'T', 'E', 'R']",YAYEYEYYTER,,YAYEYEYYTER,0.0,0,-5.5757880210876465
-341,"['A', 'L', 'D', 'I', 'R', 'P', 'P', 'A', 'Q', 'P', 'L', 'A', 'L', 'V', 'S', 'G', 'A', 'R']",ALDLRPPAQPLALVSGAR,,ALDLRPPAQPLALVSGAR,0.0,0,-0.9158328175544739
-342,"['A', 'S', 'T', 'T', 'M', 'D', 'V', 'Q', 'S', 'A', 'A', 'D', 'D', 'T', 'G', 'L', 'P', 'M', 'L', 'V', 'V', 'R']",GSATMDQVVDQYVGLPMIVVR,,GSATMDQVVDQYVGLPMIVVR,0.0,0,-28.043704986572266
-343,"['A', 'E', 'M', 'S', 'E', 'Y', 'L', 'F', 'D', 'K']",AEMSEYLFDK,,AEMSEYLFDK,0.0,0,-0.019890159368515015
-344,"['T', 'G', 'A', 'A', 'L', 'T', 'L', 'D', 'G', 'A', 'T', 'F', 'S', 'S', 'E', 'T', 'T', 'L', 'N', 'N', 'G', 'T', 'N', 'T', 'I', 'P', 'F', 'Q', 'A', 'R']",LLTGAAATLTSAAATLFINNGTNTLPFQAR,,LLTGAAATLTSAAATLFINNGTNTLPFQAR,0.0,0,-22.06134605407715
-345,"['M', 'Q', 'A', 'A', 'S', 'G', 'Q', 'L', 'Q', 'Q', 'S', 'H', 'L', 'L', 'K']",MQAASGQLQQSHIIK,,MQAASGQLQQSHIIK,0.0,0,-0.3653929829597473
-346,"['Y', 'D', 'S', 'S', 'A', 'T', 'L', 'D', 'E', 'M', 'K']",[UNIMOD:385]NSSSDRYDSSATLDEMK,,NSSSDRYDSSATLDEMK,0.0,0,-25.534154891967773
-347,"['T', 'Q', 'F', 'T', 'G', 'D', 'T', 'A', 'S', 'L', 'L', 'V', 'E', 'N', 'G', 'R']",SATQFTDASLLVENGR,,SATQFTDASLLVENGR,0.0,0,-16.90151596069336
-348,"['V', 'D', 'Q', 'L', 'S', 'N', 'D', 'V', 'N', 'A', 'M', 'R']",VDQLSNDVNAMR,,VDQLSNDVNAMR,0.0,0,-0.03711330518126488
-349,"['D', 'G', 'S', 'V', 'V', 'V', 'L', 'G', 'Y', 'T', 'D', 'R']",DGSVVVLGYTDR,,DGSVVVLGYTDR,0.0,0,-0.11554718017578125
-350,"['G', 'Q', 'I', 'Q', 'E', 'N', 'Q', 'Y', 'Q', 'L', 'N', 'Q', 'V', 'V', 'E', 'R']",GQNQLNQVVER,,GQNQLNQVVER,0.0,0,-3.2803213596343994
-351,"['N', 'G', 'G', 'V', 'A', 'G', 'N', 'T', 'T', 'V', 'N', 'Q', 'K']",NGGVAGGSATVNQK,,NGGVAGGSATVNQK,0.0,0,-1.6960631608963013
-352,"['I', 'E', 'Q', 'A', 'P', 'G', 'Q', 'H', 'G', 'A', 'R']",LEQAPGQHGAR,,LEQAPGQHGAR,0.0,0,-0.7663475871086121
-353,"['G', 'Q', 'N', 'E', 'D', 'Q', 'N', 'V', 'G', 'I', 'K']",GQNEDQNVGIK,,GQNEDQNVGIK,0.0,0,-0.9087653756141663
-354,"['I', 'N', 'E', 'G', 'P', 'Y', 'Q', 'F', 'E', 'S', 'E', 'G', 'K']",LNEGPYQFESEGK,,LNEGPYQFESEGK,0.0,0,-0.6368089318275452
-355,"['M', 'S', 'L', 'V', 'N', 'I', 'T', 'P', 'D', 'A', 'D', 'G', 'T', 'T', 'L', 'T', 'L', 'R']",MSIVNLTPDADGTTLTLR,,MSIVNLTPDADGTTLTLR,0.0,0,-4.110886573791504
-356,"['G', 'D', 'A', 'L', 'E', 'M', 'L', 'D', 'R']",GDALEMLDR,,GDALEMLDR,0.0,0,-0.10843288898468018
-357,"['T', 'D', 'S', 'A', 'Q', 'V', 'A', 'E', 'I', 'V', 'A', 'V', 'M', 'G', 'N', 'A', 'S', 'V', 'A', 'S', 'R']",TDSAQVAELVAVMGNASVASR,,TDSAQVAELVAVMGNASVASR,0.0,0,-2.3806684017181396
-358,"['Q', 'W', 'I', 'L', 'G', 'L', 'P', 'G', 'D', 'A', 'T', 'D', 'Y', 'K']",QWLLGLPGDATDYK,,QWLLGLPGDATDYK,0.0,0,-0.6420302987098694
-359,"['A', 'E', 'A', 'A', 'P', 'A', 'A', 'T', 'G', 'G', 'G', 'I', 'P', 'G', 'M', 'L', 'P', 'W', 'P', 'K']",GAKAEAEAPAAPGMLPWPK,,GAKAEAEAPAAPGMLPWPK,0.0,0,-18.82871437072754
-360,"['G', 'T', 'A', 'M', 'N', 'P', 'V', 'D', 'H', 'P', 'H', 'G', 'G', 'G', 'E', 'G', 'R']",[UNIMOD:385]TGTQGMNMATK,,TGTQGMNMATK,0.0,0,-20.82178497314453
-361,"['S', 'I', 'D', 'P', 'G', 'L', 'F', 'D', 'Q', 'L', 'Y', 'R']",SLDPGLFDQIYR,,SLDPGLFDQIYR,0.0,0,-0.43066394329071045
-362,"['Y', 'W', 'H', 'D', 'G', 'G', 'Q', 'W', 'N', 'D', 'D', 'A', 'E', 'L', 'N', 'F', 'G', 'N', 'G', 'N', 'F', 'N', 'V', 'R']",AGEYWHDGGQWSAELNFGNGNFNVR,,AGEYWHDGGQWSAELNFGNGNFNVR,0.0,0,-27.671520233154297
-363,"['G', 'G', 'Y', 'F', 'P', 'V', 'P', 'P', 'V', 'D', 'S', 'A', 'Q', 'D', 'I', 'R']",[UNIMOD:385]VNYNFPPVDGAGTDLR,,VNYNFPPVDGAGTDLR,0.0,0,-27.189281463623047
-364,"['A', 'D', 'I', 'D', 'Y', 'N', 'T', 'S', 'E', 'A', 'H', 'T', 'T', 'Y', 'G', 'V', 'I', 'G', 'V', 'K']",ASGTLEASEDVHAHQALLGVK,,ASGTLEASEDVHAHQALLGVK,0.0,0,-24.720638275146484
-365,"['L', 'E', 'V', 'V', 'V', 'N', 'E', 'R']",LEVVVNER,,LEVVVNER,0.0,0,-0.5613420009613037
-366,"['A', 'E', 'T', 'Y', 'T', 'G', 'G', 'L', 'K']",GETYTGGLK,,GETYTGGLK,0.0,0,-13.227208137512207
-367,"['V', 'Y', 'A', 'A', 'I', 'E', 'A', 'G', 'D', 'K']",VYAALEAGDK,,VYAALEAGDK,0.0,0,-0.13079385459423065
-368,"['I', 'E', 'G', 'V', 'P', 'E', 'S', 'N', 'I', 'S', 'R']",LEGVPESNLSR,,LEGVPESNLSR,0.0,0,-0.8009037375450134
-369,"['V', 'T', 'I', 'P', 'G', 'S', 'D', 'N', 'E', 'Y', 'Y', 'K']",ILSSPGSDNEPGSDNEYYK,,ILSSPGSDNEPGSDNEYYK,0.0,0,-8.87346076965332
-370,"['G', 'N', 'T', 'S', 'L', 'Y', 'D', 'H', 'N', 'N', 'N', 'T', 'S', 'D', 'Y', 'S', 'K']",GNGNTSTNYDHYSDYSK,,GNGNTSTNYDHYSDYSK,0.0,0,-16.96068000793457
-371,"['A', 'Q', 'A', 'F', 'E', 'Q', 'D', 'R']",TSTELATAK,,TSTELATAK,0.0,0,-2.947493553161621
-372,"['S', 'L', 'E', 'Q', 'Y', 'F', 'G', 'R']",SLEQYFGR,,SLEQYFGR,0.0,0,-0.38091129064559937
-373,"['A', 'L', 'N', 'L', 'Q', 'D', 'K']",ALNLQDK,,ALNLQDK,0.0,0,-0.5322306156158447
-374,"['R', 'H', 'P', 'E', 'Y', 'A', 'V', 'S', 'V', 'L', 'L', 'R']",YAVSVLLR,,YAVSVLLR,0.0,0,-5.206423282623291
-375,"['L', 'A', 'L', 'D', 'G', 'D', 'L', 'I', 'R']",LALDGDLLR,,LALDGDLLR,0.0,0,-1.0225112438201904
-376,"['G', 'G', 'W', 'T', 'V', 'I', 'Q', 'N', 'R']",LWTVLQGGR,,LWTVLQGGR,0.0,0,-5.331042766571045
-377,"['F', 'S', 'L', 'G', 'A', 'G', 'V', 'G', 'V', 'V', 'E', 'H', 'P', 'Y', 'K']",FSLGAGVGVVEHPYK,,FSLGAGVGVVEHPYK,0.0,0,-2.4999277591705322
-378,"['V', 'A', 'Q', 'E', 'M', 'Q', 'K']",GPGLPTQK,,GPGLPTQK,0.0,0,-10.35871696472168
-379,"['G', 'N', 'N', 'Q', 'P', 'D', 'I', 'Q', 'K']",GNNQPDIQK,,GNNQPDIQK,0.0,0,-0.1880291998386383
-380,"['T', 'G', 'V', 'S', 'N', 'T', 'L', 'E', 'N', 'E', 'F', 'K']",SAVSNTLENEFK,,SAVSNTLENEFK,0.0,0,-0.18080462515354156
-381,"['A', 'V', 'Y', 'Q', 'Q', 'V', 'I', 'S', 'K']",AVYQQVISK,,AVYQQVISK,0.0,0,-0.2188103049993515
-382,"['L', 'L', 'S', 'P', 'E', 'V', 'A', 'N', 'D', 'K']",LLSPEVANDK,,LLSPEVANDK,0.0,0,-1.2866963148117065
-383,"['T', 'L', 'E', 'G', 'W', 'G', 'Y', 'D', 'Y', 'Y', 'V', 'F', 'D', 'K']",TLEGWGYDYYVFDK,,TLEGWGYDYYVFDK,0.0,0,-2.2834584712982178
-384,"['V', 'D', 'D', 'Y', 'I', 'I', 'K']",VDDYLLK,,VDDYLLK,0.0,0,-0.9449881911277771
-385,"['T', 'L', 'Y', 'P', 'D', 'A', 'E', 'T', 'I', 'K']",TLYPDAETIK,,TLYPDAETIK,0.0,0,-0.2140204757452011
-386,"['G', 'N', 'T', 'G', 'E', 'N', 'L', 'L', 'A', 'L', 'L', 'E', 'G', 'R']",GNTGENLLALLEGR,,GNTGENLLALLEGR,0.0,0,-3.0511374473571777
-387,"['L', 'G', 'E', 'H', 'N', 'I', 'E', 'V', 'L', 'E', 'G', 'N', 'E', 'Q', 'F', 'I', 'N', 'A', 'A', 'K']",LGEHNIDVLEGNEQFLNGVK,,LGEHNIDVLEGNEQFLNGVK,0.0,0,-2.671525478363037
-388,"['E', 'I', 'S', 'M', 'S', 'I', 'K']",EISM[UNIMOD:35]SIK,,EISMSIK,0.0,0,-0.07334920018911362
-389,"['V', 'N', 'I', 'N', 'G', 'G', 'A', 'P', 'Q', 'R']",VNLNGGAPQR,,VNLNGGAPQR,0.0,0,-0.23279549181461334
-390,"['L', 'L', 'V', 'H', 'P', 'S', 'T', 'S', 'P', 'V', 'P', 'K']",ILVHPSTSPVPK,,ILVHPSTSPVPK,0.0,0,-0.2182270884513855
-391,"['G', 'P', 'E', 'G', 'L', 'M', 'P', 'S', 'D', 'D', 'T', 'L', 'K']",AVGPEMNAGSDAIK,,AVGPEMNAGSDAIK,0.0,0,-19.237316131591797
-392,"['N', 'A', 'P', 'P', 'P', 'T', 'K', 'P', 'V', 'E', 'T', 'Q', 'T', 'Q', 'S', 'T', 'V', 'P', 'D', 'K']",PPPPTKPDLTQSEDSSVPDK,,PPPPTKPDLTQSEDSSVPDK,0.0,0,-18.67786407470703
-393,"['Y', 'E', 'Y', 'S', 'V', 'A', 'E', 'Y', 'Y', 'T', 'E', 'R']",YEYSVAEYYTER,,YEYSVAEYYTER,0.0,0,-0.06093438342213631
-394,"['S', 'T', 'P', 'F', 'A', 'A', 'Q', 'V', 'A', 'A', 'E', 'R']",ATPFAAQVAAER,,ATPFAAQVAAER,0.0,0,-9.433995246887207
-395,"['V', 'A', 'T', 'V', 'S', 'L', 'P', 'R']",VATVSLPR,,VATVSLPR,0.0,0,-0.17024284601211548
-396,"['S', 'L', 'A', 'T', 'A', 'A', 'G', 'A', 'V', 'A', 'G', 'G', 'V', 'A', 'G', 'Q', 'G', 'V', 'Q', 'S', 'A', 'M', 'N', 'K']",SLVTAAGAAAGGVAGGAGVQSAM[UNIMOD:35]GGK,,SLVTAAGAAAGGVAGGAGVQSAMGGK,0.0,0,-6.4025959968566895
-397,"['Y', 'A', 'G', 'A', 'L', 'V', 'L', 'G', 'Q', 'Y', 'Y', 'K']",YAGALVIGQYYK,,YAGALVIGQYYK,0.0,0,-0.5005014538764954
-398,"['I', 'A', 'I', 'V', 'N', 'M', 'G', 'S', 'L', 'F', 'Q', 'Q', 'V', 'A', 'Q', 'K']",LALVNM[UNIMOD:35]GSVFQQVAQK,,LALVNMGSVFQQVAQK,0.0,0,-3.451056957244873
-399,"['G', 'N', 'N', 'L', 'T', 'V', 'S', 'A', 'D', 'L', 'Y', 'K']",GNNITVSADLYK,,GNNITVSADLYK,0.0,0,-0.8212968707084656
-400,"['E', 'A', 'L', 'S', 'Y', 'T', 'P', 'G', 'V', 'S', 'V', 'G', 'T', 'R']",AAAVSYTPGVGSISR,,AAAVSYTPGVGSISR,0.0,0,-20.350006103515625
-401,"['I', 'V', 'D', 'E', 'Q', 'P', 'G', 'A', 'E', 'C', 'Q', 'L', 'I', 'G', 'T', 'A', 'T', 'G', 'K']",LVDEQPGAEC[UNIMOD:4]QLIGTATGK,,LVDEQPGAECQLIGTATGK,0.0,0,-3.2968814373016357
-402,"['Q', 'W', 'I', 'L', 'G', 'L', 'P', 'G', 'D', 'A', 'T', 'D', 'Y', 'K']",QWLLGLPGDATDYK,,QWLLGLPGDATDYK,0.0,0,-0.4650200307369232
-403,"['K', 'V', 'V', 'M', 'T', 'G', 'P', 'S', 'K']",NKTLDINK,,NKTLDINK,0.0,0,-2.875699281692505
-404,"['L', 'P', 'E', 'Y', 'T', 'P', 'D', 'V', 'N', 'Q', 'L', 'Y', 'D', 'A', 'L', 'Y', 'N', 'K']",LPEYTPDVNQLYDALYNK,,LPEYTPDVNQLYDALYNK,0.0,0,-0.18528719246387482
-405,"['A', 'Q', 'Q', 'Y', 'Q', 'Q', 'Q', 'L', 'G', 'Q', 'K']",AQQYQQQLGQK,,AQQYQQQLGQK,0.0,0,-4.149691104888916
-406,"['S', 'Q', 'S', 'T', 'S', 'L', 'I', 'E', 'R']",AQSTSLLER,,AQSTSLLER,0.0,0,-11.474588394165039
-407,"['T', 'A', 'S', 'V', 'T', 'P', 'S', 'S', 'A', 'V', 'P', 'K']",TASVTPSSAVPK,,TASVTPSSAVPK,0.0,0,-0.17960181832313538
-408,"['I', 'A', 'Y', 'V', 'V', 'Q', 'T', 'N', 'G', 'G', 'Q', 'F', 'P', 'Y', 'E', 'L', 'R']",EKIAYVLNASFPYELR,,EKIAYVLNASFPYELR,0.0,0,-14.4102783203125
-409,"['S', 'L', 'E', 'Q', 'Y', 'F', 'G', 'R']",SLEQYFGR,,SLEQYFGR,0.0,0,-3.1673500537872314
-410,"['E', 'F', 'A', 'D', 'N', 'L', 'D', 'S', 'D', 'F', 'K']",EFADNIDSDFK,,EFADNIDSDFK,0.0,0,-1.613990068435669
-411,"['G', 'Q', 'P', 'A', 'V', 'G', 'P', 'E', 'T', 'K']",GQPAVGPETK,,GQPAVGPETK,0.0,0,-2.171251058578491
-412,"['Y', 'A', 'G', 'H', 'T', 'A', 'S', 'D', 'E', 'V', 'F', 'E', 'K']",YAGHTASDEVFEK,,YAGHTASDEVFEK,0.0,0,-1.9503285884857178
-413,"['L', 'A', 'L', 'D', 'G', 'D', 'L', 'I', 'R']",LALDGDLLR,,LALDGDLLR,0.0,0,-0.39875173568725586
-414,"['L', 'A', 'Y', 'V', 'T', 'F', 'E', 'S', 'G', 'R']",LAYVTFESGR,,LAYVTFESGR,0.0,0,-0.21596170961856842
-415,"['I', 'F', 'V', 'D', 'E', 'G', 'P', 'S', 'M', 'K']",LFVDEGPSM[UNIMOD:35]K,,LFVDEGPSMK,0.0,0,-0.03121395781636238
-416,"['M', 'A', 'N', 'Q', 'A', 'N', 'I', 'P', 'V', 'I', 'T', 'L', 'D', 'R']",M[UNIMOD:35]ANQANLPVITLDR,,MANQANLPVITLDR,0.0,0,-0.22968599200248718
-417,"['G', 'A', 'S', 'G', 'Y', 'L', 'P', 'E', 'H', 'T', 'L', 'P', 'A', 'K']",GASGYLPEHTLPAK,,GASGYLPEHTLPAK,0.0,0,-1.6875964403152466
-418,"['Q', 'F', 'N', 'N', 'I', 'G', 'A', 'T', 'T', 'P', 'V', 'V', 'P', 'F', 'R']",QFNNLGATTPVVPFR,,QFNNLGATTPVVPFR,0.0,0,-2.1944594383239746
-419,"['A', 'G', 'D', 'N', 'A', 'P', 'M', 'A', 'Y', 'I', 'E', 'L', 'V', 'D', 'R']",AGNDAPMAYIELVDR,,AGNDAPMAYIELVDR,0.0,0,-1.0026278495788574
-420,"['A', 'L', 'N', 'E', 'I', 'N', 'Q', 'F', 'Y', 'Q', 'K']",AINEINQFYQK,,AINEINQFYQK,0.0,0,-0.3849497437477112
-421,"['A', 'E', 'A', 'A', 'P', 'A', 'A', 'T', 'G', 'G', 'G', 'I', 'P', 'G', 'M', 'L', 'P', 'W', 'P', 'K']",AEAEAAPAAPAPGMLPWPK,,AEAEAAPAAPAPGMLPWPK,0.0,0,-4.428094387054443
-422,"['F', 'M', 'V', 'A', 'N', 'N', 'A', 'E', 'L', 'E', 'R']",[UNIMOD:1]LMVANNASQATK,,LMVANNASQATK,0.0,0,-21.253822326660156
-423,"['D', 'L', 'N', 'N', 'E', 'S', 'T', 'P', 'M', 'A', 'F', 'E', 'N', 'I', 'K']",VINNEVTPMAFENIK,,VINNEVTPMAFENIK,0.0,0,-16.162052154541016
-424,"['V', 'L', 'E', 'N', 'A', 'L', 'V', 'P', 'P', 'M', 'G', 'E', 'S', 'T', 'V', 'K']",[UNIMOD:385]NIENALVPPMADTSVK,,NIENALVPPMADTSVK,0.0,0,-23.47458267211914
-425,"['D', 'L', 'S', 'S', 'N', 'T', 'Q', 'A', 'L', 'T', 'G', 'T', 'N', 'T', 'G', 'G', 'A', 'I', 'D', 'G', 'V', 'S', 'T', 'T', 'D', 'R']",DIDLSAANTGLTNTGQIDGVSTTDR,,DIDLSAANTGLTNTGQIDGVSTTDR,0.0,0,-18.374948501586914
-426,"['D', 'A', 'L', 'P', 'L', 'M', 'E', 'N', 'A', 'Y', 'R']",DALPLMENAYR,,DALPLMENAYR,0.0,0,-0.0359523668885231
-427,"['D', 'P', 'Q', 'L', 'Q', 'V', 'V', 'T', 'N', 'K']",DPQIQVVTNK,,DPQIQVVTNK,0.0,0,-0.2514228820800781
-428,"['Y', 'A', 'G', 'H', 'T', 'A', 'S', 'D', 'E', 'V', 'F', 'E', 'K']",ALPTSAGLAGHFEK,,ALPTSAGLAGHFEK,0.0,0,-28.73719596862793
-429,"['I', 'E', 'P', 'G', 'E', 'L', 'Y', 'N', 'G', 'T', 'K']",IEPGELYNGTK,,IEPGELYNGTK,0.0,0,-0.12585437297821045
-430,"['Y', 'W', 'H', 'D', 'G', 'G', 'Q', 'W', 'N', 'D', 'D', 'A', 'E', 'L', 'N', 'F', 'G', 'N', 'G', 'N', 'F', 'N', 'V', 'R']",DYWHDGQWGNDNFNFGNGNFNVR,,DYWHDGQWGNDNFNFGNGNFNVR,0.0,0,-14.91191577911377
-431,"['S', 'D', 'I', 'A', 'L', 'I', 'Q', 'I', 'Q', 'N', 'P', 'K']",LSDLAIQIQNPK,,LSDLAIQIQNPK,0.0,0,-6.174262046813965
-432,"['E', 'V', 'F', 'Q', 'M', 'A', 'L', 'R']",EVFQMALR,,EVFQMALR,0.0,0,-0.13830281794071198
-433,"['N', 'L', 'N', 'Q', 'Y', 'Q', 'T', 'R']",[UNIMOD:1]ALNQYAASR,,ALNQYAASR,0.0,0,-21.88825225830078
-434,"['S', 'S', 'L', 'Q', 'F', 'I', 'D', 'P', 'K']",SSLQFIDPK,,SSLQFIDPK,0.0,0,-0.8432875275611877
-435,"['S', 'L', 'A', 'T', 'A', 'A', 'G', 'A', 'V', 'A', 'G', 'G', 'V', 'A', 'G', 'Q', 'G', 'V', 'Q', 'S', 'A', 'M', 'N', 'K']",GFGAGGAVGAGVGAGVGQGAVLENK,,GFGAGGAVGAGVGAGVGQGAVLENK,0.0,0,-21.180503845214844
-436,"['V', 'V', 'E', 'P', 'L', 'I', 'T', 'L', 'A', 'K']",VVEPLITLAK,,VVEPLITLAK,0.0,0,-1.0024956464767456
-437,"['I', 'A', 'T', 'M', 'G', 'S', 'T', 'D', 'A', 'A', 'S', 'V', 'R']",IATMGSTDAASVR,,IATMGSTDAASVR,0.0,0,-0.8860418796539307
-438,"['D', 'L', 'S', 'S', 'N', 'T', 'Q', 'A', 'L', 'T', 'G', 'T', 'N', 'T', 'G', 'G', 'A', 'I', 'D', 'G', 'V', 'S', 'T', 'T', 'D', 'R']",ASSQSSSSTNTGSSQGQDLMVDATGK,,ASSQSSSSTNTGSSQGQDLMVDATGK,0.0,0,-29.535186767578125
-439,"['M', 'Q', 'Q', 'L', 'D', 'S', 'I', 'I', 'S', 'A', 'K']",MQQLDSLLSAK,,MQQLDSLLSAK,0.0,0,-0.13500994443893433
-440,"['Y', 'S', 'G', 'F', 'L', 'N', 'N', 'Y', 'S', 'D', 'L', 'K']",[UNIMOD:1]LEGLINNYSDLK,,LEGLINNYSDLK,0.0,0,-24.88687515258789
-441,"['G', 'V', 'G', 'E', 'D', 'I', 'S', 'D', 'G', 'G', 'N', 'A', 'I', 'S', 'G', 'A', 'A', 'T', 'K']",GVGEDISDGGNAISGAATK,,GVGEDISDGGNAISGAATK,0.0,0,-3.586554765701294
-442,"['L', 'Q', 'L', 'V', 'G', 'V', 'G', 'Y', 'R']",LQLVGVGYR,,LQLVGVGYR,0.0,0,-0.2616778016090393
-443,"['V', 'V', 'Y', 'R', 'P', 'D', 'I', 'N', 'Q', 'G', 'N', 'Y', 'L', 'T', 'A', 'N', 'D', 'V', 'S', 'K']",[UNIMOD:385]QAGGDVVYRPDLNYTANDVSK,,QAGGDVVYRPDLNYTANDVSK,0.0,0,-27.282377243041992
-444,"['A', 'D', 'S', 'V', 'A', 'S', 'A', 'L', 'I', 'T', 'Q', 'G', 'V', 'D', 'A', 'S', 'R']",ADSVASALLTQGVDASR,,ADSVASALLTQGVDASR,0.0,0,-0.35388147830963135
-445,"['T', 'Q', 'F', 'T', 'G', 'D', 'T', 'A', 'S', 'L', 'L', 'V', 'E', 'N', 'G', 'R']",TQFTGDTASLLVENGR,,TQFTGDTASLLVENGR,0.0,0,-0.06204859912395477
-446,"['Y', 'N', 'Y', 'L', 'I', 'N', 'Q', 'L', 'N', 'I', 'K']",LYNYLNQLQVK,,LYNYLNQLQVK,0.0,0,-11.596780776977539
-447,"['V', 'P', 'G', 'S', 'P', 'D', 'Q', 'V', 'D', 'V', 'V', 'Y', 'K']",VPGSPDQVDVVYK,,VPGSPDQVDVVYK,0.0,0,-0.3222346305847168
-448,"['K', 'D', 'D', 'G', 'N', 'T', 'I', 'M', 'V', 'V', 'Q', 'K']",KDDGNTIMVVQK,,KDDGNTIMVVQK,0.0,0,-0.8698650598526001
-449,"['A', 'Y', 'S', 'G', 'E', 'G', 'A', 'I', 'A', 'D', 'D', 'A', 'G', 'N', 'V', 'S', 'R']",AYADGEGAAGGGAGESGALADDAGGGVSR,,AYADGEGAAGGGAGESGALADDAGGGVSR,0.0,0,-10.141901969909668
-450,"['D', 'T', 'V', 'E', 'I', 'Q', 'G', 'E', 'V', 'D', 'K']",DTVEIQGEVDK,,DTVEIQGEVDK,0.0,0,-0.27763885259628296
-451,"['L', 'S', 'D', 'E', 'V', 'T', 'D', 'S', 'P', 'M', 'V', 'D', 'K']",LSDEVTDSPM[UNIMOD:35]VDK,,LSDEVTDSPMVDK,0.0,0,-0.048667531460523605
-452,"['S', 'P', 'T', 'Y', 'W', 'N', 'N', 'A', 'K']",GDDDSLYTGN,,GDDDSLYTGN,0.0,0,-13.942058563232422
-453,"['V', 'D', 'Q', 'L', 'S', 'N', 'D', 'V', 'N', 'A', 'M', 'R']",VDQLSNDVNAMR,,VDQLSNDVNAMR,0.0,0,-0.026758896186947823
-454,"['L', 'S', 'D', 'Y', 'G', 'V', 'Q', 'L', 'R']",LSDYGNLLR,,LSDYGNLLR,0.0,0,-2.784700393676758
-455,"['Y', 'S', 'G', 'S', 'S', 'Y', 'P', 'F', 'P', 'T', 'T', 'S', 'E', 'T', 'P', 'R']",YSGSSYPFPTTSETPR,,YSGSSYPFPTTSETPR,0.0,0,-1.362626314163208
-456,"['S', 'A', 'T', 'D', 'A', 'A', 'N', 'A', 'A', 'Q', 'N', 'R']",[UNIMOD:1]AATDAAGGPMPGK,,AATDAAGGPMPGK,0.0,0,-18.542863845825195
-457,"['A', 'I', 'I', 'S', 'D', 'V', 'N', 'A', 'S', 'D', 'E', 'D', 'R']",AILSDVNASDEDR,,AILSDVNASDEDR,0.0,0,-0.23320725560188293
-458,"['G', 'I', 'D', 'G', 'L', 'T', 'A', 'Q', 'L', 'K']",GIDGLTAQLK,,GIDGLTAQLK,0.0,0,-2.101757287979126
-459,"['Y', 'D', 'S', 'S', 'A', 'T', 'L', 'D', 'E', 'M', 'K']",QKYDSSANAAATLDEMK,,QKYDSSANAAATLDEMK,0.0,0,-19.05498695373535
-460,"['W', 'E', 'L', 'L', 'Q', 'Q', 'V', 'D', 'T', 'S', 'T', 'R']",WELLQQVDSTTR,,WELLQQVDSTTR,0.0,0,-1.7176074981689453
-461,"['D', 'V', 'F', 'I', 'N', 'A', 'G', 'I', 'K']",DVLEDLVR,,DVLEDLVR,0.0,0,-5.650102138519287
-462,"['Q', 'A', 'I', 'T', 'Q', 'L', 'E', 'A', 'L', 'D', 'N', 'R']",QALTQLEALDNR,,QALTQLEALDNR,0.0,0,-0.6813324093818665
-463,"['E', 'I', 'E', 'A', 'A', 'Y', 'N', 'E', 'L', 'K']",AEIEAYNELK,,AEIEAYNELK,0.0,0,-13.481304168701172
-464,"['I', 'D', 'G', 'I', 'G', 'L', 'Y', 'R']",LPITGSYR,,LPITGSYR,0.0,0,-0.08242077380418777
-465,"['T', 'T', 'V', 'T', 'S', 'G', 'G', 'L', 'Q', 'R']",TTVTGHLYK,,TTVTGHLYK,0.0,0,-2.2199249267578125
-466,"['T', 'G', 'V', 'S', 'N', 'T', 'L', 'E', 'N', 'E', 'F', 'K']",TGSSSPAPVMEFK,,TGSSSPAPVMEFK,0.0,0,-5.878984451293945
-467,"['D', 'G', 'S', 'V', 'V', 'V', 'L', 'G', 'Y', 'T', 'D', 'R']",[UNIMOD:385]AAKVDGSVVVVDRDGSVVVLGYTDR,,AAKVDGSVVVVDRDGSVVVLGYTDR,0.0,0,-27.233837127685547
-468,"['A', 'A', 'T', 'Y', 'E', 'Q', 'I', 'K']",VDGSVGAYK,,VDGSVGAYK,0.0,0,-7.3014373779296875
-469,"['D', 'Q', 'G', 'V', 'V', 'V', 'N', 'N', 'V', 'K']",DQGVVVNNVK,,DQGVVVNNVK,0.0,0,-0.012846644036471844
-470,"['N', 'H', 'D', 'T', 'G', 'V', 'S', 'P', 'V', 'F', 'A', 'G', 'G', 'V', 'E', 'Y', 'A', 'I', 'T', 'P', 'E', 'I', 'A', 'T', 'R']",PNHDTGVSPVFSVEYAITPELATR,,PNHDTGVSPVFSVEYAITPELATR,0.0,0,-24.111553192138672
-471,"['G', 'F', 'S', 'S', 'G', 'S', 'A', 'V', 'V', 'S', 'G', 'G', 'S', 'R']",GFSSGSAVVSGGSR,,GFSSGSAVVSGGSR,0.0,0,-0.5966345071792603
+0,"['G', 'F', 'E', 'T', 'P', 'T', 'I', 'N', 'E', 'L', 'S', 'Y', 'R']",TGFEPTLNELSYR,GFETPTINELSYR,TGFEPTLNELSYR,0.6153846153846154,0,-16.858304977416992
+1,"['G', 'P', 'T', 'L', 'T', 'E', 'I', 'L', 'E', 'G', 'L', 'K']",GPTLTEILEGLK,GPTLTEILEGLK,GPTLTEILEGLK,1.0,1,-3.5148162841796875
+2,"['L', 'L', 'S', 'P', 'E', 'V', 'A', 'N', 'D', 'K']",ILSPEVANDK,LLSPEVANDK,ILSPEVANDK,0.9,0,-0.475436121225357
+3,"['N', 'E', 'A', 'P', 'L', 'G', 'I', 'V', 'Y', 'G', 'S', 'D', 'A', 'V', 'A', 'S', 'K']",[UNIMOD:5]EAPLGLVYSNEAVASK,NEAPLGIVYGSDAVASK,EAPLGLVYSNEAVASK,0.0,0,-23.078929901123047
+4,"['T', 'S', 'H', 'I', 'T', 'V', 'V', 'V', 'S', 'D', 'R']",TSHLTVVVSDR,TSHITVVVSDR,TSHLTVVVSDR,0.9090909090909091,0,-0.2491781115531921
+5,"['S', 'L', 'A', 'T', 'A', 'A', 'G', 'A', 'V', 'A', 'G', 'G', 'V', 'A', 'G', 'Q', 'G', 'V', 'Q', 'S', 'A', 'M', 'N', 'K']",GAGKSLATAAGAAAGGAGVQSAM[UNIMOD:35]NK,SLATAAGAVAGGVAGQGVQSAMNK,GAGKSLATAAGAAAGGAGVQSAMNK,0.16666666666666666,0,-22.142662048339844
+6,"['L', 'A', 'L', 'P', 'P', 'D', 'Q', 'A', 'A', 'E', 'K']",LALPPDQAAEK,LALPPDQAAEK,LALPPDQAAEK,1.0,1,-1.0219676494598389
+7,"['T', 'G', 'Q', 'A', 'V', 'E', 'L', 'F', 'N', 'Q', 'L', 'P', 'Q', 'E', 'L', 'N', 'D', 'A', 'Q', 'R']",SAQAVELFNQIPQELNDAQR,TGQAVELFNQLPQELNDAQR,SAQAVELFNQIPQELNDAQR,0.85,0,-2.873715400695801
+8,"['A', 'D', 'S', 'V', 'A', 'S', 'A', 'L', 'I', 'T', 'Q', 'G', 'V', 'D', 'A', 'S', 'R']",ADSVASALLTEGVDWK,ADSVASALITQGVDASR,ADSVASALLTEGVDWK,0.7058823529411765,0,-2.345811128616333
+9,"['L', 'E', 'N', 'E', 'I', 'Q', 'T', 'Y', 'R']",LENEIQTYR,LENEIQTYR,LENEIQTYR,1.0,1,-0.9317585825920104
+10,"['N', 'I', 'E', 'F', 'F', 'E', 'A', 'R']",NIEFFEAR,NIEFFEAR,NIEFFEAR,1.0,1,-0.037377044558525
+11,"['V', 'M', 'I', 'L', 'D', 'S', 'G', 'D', 'P', 'N', 'G', 'P', 'L', 'S', 'R']",LVMLDSGDPNGPLSR,VMILDSGDPNGPLSR,LVMLDSGDPNGPLSR,0.8,0,-16.69071388244629
+12,"['I', 'A', 'G', 'I', 'N', 'I', 'P', 'D', 'H', 'K']",AIGLGGIPDHK,IAGINIPDHK,AIGLGGIPDHK,0.1,0,-7.753435611724853
+13,"['S', 'S', 'F', 'N', 'N', 'I', 'N', 'A', 'S', 'I', 'S', 'S', 'I', 'N', 'A', 'Y', 'K']",SSFNNLNASLSSLNAYK,SSFNNINASISSINAYK,SSFNNLNASLSSLNAYK,0.8235294117647058,0,-3.007234811782837
+14,"['E', 'G', 'T', 'D', 'L', 'F', 'L', 'K']",EGTDLFIK,EGTDLFLK,EGTDLFIK,0.875,0,-0.4052835702896118
+15,"['N', 'G', 'N', 'P', 'S', 'G', 'E', 'G', 'F', 'T', 'S', 'G', 'V', 'T', 'N', 'N', 'G', 'R']",NGNPSGEGFTSGVSQNGR,NGNPSGEGFTSGVTNNGR,NGNPSGEGFTSGVSQNGR,0.8888888888888888,0,-1.4072729349136353
+16,"['V', 'A', 'I', 'A', 'N', 'V', 'L', 'K']",VAIANVIK,VAIANVLK,VAIANVIK,0.875,0,-0.7361432313919067
+17,"['I', 'E', 'G', 'V', 'P', 'E', 'S', 'N', 'I', 'S', 'R']",LEGVPESNLSR,IEGVPESNISR,LEGVPESNLSR,0.8181818181818182,0,-0.4498757123947143
+18,"['W', 'S', 'D', 'G', 'T', 'P', 'V', 'T', 'A', 'Q', 'D', 'F', 'V', 'Y', 'S', 'W', 'Q', 'R']",EGSSWPVTAQDFVYSWQR,WSDGTPVTAQDFVYSWQR,EGSSWPVTAQDFVYSWQR,0.7222222222222222,0,-1.1618057489395142
+19,"['L', 'G', 'L', 'M', 'A', 'G', 'Y', 'Q', 'E', 'S', 'R']",LGLMAGYQESR,LGLMAGYQESR,LGLMAGYQESR,1.0,1,-0.0458260662853717
+20,"['Y', 'F', 'A', 'T', 'G', 'A', 'A', 'T', 'P', 'G', 'A', 'A', 'N', 'A', 'D', 'A', 'T', 'F', 'K']",YFATQATPGAANADATFK,YFATGAATPGAANADATFK,YFATQATPGAANADATFK,0.3157894736842105,0,-2.3492119312286377
+21,"['L', 'Q', 'E', 'L', 'G', 'A', 'T', 'R']",LQELGATR,LQELGATR,LQELGATR,1.0,1,-0.507656991481781
+22,"['V', 'I', 'L', 'A', 'G', 'E', 'V', 'T', 'T', 'P', 'V', 'T', 'V', 'R']",LVLAGEVTTPVTVR,VILAGEVTTPVTVR,LVLAGEVTTPVTVR,0.8571428571428571,0,-1.6659752130508425
+23,"['A', 'S', 'T', 'T', 'M', 'D', 'V', 'Q', 'S', 'A', 'A', 'D', 'D', 'T', 'G', 'L', 'P', 'M', 'L', 'V', 'V', 'R']",SATTMDVQSAADDTGLPMLVVR,ASTTMDVQSAADDTGLPMLVVR,SATTMDVQSAADDTGLPMLVVR,0.9090909090909091,0,-0.3640159666538238
+24,"['K', 'V', 'P', 'Q', 'V', 'S', 'T', 'P', 'T', 'L', 'V', 'E', 'V', 'S', 'R']",KVPQVSTPTLVEVSR,KVPQVSTPTLVEVSR,KVPQVSTPTLVEVSR,1.0,1,-0.0632305741310119
+25,"['Q', 'N', 'L', 'E', 'A', 'S', 'G', 'V', 'R']",QNLEASGVR,QNLEASGVR,QNLEASGVR,1.0,1,-1.2811152935028076
+26,"['F', 'G', 'S', 'E', 'L', 'L', 'A', 'K']",FGSELLAK,FGSELLAK,FGSELLAK,1.0,1,-0.1796579360961914
+27,"['Q', 'N', 'N', 'M', 'T', 'L', 'D', 'Q', 'M', 'R']",QNNMTLDQMR,QNNMTLDQMR,QNNMTLDQMR,1.0,1,-0.0386139824986457
+28,"['F', 'L', 'L', 'Q', 'E', 'V', 'L', 'E', 'K']",FLLQEVLEK,FLLQEVLEK,FLLQEVLEK,1.0,1,-0.1671541780233383
+29,"['Q', 'Y', 'G', 'N', 'I', 'P', 'K']",QYGNIPK,QYGNIPK,QYGNIPK,1.0,1,-0.0087286261841654
+30,"['L', 'A', 'N', 'E', 'L', 'S', 'D', 'A', 'A', 'E', 'N', 'K']",LANEISDAAENK,LANELSDAAENK,LANEISDAAENK,0.9166666666666666,0,-0.5704308152198792
+31,"['V', 'Y', 'V', 'E', 'G', 'A', 'W', 'N', 'R']",VYVEGAWNR,VYVEGAWNR,VYVEGAWNR,1.0,1,-0.052127718925476
+32,"['V', 'L', 'A', 'L', 'D', 'M', 'G', 'A', 'L', 'V', 'A', 'G', 'A', 'K']",VLAIDMGALVAGAK,VLALDMGALVAGAK,VLAIDMGALVAGAK,0.9285714285714286,0,-0.6216719150543213
+33,"['A', 'N', 'L', 'T', 'A', 'Q', 'I', 'N', 'K']",[UNIMOD:385]QADSNVLGGK,ANLTAQINK,QADSNVLGGK,0.0,0,-17.631715774536133
+34,"['G', 'E', 'S', 'A', 'P', 'T', 'T', 'A', 'F', 'G', 'A', 'A', 'V', 'V', 'G', 'G', 'D', 'N', 'G', 'R']",GESAPTTAFGAAVVGGDNGR,GESAPTTAFGAAVVGGDNGR,GESAPTTAFGAAVVGGDNGR,1.0,1,-1.4755761623382568
+35,"['D', 'A', 'L', 'P', 'L', 'M', 'E', 'N', 'A', 'Y', 'R']",DALPLMENAYR,DALPLMENAYR,DALPLMENAYR,1.0,1,-0.0358236320316791
+36,"['A', 'L', 'I', 'A', 'Q', 'E', 'P', 'L', 'L', 'G', 'A', 'K']",ALIAQEPLLGAK,ALIAQEPLLGAK,ALIAQEPLLGAK,1.0,1,-0.7038929462432861
+37,"['G', 'T', 'C', 'Q', 'T', 'Y', 'I', 'L', 'G', 'Q', 'R']",GTC[UNIMOD:4]QTYILGQR,GTCQTYILGQR,GTCQTYILGQR,1.0,1,-0.2278449237346649
+38,"['L', 'S', 'E', 'I', 'T', 'Y', 'S', 'Q', 'N', 'G', 'K']",LSELTYSQNGK,LSEITYSQNGK,LSELTYSQNGK,0.9090909090909091,0,-0.5699032545089722
+39,"['G', 'D', 'Q', 'V', 'A', 'V', 'M', 'A', 'N', 'G', 'Q', 'A', 'P', 'G', 'L', 'P', 'N', 'G', 'F', 'K']",[UNIMOD:385]GAGDQAMAVDKDPGLPNGFK,GDQVAVMANGQAPGLPNGFK,GAGDQAMAVDKDPGLPNGFK,0.55,0,-32.94820785522461
+40,"['T', 'V', 'Q', 'V', 'D', 'D', 'S', 'S', 'Q', 'S', 'A', 'H', 'F', 'P', 'L', 'Q', 'V', 'R']",GTGGATHFPNILR,TVQVDDSSQSAHFPLQVR,GTGGATHFPNILR,0.0,0,-14.611988067626951
+41,"['G', 'A', 'S', 'G', 'Y', 'L', 'P', 'E', 'H', 'T', 'L', 'P', 'A', 'K']",GASGYLPEHTLPAK,GASGYLPEHTLPAK,GASGYLPEHTLPAK,1.0,1,-4.924595355987549
+42,"['A', 'E', 'Y', 'T', 'P', 'H', 'V', 'D', 'T', 'G', 'D', 'Y', 'I', 'I', 'V', 'L', 'N', 'A', 'D', 'K']",[UNIMOD:385]AAELVPHVDGSEYLLVINADK,AEYTPHVDTGDYIIVLNADK,AAELVPHVDGSEYLLVINADK,0.1,0,-27.663970947265625
+43,"['D', 'T', 'N', 'A', 'T', 'A', 'Q', 'G', 'S', 'V', 'A', 'E', 'S', 'N', 'A', 'T', 'G', 'N', 'P', 'V', 'N', 'L', 'L', 'D', 'G', 'K']",[UNIMOD:385]QGKDTNATAQASSQGSSSPVNLLDGK,DTNATAQGSVAESNATGNPVNLLDGK,QGKDTNATAQASSQGSSSPVNLLDGK,0.4230769230769231,0,-30.88182830810547
+44,"['N', 'L', 'S', 'L', 'L', 'Q', 'A', 'R']",NLSLLQAR,NLSLLQAR,NLSLLQAR,1.0,1,-0.3262585997581482
+45,"['A', 'M', 'A', 'Y', 'A', 'Q', 'G', 'A', 'D', 'Y', 'L', 'E', 'Q', 'D', 'L', 'V', 'M', 'T', 'K']",[UNIMOD:1]AAMAQQDYYAQQDLVMTK,AMAYAQGADYLEQDLVMTK,AAMAQQDYYAQQDLVMTK,0.10526315789473684,0,-28.37212562561035
+46,"['R', 'D', 'D', 'E', 'V', 'I', 'V', 'L', 'T', 'G', 'K']",STVLAPTTVVTR,RDDEVIVLTGK,STVLAPTTVVTR,0.0,0,-0.1608156114816665
+47,"['A', 'T', 'L', 'K', 'P', 'E', 'G', 'Q', 'A', 'A', 'L', 'D', 'Q', 'L', 'Y', 'S', 'Q', 'L', 'S', 'N', 'L', 'D', 'P', 'K']",ATATKVHDEIYTALDQYSNEVPK,ATLKPEGQAALDQLYSQLSNLDPK,ATATKVHDEIYTALDQYSNEVPK,0.125,0,-17.852872848510742
+48,"['L', 'Y', 'F', 'E', 'G', 'E', 'L', 'I', 'D', 'A', 'A', 'T', 'N', 'K', 'P', 'V', 'I', 'K']",IYFEGEILDAATNKPVLK,LYFEGELIDAATNKPVIK,IYFEGEILDAATNKPVLK,0.7777777777777778,0,-2.753171682357788
+49,"['T', 'I', 'V', 'D', 'Q', 'E', 'L', 'L', 'P', 'Y', 'V', 'Q', 'V', 'K']",[UNIMOD:385]ELVDQETLPYVQVK,TIVDQELLPYVQVK,ELVDQETLPYVQVK,0.7857142857142857,0,-36.28446960449219
+50,"['W', 'Q', 'S', 'T', 'S', 'V', 'N', 'D', 'V', 'L', 'R']",WQSTSVNDVIR,WQSTSVNDVLR,WQSTSVNDVIR,0.9090909090909091,0,-0.0410226285457611
+51,"['T', 'E', 'Q', 'A', 'Q', 'L', 'A', 'R']",ASPAEAQVK,TEQAQLAR,ASPAEAQVK,0.125,0,-10.480904579162598
+52,"['R', 'V', 'E', 'I', 'E', 'V', 'K']",RVELEVK,RVEIEVK,RVELEVK,0.8571428571428571,0,-0.353300929069519
+53,"['G', 'V', 'G', 'E', 'D', 'I', 'S', 'D', 'G', 'G', 'N', 'A', 'I', 'S', 'G', 'A', 'A', 'T', 'K']",M[UNIMOD:35]KIGMGAAAVAISGAATK,GVGEDISDGGNAISGAATK,MKIGMGAAAVAISGAATK,0.05263157894736842,0,-11.796494483947754
+54,"['G', 'I', 'D', 'I', 'S', 'A', 'P', 'R']",GLDLSAPR,GIDISAPR,GLDLSAPR,0.75,0,-0.4748814404010772
+55,"['Q', 'I', 'L', 'L', 'Q', 'I', 'D', 'S', 'L', 'S', 'S', 'G', 'G', 'A', 'A', 'A', 'Q', 'S', 'T', 'S', 'G', 'D', 'Q', 'S', 'G', 'A', 'A', 'A', 'S', 'T', 'T', 'P', 'T', 'A', 'D', 'A', 'G', 'T', 'A', 'N', 'A', 'G', 'A', 'P', 'V', 'K']",DDDEELAEEKQIILQLDSLAAGANTPTADAGTANAGAPVK,QILLQIDSLSSGGAAAQSTSGDQSGAAASTTPTADAGTANAGAPVK,DDDEELAEEKQIILQLDSLAAGANTPTADAGTANAGAPVK,0.043478260869565216,0,-32.15129089355469
+56,"['I', 'I', 'S', 'L', 'A', 'P', 'E', 'V', 'L']",ILSLAPEVL,IISLAPEVL,ILSLAPEVL,0.8888888888888888,0,-0.5171428918838501
+57,"['L', 'E', 'N', 'E', 'I', 'Q', 'T', 'Y', 'R']",LENEIQTYR,LENEIQTYR,LENEIQTYR,1.0,1,-0.1382572650909423
+58,"['D', 'W', 'Y', 'V', 'V', 'D', 'A', 'T', 'G', 'K']",DWYVVDATGK,DWYVVDATGK,DWYVVDATGK,1.0,1,-0.0088367331773042
+59,"['L', 'P', 'S', 'D', 'A', 'G', 'S', 'N', 'I', 'T', 'Y', 'R']",LPSDAGSNITYR,LPSDAGSNITYR,LPSDAGSNITYR,1.0,1,-0.2187806367874145
+60,"['V', 'Q', 'F', 'I', 'D', 'E', 'P', 'V', 'K']",VQFLDEPVK,VQFIDEPVK,VQFLDEPVK,0.8888888888888888,0,-0.0457056239247322
+61,"['V', 'D', 'D', 'L', 'A', 'V', 'D', 'L', 'V', 'E', 'R']",[UNIMOD:385]GAVDLAVDLVER,VDDLAVDLVER,GAVDLAVDLVER,0.0,0,-27.405229568481445
+62,"['V', 'T', 'T', 'E', 'N', 'G', 'E', 'V', 'F', 'L', 'M', 'G', 'L', 'V', 'T', 'E', 'R']",VTVTEDGQFLMGLVTER,VTTENGEVFLMGLVTER,VTVTEDGQFLMGLVTER,0.6470588235294118,0,-5.26998233795166
+63,"['L', 'A', 'T', 'L', 'P', 'T', 'Y', 'E', 'E', 'A', 'I', 'A', 'R']",LATLPTYEEALAR,LATLPTYEEAIAR,LATLPTYEEALAR,0.9230769230769231,0,-0.7676795125007629
+64,"['A', 'L', 'D', 'A', 'I', 'I', 'A', 'S', 'V', 'T', 'E', 'S', 'L', 'K']",AIDAIIASVTESIK,ALDAIIASVTESLK,AIDAIIASVTESIK,0.8571428571428571,0,-0.5641613602638245
+65,"['A', 'D', 'I', 'D', 'Y', 'N', 'T', 'S', 'E', 'A', 'H', 'T', 'T', 'Y', 'G', 'V', 'I', 'G', 'V', 'K']",SKADLDYNTAHTTYGVIGVK,ADIDYNTSEAHTTYGVIGVK,SKADLDYNTAHTTYGVIGVK,0.6,0,-21.43830680847168
+66,"['T', 'Q', 'F', 'T', 'G', 'D', 'T', 'A', 'S', 'L', 'L', 'V', 'E', 'N', 'G', 'R']",TQFTGDTASLLVENGR,TQFTGDTASLLVENGR,TQFTGDTASLLVENGR,1.0,1,-0.0371678918600082
+67,"['T', 'I', 'N', 'D', 'Y', 'G', 'A', 'L', 'T', 'P', 'K']",TADNDVLVTPK,TINDYGALTPK,TADNDVLVTPK,0.36363636363636365,0,-15.605184555053713
+68,"['Q', 'V', 'Q', 'G', 'F', 'E', 'I', 'N', 'G', 'N', 'T', 'G', 'S', 'L', 'T', 'A', 'N', 'P', 'D', 'C', 'V', 'I', 'N', 'R']",QVQGFAGGEPEELVTANPDC[UNIMOD:4]VLNR,QVQGFEINGNTGSLTANPDCVINR,QVQGFAGGEPEELVTANPDCVLNR,0.5833333333333334,0,-8.157662391662598
+69,"['T', 'G', 'I', 'A', 'F', 'D', 'D', 'S', 'P', 'V', 'P', 'A', 'Q', 'N', 'R']",TAVAFDDSPVPAGGGAR,TGIAFDDSPVPAQNR,TAVAFDDSPVPAGGGAR,0.6666666666666666,0,-7.876992225646973
+70,"['S', 'W', 'T', 'G', 'L', 'I', 'S', 'T', 'G', 'I', 'T', 'Y', 'K']",TGLSWLSTGLTYK,SWTGLISTGITYK,TGLSWLSTGLTYK,0.46153846153846156,0,-13.91446304321289
+71,"['I', 'V', 'D', 'E', 'Q', 'P', 'G', 'A', 'E', 'C', 'Q', 'L', 'I', 'G', 'T', 'A', 'T', 'G', 'K']",LVDEQPGAEC[UNIMOD:4]QLLGTATGK,IVDEQPGAECQLIGTATGK,LVDEQPGAECQLLGTATGK,0.8947368421052632,0,-0.1994300633668899
+72,"['A', 'D', 'S', 'V', 'A', 'S', 'A', 'L', 'I', 'T', 'Q', 'G', 'V', 'D', 'A', 'S', 'R']",ADSVASALLTQGVDASR,ADSVASALITQGVDASR,ADSVASALLTQGVDASR,0.9411764705882353,0,-0.3131694197654724
+73,"['G', 'P', 'L', 'Y', 'F', 'P', 'P', 'A', 'D', 'K']",GSQGPLPPADK,GPLYFPPADK,GSQGPLPPADK,0.2,0,-14.148459434509276
+74,"['G', 'E', 'G', 'F', 'Q', 'Q', 'A', 'V', 'A', 'A', 'H', 'K']",GEGFQQAVAAHK,GEGFQQAVAAHK,GEGFQQAVAAHK,1.0,1,-0.0183457992970943
+75,"['V', 'A', 'N', 'L', 'E', 'A', 'Q', 'L', 'A', 'E', 'A', 'Q', 'T', 'R']",[UNIMOD:1]GGAAVQAQLAESAAAR,VANLEAQLAEAQTR,GGAAVQAQLAESAAAR,0.0,0,-35.249961853027344
+76,"['T', 'G', 'T', 'P', 'A', 'A', 'Q', 'I', 'G', 'L', 'K']",TGTPAAQLGLK,TGTPAAQIGLK,TGTPAAQLGLK,0.9090909090909091,0,-0.0998530164361
+77,"['A', 'A', 'A', 'D', 'V', 'Q', 'L', 'R']",AAADVQLR,AAADVQLR,AAADVQLR,1.0,1,-0.2258378118276596
+78,"['V', 'I', 'G', 'T', 'A', 'T', 'S', 'E', 'N', 'G', 'A', 'Q', 'A', 'I', 'S', 'D', 'Y', 'L', 'G', 'A', 'N', 'G', 'K']",SGALVGDKDSGYYSDYLGANGK,VIGTATSENGAQAISDYLGANGK,SGALVGDKDSGYYSDYLGANGK,0.0,0,-30.872926712036133
+79,"['A', 'Y', 'S', 'G', 'E', 'G', 'A', 'I', 'A', 'D', 'D', 'A', 'G', 'N', 'V', 'S', 'R']",AYSGEGALADDAGNVSR,AYSGEGAIADDAGNVSR,AYSGEGALADDAGNVSR,0.9411764705882353,0,-1.5417059659957886
+80,"['D', 'G', 'S', 'V', 'V', 'V', 'L', 'G', 'Y', 'T', 'D', 'R']",DGSVVVLGYTDR,DGSVVVLGYTDR,DGSVVVLGYTDR,1.0,1,-0.231581300497055
+81,"['Y', 'T', 'N', 'G', 'G', 'L', 'T', 'V', 'T', 'P', 'G', 'I', 'G', 'V', 'Q', 'W', 'N', 'S', 'E', 'N', 'Q', 'N', 'E', 'Y', 'Y', 'Y', 'G', 'V', 'S', 'R']",[UNIMOD:385]GPGLGVQNSLPGLGVQWDSQGWNEYYYGVSR,YTNGGLTVTPGIGVQWNSENQNEYYYGVSR,GPGLGVQNSLPGLGVQWDSQGWNEYYYGVSR,0.1,0,-23.55733108520508
+82,"['K', 'P', 'L', 'D', 'D', 'V', 'K']",[UNIMOD:385]AADVLPSR,KPLDDVK,AADVLPSR,0.0,0,-24.622072219848633
+83,"['V', 'M', 'N', 'M', 'Q', 'A', 'K']",SPVHPGSIVHR,VMNMQAK,SPVHPGSIVHR,0.0,0,-13.546707153320312
+84,"['S', 'V', 'A', 'N', 'S', 'Q', 'D', 'I', 'D', 'L', 'V', 'V', 'D', 'A', 'N', 'A', 'V', 'A', 'Y', 'N', 'S', 'S', 'D', 'V', 'K']",GAGDAGLSVANSQDIDLVAYNSSDVK,SVANSQDIDLVVDANAVAYNSSDVK,GAGDAGLSVANSQDIDLVAYNSSDVK,0.04,0,-24.050710678100582
+85,"['T', 'I', 'V', 'S', 'D', 'G', 'K', 'P', 'Q', 'T', 'D', 'N', 'D', 'T', 'G', 'M', 'I', 'S', 'Y', 'K']",TIVSDGKPQSSYEMELSYK,TIVSDGKPQTDNDTGMISYK,TIVSDGKPQSSYEMELSYK,0.45,0,-3.876924753189087
+86,"['E', 'P', 'Q', 'G', 'F', 'V', 'A', 'D', 'A', 'T', 'I', 'N', 'T', 'P', 'N', 'G', 'V', 'L', 'V', 'A', 'S', 'G', 'K']",[UNIMOD:1]GSTLTGKEPQGFVPNGVLVASGK,EPQGFVADATINTPNGVLVASGK,GSTLTGKEPQGFVPNGVLVASGK,0.43478260869565216,0,-31.49433326721191
+87,"['A', 'E', 'Y', 'T', 'P', 'H', 'V', 'D', 'T', 'G', 'D', 'Y', 'I', 'I', 'V', 'L', 'N', 'A', 'D', 'K']",AGIDSVPHVDEGDYLVINADK,AEYTPHVDTGDYIIVLNADK,AGIDSVPHVDEGDYLVINADK,0.05,0,-16.593549728393555
+88,"['V', 'N', 'Y', 'G', 'V', 'T', 'V', 'L', 'P', 'T', 'F', 'K']",VNYGVTVLPTFK,VNYGVTVLPTFK,VNYGVTVLPTFK,1.0,1,-0.0661269053816795
+89,"['G', 'G', 'W', 'T', 'V', 'I', 'Q', 'N', 'R']",GGWTVIQNR,GGWTVIQNR,GGWTVIQNR,1.0,1,-0.0369254238903522
+90,"['L', 'T', 'G', 'L', 'E', 'G', 'E', 'Q', 'L', 'G', 'I', 'V', 'S', 'L', 'R']",LTGLEGEQLGLVSLR,LTGLEGEQLGIVSLR,LTGLEGEQLGLVSLR,0.9333333333333333,0,-0.2902936637401581
+91,"['V', 'A', 'F', 'Q', 'A', 'V', 'I', 'K']",VAFQAVLK,VAFQAVIK,VAFQAVLK,0.875,0,-0.0352389365434646
+92,"['G', 'L', 'G', 'G', 'G', 'Y', 'Y', 'L', 'W', 'N', 'D', 'A', 'T', 'D', 'K']",GIGGGYYIWNDATDK,GLGGGYYLWNDATDK,GIGGGYYIWNDATDK,0.8666666666666667,0,-7.822528839111328
+93,"['V', 'P', 'L', 'P', 'P', 'L', 'T', 'E', 'E', 'R']",[UNIMOD:385]LPLPPITEER,VPLPPLTEER,LPLPPITEER,0.8,0,-27.96770477294922
+94,"['L', 'A', 'A', 'T', 'I', 'A', 'Q', 'L', 'P', 'D', 'Q', 'I', 'G', 'A', 'K']",GALALAATLPDQLAGK,LAATIAQLPDQIGAK,GALALAATLPDQLAGK,0.2,0,-13.956966400146484
+95,"['V', 'D', 'Q', 'L', 'S', 'N', 'D', 'V', 'N', 'A', 'M', 'R']",VDQLSNDSVEQK,VDQLSNDVNAMR,VDQLSNDSVEQK,0.5833333333333334,0,-1.9911024570465088
+96,"['L', 'V', 'I', 'W', 'I', 'N', 'G', 'D', 'K']",VILWLNGDK,LVIWINGDK,VILWLNGDK,0.5555555555555556,0,-0.7739212512969971
+97,"['A', 'V', 'V', 'T', 'P', 'L', 'P', 'R']",[UNIMOD:385]GLGLHLTR,AVVTPLPR,GLGLHLTR,0.25,0,-24.634475708007812
+98,"['N', 'F', 'L', 'V', 'P', 'Q', 'G', 'K']",NFLVPQGK,NFLVPQGK,NFLVPQGK,1.0,1,-0.3710314333438873
+99,"['V', 'A', 'I', 'N', 'E', 'A', 'I', 'E', 'L', 'A', 'K']",[UNIMOD:1]AVAGGEAIELAK,VAINEAIELAK,AVAGGEAIELAK,0.0,0,-31.855369567871097
+100,"['D', 'Y', 'S', 'S', 'Y', 'P', 'Y', 'Q', 'T', 'V', 'K']",DYSSYPYQTVK,DYSSYPYQTVK,DYSSYPYQTVK,1.0,1,-2.953418970108032
+101,"['V', 'A', 'I', 'A', 'N', 'V', 'L', 'K']",VAIANVIK,VAIANVLK,VAIANVIK,0.875,0,-0.9789353609085084
+102,"['G', 'N', 'N', 'L', 'T', 'V', 'S', 'A', 'D', 'L', 'Y', 'K']",GNNITVSADIYK,GNNLTVSADLYK,GNNITVSADIYK,0.8333333333333334,0,-1.3349515199661257
+103,"['G', 'E', 'G', 'F', 'Q', 'Q', 'A', 'V', 'A', 'A', 'H', 'K']",GEGFQQAVAAHK,GEGFQQAVAAHK,GEGFQQAVAAHK,1.0,1,-1.0349855422973633
+104,"['F', 'L', 'L', 'Q', 'E', 'V', 'L', 'E', 'K']",FLLQEVLEK,FLLQEVLEK,FLLQEVLEK,1.0,1,-0.1032896339893341
+105,"['Q', 'G', 'G', 'A', 'L', 'V', 'T', 'S', 'T', 'A', 'A', 'T', 'V', 'T', 'G', 'I', 'N', 'R']",QGGALVTSTAATVSALNR,QGGALVTSTAATVTGINR,QGGALVTSTAATVSALNR,0.8333333333333334,0,-2.514388084411621
+106,"['T', 'D', 'S', 'A', 'Q', 'V', 'A', 'E', 'I', 'V', 'A', 'V', 'M', 'G', 'N', 'A', 'S', 'V', 'A', 'S', 'R']",TDSAQVEALVAVMGNASVASR,TDSAQVAEIVAVMGNASVASR,TDSAQVEALVAVMGNASVASR,0.8571428571428571,0,-0.6087200045585632
+107,"['A', 'V', 'G', 'D', 'S', 'L', 'E', 'A', 'Q', 'Q', 'Y', 'G', 'I', 'A', 'F', 'P', 'K']",AVGDSLEAQQYGIAFPK,AVGDSLEAQQYGIAFPK,AVGDSLEAQQYGIAFPK,1.0,1,-2.855934381484986
+108,"['W', 'E', 'L', 'L', 'Q', 'Q', 'V', 'D', 'T', 'S', 'T', 'R']",WELLQQVDTTSR,WELLQQVDTSTR,WELLQQVDTTSR,0.8333333333333334,0,-0.7430405616760254
+109,"['K', 'D', 'D', 'G', 'N', 'T', 'I', 'M', 'V', 'V', 'Q', 'K']",[UNIMOD:385]KDDNTSVMVVQK,KDDGNTIMVVQK,KDDNTSVMVVQK,0.6666666666666666,0,-25.80189323425293
+110,"['G', 'A', 'S', 'A', 'V', 'P', 'L', 'V', 'G', 'R']",GASAVPLVGR,GASAVPLVGR,GASAVPLVGR,1.0,1,-0.2863697409629822
+111,"['E', 'E', 'P', 'S', 'S', 'F', 'A', 'S', 'Y', 'G', 'T', 'W', 'A', 'R']",EEPSSFASYSAWAR,EEPSSFASYGTWAR,EEPSSFASYSAWAR,0.8571428571428571,0,-1.72877037525177
+112,"['L', 'L', 'D', 'L', 'A', 'A', 'P', 'D', 'I', 'I', 'V', 'R']",LLDLAAPDLLVR,LLDLAAPDIIVR,LLDLAAPDLLVR,0.8333333333333334,0,-0.3579758703708648
+113,"['I', 'A', 'T', 'M', 'G', 'S', 'T', 'G', 'T', 'S', 'S', 'T', 'R']",MEMEEPATPAR,IATMGSTGTSSTR,MEMEEPATPAR,0.0,0,-5.167568206787109
+114,"['T', 'L', 'L', 'A', 'V', 'E', 'I', 'K']",TILAVELK,TLLAVEIK,TILAVELK,0.75,0,-0.6314651966094971
+115,"['G', 'L', 'D', 'S', 'S', 'Y', 'T', 'L', 'I', 'L', 'V', 'D', 'G', 'K']",GIDSSYTLILVDGK,GLDSSYTLILVDGK,GIDSSYTLILVDGK,0.9285714285714286,0,-0.4013097882270813
+116,"['A', 'V', 'A', 'A', 'G', 'M', 'N', 'P', 'M', 'D', 'L', 'K']",AVAAGMNPMDIK,AVAAGMNPMDLK,AVAAGMNPMDIK,0.9166666666666666,0,-0.128208577632904
+117,"['Y', 'A', 'G', 'H', 'T', 'A', 'S', 'D', 'E', 'V', 'F', 'E', 'K']",[UNIMOD:385]AVTHTSFGDGHEEGSEMFEK,YAGHTASDEVFEK,AVTHTSFGDGHEEGSEMFEK,0.23076923076923078,0,-28.64252471923828
+118,"['I', 'N', 'L', 'L', 'D', 'D', 'N', 'Q', 'F', 'T', 'R']",INLLDDNQFTR,INLLDDNQFTR,INLLDDNQFTR,1.0,1,-0.4568387866020202
+119,"['V', 'I', 'N', 'V', 'I', 'N', 'G', 'K']",VINVLNGK,VINVINGK,VINVLNGK,0.875,0,-0.3685636222362518
+120,"['A', 'M', 'Q', 'W', 'M', 'P', 'I', 'S', 'Q', 'K']",AMQWMPISQK,AMQWMPISQK,AMQWMPISQK,1.0,1,-0.0165311079472303
+121,"['T', 'S', 'H', 'I', 'T', 'V', 'V', 'V', 'S', 'D', 'R']",STHITVVVSDR,TSHITVVVSDR,STHITVVVSDR,0.8181818181818182,0,-2.074432134628296
+122,"['F', 'T', 'L', 'V', 'S', 'A', 'Q', 'Q', 'L', 'S', 'M', 'A', 'K']",[UNIMOD:385]TGFTLAETAISM[UNIMOD:35]AK,FTLVSAQQLSMAK,TGFTLAETAISMAK,0.07692307692307693,0,-36.97587966918945
+123,"['G', 'G', 'Y', 'F', 'P', 'V', 'P', 'P', 'V', 'D', 'S', 'A', 'Q', 'D', 'I', 'R']",C[UNIMOD:4]GGGSLYNSQWVSAAH,GGYFPVPPVDSAQDIR,CGGGSLYNSQWVSAAH,0.0625,0,-6.278232574462891
+124,"['L', 'G', 'E', 'H', 'N', 'I', 'D', 'V', 'L', 'E', 'G', 'N', 'E', 'Q', 'F', 'I', 'N', 'A', 'A', 'K']",LGEHNIDVLEGNEQFINAAK,LGEHNIDVLEGNEQFINAAK,LGEHNIDVLEGNEQFINAAK,1.0,1,-0.0835250988602638
+125,"['T', 'T', 'L', 'P', 'D', 'S', 'A', 'H', 'V', 'A', 'S', 'A', 'S', 'T', 'I', 'P', 'N', 'R']",TTLPDSAHVASASTLPNR,TTLPDSAHVASASTIPNR,TTLPDSAHVASASTLPNR,0.9444444444444444,0,-0.1418563574552536
+126,"['V', 'G', 'F', 'F', 'N', 'P', 'I', 'A', 'S', 'E', 'K']",VGFFNPLASEK,VGFFNPIASEK,VGFFNPLASEK,0.9090909090909091,0,-0.5083386301994324
+127,"['I', 'L', 'D', 'A', 'T', 'N', 'N', 'Q', 'L', 'P', 'Q', 'D', 'R']",LLDATNNQLPQDR,ILDATNNQLPQDR,LLDATNNQLPQDR,0.9230769230769231,0,-0.6816688776016235
+128,"['I', 'I', 'T', 'H', 'P', 'N', 'F', 'N', 'G', 'N', 'T', 'L', 'D', 'N', 'D', 'I', 'M', 'L', 'I', 'K']",IITHPNFNGNTLDNDIMLIK,IITHPNFNGNTLDNDIMLIK,IITHPNFNGNTLDNDIMLIK,1.0,1,-0.0508134178817272
+129,"['A', 'L', 'M', 'E', 'Y', 'D', 'E', 'S', 'L', 'R']",ALMEYDESLR,ALMEYDESLR,ALMEYDESLR,1.0,1,-0.6427608728408813
+130,"['A', 'M', 'Q', 'W', 'M', 'P', 'I', 'S', 'Q', 'K']",AMQWMPISQK,AMQWMPISQK,AMQWMPISQK,1.0,1,-0.0228776596486568
+131,"['I', 'P', 'V', 'V', 'S', 'S', 'P', 'K']",LPVVSSPK,IPVVSSPK,LPVVSSPK,0.875,0,-0.0096570327877998
+132,"['F', 'W', 'V', 'E', 'S', 'E', 'K']",EVLGVLPR,FWVESEK,EVLGVLPR,0.0,0,-10.983034133911133
+133,"['T', 'G', 'Q', 'A', 'V', 'E', 'L', 'F', 'N', 'Q', 'L', 'P', 'Q', 'E', 'L', 'N', 'D', 'A', 'Q', 'R']",TGQAVELFNQIPQELNDAQR,TGQAVELFNQLPQELNDAQR,TGQAVELFNQIPQELNDAQR,0.95,0,-1.5125757455825806
+134,"['Q', 'A', 'T', 'F', 'E', 'E', 'M', 'I', 'A', 'R']",QATFEEMLAR,QATFEEMIAR,QATFEEMLAR,0.9,0,-0.1337357014417648
+135,"['I', 'S', 'E', 'L', 'S', 'E', 'G', 'Q', 'I', 'D', 'T', 'L', 'R']",ISELSEGQIDTLR,ISELSEGQIDTLR,ISELSEGQIDTLR,1.0,1,-0.7524881362915039
+136,"['S', 'L', 'S', 'D', 'T', 'L', 'E', 'E', 'V', 'L', 'S', 'S', 'S', 'G', 'E', 'K']",SLSSELEEVLSSSGEK,SLSDTLEEVLSSSGEK,SLSSELEEVLSSSGEK,0.875,0,-4.6218390464782715
+137,"['L', 'I', 'D', 'Q', 'A', 'T', 'A', 'E', 'I', 'V', 'E', 'T', 'A', 'K']",LIDQATAELVETAK,LIDQATAEIVETAK,LIDQATAELVETAK,0.9285714285714286,0,-8.60302448272705
+138,"['G', 'E', 'V', 'V', 'S', 'H', 'I', 'A', 'S', 'D', 'N', 'V', 'L', 'G', 'G', 'K']",GEVVSHIASDNVLGGK,GEVVSHIASDNVLGGK,GEVVSHIASDNVLGGK,1.0,1,-2.043409585952759
+139,"['V', 'I', 'E', 'L', 'Q', 'G', 'I', 'A', 'G', 'T', 'S', 'A', 'A', 'R']",VLELQGIAGTSAAR,VIELQGIAGTSAAR,VLELQGIAGTSAAR,0.9285714285714286,0,-0.0926775857806205
+140,"['S', 'M', 'Q', 'D', 'P', 'I', 'A', 'D', 'M', 'L', 'T', 'R']",SMQDPIADMITR,SMQDPIADMLTR,SMQDPIADMITR,0.9166666666666666,0,-0.6469162702560425
+141,"['S', 'G', 'E', 'G', 'L', 'Y', 'F', 'I', 'D', 'K']",SGEGLYFIDK,SGEGLYFIDK,SGEGLYFIDK,1.0,1,-0.3181671798229217
+142,"['N', 'D', 'V', 'S', 'D', 'L', 'I', 'D', 'Y', 'D', 'D', 'H', 'T', 'L', 'K']",LTLPLVTPEQLPEQH,NDVSDLIDYDDHTLK,LTLPLVTPEQLPEQH,0.0,0,-13.527817726135254
+143,"['D', 'T', 'V', 'E', 'I', 'Q', 'G', 'E', 'V', 'D', 'K']",DTVELQGEVDK,DTVEIQGEVDK,DTVELQGEVDK,0.9090909090909091,0,-1.9200621843338013
+144,"['D', 'Y', 'S', 'S', 'Y', 'P', 'Y', 'Q', 'T', 'V', 'K']",DYSSYPYQTVK,DYSSYPYQTVK,DYSSYPYQTVK,1.0,1,-0.9772370457649232
+145,"['T', 'V', 'I', 'N', 'Q', 'V', 'T', 'Y', 'L', 'P', 'I', 'A', 'S', 'E', 'V', 'T', 'D', 'V', 'N', 'R']",[UNIMOD:5]VGGQLLSVYAPLASEVTDVNR,TVINQVTYLPIASEVTDVNR,VGGQLLSVYAPLASEVTDVNR,0.0,0,-25.538217544555664
+146,"['F', 'N', 'G', 'Q', 'Y', 'E', 'L', 'R']",FNGQYELK,FNGQYELR,FNGQYELK,0.875,0,-7.4135308265686035
+147,"['V', 'A', 'N', 'L', 'E', 'A', 'Q', 'L', 'A', 'E', 'A', 'Q', 'T', 'R']",VANIGYTNADIEAQLAEGRDK,VANLEAQLAEAQTR,VANIGYTNADIEAQLAEGRDK,0.2857142857142857,0,-7.166167736053467
+148,"['Y', 'Q', 'W', 'Q', 'N', 'Y', 'G', 'A', 'A', 'N', 'E', 'N', 'E', 'W', 'D', 'G', 'Y', 'R']",[UNIMOD:5]QQSIYQATANYQEWDGYR,YQWQNYGAANENEWDGYR,QQSIYQATANYQEWDGYR,0.5,0,-32.57602310180664
+149,"['F', 'L', 'A', 'D', 'D', 'P', 'Q', 'A', 'V', 'A', 'D', 'L', 'S', 'R']",FLDADPQAVADLSR,FLADDPQAVADLSR,FLDADPQAVADLSR,0.8571428571428571,0,-5.1504998207092285
+150,"['N', 'Q', 'G', 'T', 'A', 'Q', 'N', 'I', 'Q', 'L', 'E', 'L', 'Q', 'D', 'D', 'S', 'G', 'N', 'T', 'L', 'N', 'T', 'G', 'A', 'T', 'K']",VTNQGTAQNLQLELQDGTNINTGATK,NQGTAQNIQLELQDDSGNTLNTGATK,VTNQGTAQNLQLELQDGTNINTGATK,0.34615384615384615,0,-17.375831604003906
+151,"['M', 'A', 'N', 'Q', 'A', 'N', 'I', 'P', 'V', 'I', 'T', 'L', 'D', 'R']",MANQANLPVITLDR,MANQANIPVITLDR,MANQANLPVITLDR,0.9285714285714286,0,-0.0488174967467784
+152,"['S', 'A', 'G', 'T', 'Y', 'V', 'Q', 'I', 'V', 'A', 'R']",SAGTYVQLVAR,SAGTYVQIVAR,SAGTYVQLVAR,0.9090909090909091,0,-0.1507682204246521
+153,"['T', 'I', 'L', 'N', 'L', 'V', 'N', 'A', 'G', 'N', 'S', 'A', 'S', 'G', 'L', 'A', 'T', 'S', 'G', 'K']",STLLNIINIANSGIATSGK,TILNLVNAGNSASGLATSGK,STLLNIINIANSGIATSGK,0.05,0,-26.749290466308594
+154,"['E', 'F', 'G', 'V', 'N', 'L', 'A', 'K']",EFGVNLAK,EFGVNLAK,EFGVNLAK,1.0,1,-0.042680624872446
+155,"['A', 'D', 'S', 'V', 'A', 'S', 'A', 'L', 'I', 'T', 'Q', 'G', 'V', 'D', 'A', 'S', 'R']",[UNIMOD:1]ADSVASAALTQGVDASR,ADSVASALITQGVDASR,ADSVASAALTQGVDASR,0.8823529411764706,0,-20.9118595123291
+156,"['F', 'S', 'G', 'N', 'Y', 'G', 'N', 'M', 'T', 'E', 'V', 'S', 'Y', 'Q', 'V', 'A', 'K']",FSGNYSGNYGFSYQVAK,FSGNYGNMTEVSYQVAK,FSGNYSGNYGFSYQVAK,0.6470588235294118,0,-12.43313694000244
+157,"['Q', 'N', 'T', 'F', 'F', 'V', 'T', 'N', 'S', 'G', 'V', 'Q', 'N', 'R']",QNTFFVTNSGVQNR,QNTFFVTNSGVQNR,QNTFFVTNSGVQNR,1.0,1,-0.0666716024279594
+158,"['A', 'P', 'L', 'P', 'T', 'P', 'L', 'P']",APLPTPIP,APLPTPLP,APLPTPIP,0.875,0,-0.799430787563324
+159,"['N', 'K', 'P', 'G', 'V', 'Y', 'T', 'K']",NKPGVYTK,NKPGVYTK,NKPGVYTK,1.0,1,-0.041007213294506
+160,"['V', 'V', 'N', 'P', 'E', 'L', 'H', 'K']",VVLPEIHK,VVNPELHK,VVLPEIHK,0.75,0,-2.6776986122131348
+161,"['A', 'D', 'L', 'T', 'L', 'V', 'P', 'V', 'Q', 'Q', 'T', 'A', 'V', 'P', 'V', 'Q', 'A', 'S', 'G', 'G', 'A', 'T', 'T', 'T', 'V', 'P', 'S', 'T', 'S', 'P', 'T', 'Q', 'V', 'N', 'P', 'S', 'S', 'A', 'V', 'P', 'A', 'P', 'T', 'Q', 'Y']",QPVQAGTAVPALDTLVEPSTPTSQVGGPTSTPVQPAPTQY,ADLTLVPVQQTAVPVQASGGATTTVPSTSPTQVNPSSAVPAPTQY,QPVQAGTAVPALDTLVEPSTPTSQVGGPTSTPVQPAPTQY,0.1111111111111111,0,-28.082611083984375
+162,"['V', 'V', 'N', 'I', 'A', 'S', 'Y', 'Q', 'V', 'S', 'P', 'N', 'D', 'V', 'V', 'S', 'I', 'R']",VVNIASYQVSPNDVVSLR,VVNIASYQVSPNDVVSIR,VVNIASYQVSPNDVVSLR,0.9444444444444444,0,-1.0194880962371826
+163,"['Q', 'N', 'V', 'S', 'S', 'V', 'I', 'I', 'D', 'L', 'R']",QNVSSVLLDLR,QNVSSVIIDLR,QNVSSVLLDLR,0.8181818181818182,0,-0.3953625857830047
+164,"['F', 'G', 'G', 'Y', 'A', 'Q', 'S', 'G', 'L', 'L', 'A', 'E', 'I', 'T', 'P', 'D', 'K']",FGGYAQSGLLAELTPDK,FGGYAQSGLLAEITPDK,FGGYAQSGLLAELTPDK,0.9411764705882353,0,-2.013052225112915
+165,"['E', 'V', 'P', 'G', 'V', 'Q', 'L', 'T', 'N', 'E', 'G', 'D', 'N', 'R']",EVPGVQITNEGDNR,EVPGVQLTNEGDNR,EVPGVQITNEGDNR,0.9285714285714286,0,-0.3384478390216827
+166,"['D', 'P', 'L', 'D', 'N', 'T', 'Y', 'T', 'R']",LPLDNTYTR,DPLDNTYTR,LPLDNTYTR,0.8888888888888888,0,-12.366044998168944
+167,"['V', 'A', 'I', 'N', 'E', 'A', 'I', 'E', 'L', 'A', 'K']",GSTAVAAANLNNVNILGR,VAINEAIELAK,GSTAVAAANLNNVNILGR,0.09090909090909091,0,-22.01210021972656
+168,"['F', 'N', 'A', 'I', 'G', 'E', 'A', 'V', 'K']",FNALGEAVK,FNAIGEAVK,FNALGEAVK,0.8888888888888888,0,-0.0221446361392736
+169,"['N', 'G', 'A', 'G', 'I', 'E', 'N', 'Y', 'N', 'F', 'I', 'T', 'T', 'A', 'G', 'L', 'K']",GVAKNGAGYNFLTTAGIK,NGAGIENYNFITTAGLK,GVAKNGAGYNFLTTAGIK,0.11764705882352941,0,-22.392955780029297
+170,"['N', 'Q', 'G', 'T', 'A', 'Q', 'N', 'I', 'Q', 'L', 'E', 'L', 'Q', 'D', 'D', 'S', 'G', 'N', 'T', 'L', 'N', 'T', 'G', 'A', 'T', 'K']",GQELNQSANQLELQLQNTINTGATK,NQGTAQNIQLELQDDSGNTLNTGATK,GQELNQSANQLELQLQNTINTGATK,0.07692307692307693,0,-30.228256225585938
+171,"['A', 'L', 'I', 'A', 'Q', 'E', 'P', 'L', 'L', 'G', 'A', 'K']",ALIAQEPLLGAK,ALIAQEPLLGAK,ALIAQEPLLGAK,1.0,1,-1.429487705230713
+172,"['D', 'Q', 'L', 'I', 'A', 'G', 'V', 'Q', 'D', 'A', 'F', 'A', 'D', 'K']",QLDIAGVQDAFADK,DQLIAGVQDAFADK,QLDIAGVQDAFADK,0.7857142857142857,0,-14.74417495727539
+173,"['T', 'D', 'G', 'D', 'Q', 'V', 'Q', 'I', 'N', 'N', 'V', 'N', 'I', 'L', 'G', 'R']",VTPGIGVQVNNVNIIGR,TDGDQVQINNVNILGR,VTPGIGVQVNNVNIIGR,0.0625,0,-8.634795188903809
+174,"['V', 'A', 'N', 'L', 'G', 'S', 'L', 'G', 'D', 'Q', 'V', 'N', 'V', 'K']",VANLGSLGDQVNVK,VANLGSLGDQVNVK,VANLGSLGDQVNVK,1.0,1,-0.7411442399024963
+175,"['Y', 'A', 'G', 'H', 'T', 'A', 'S', 'D', 'E', 'V', 'F', 'E', 'K']",YAGHATSEDVFEK,YAGHTASDEVFEK,YAGHATSEDVFEK,0.6923076923076923,0,-5.5474348068237305
+176,"['L', 'M', 'D', 'L', 'G', 'C', 'Y', 'R']",LMDLGC[UNIMOD:4]YR,LMDLGCYR,LMDLGCYR,1.0,1,-0.0647091642022132
+177,"['S', 'I', 'V', 'V', 'A', 'I', 'E', 'R']",[UNIMOD:385]DVVVALQR,SIVVAIER,DVVVALQR,0.5,0,-36.36308670043945
+178,"['L', 'Y', 'F', 'E', 'G', 'E', 'L', 'I', 'D', 'A', 'A', 'T', 'N', 'K', 'P', 'V', 'I', 'K']",[UNIMOD:385]ELYFEGELDAATNKPVLK,LYFEGELIDAATNKPVIK,ELYFEGELDAATNKPVLK,0.5,0,-27.434289932250977
+179,"['K', 'G', 'D', 'V', 'I', 'I', 'G', 'A', 'N', 'Q', 'Q', 'A', 'V', 'K']",KGDVILGANQQAVK,KGDVIIGANQQAVK,KGDVILGANQQAVK,0.9285714285714286,0,-1.25835919380188
+180,"['N', 'M', 'A', 'G', 'S', 'L', 'V', 'R']",NMAGSIVR,NMAGSLVR,NMAGSIVR,0.875,0,-0.2704129517078399
+181,"['V', 'L', 'L', 'V', 'G', 'Q', 'S', 'P', 'N', 'A', 'E', 'L', 'S', 'A', 'R']",[UNIMOD:385]TVIVLTSPNAELSAR,VLLVGQSPNAELSAR,TVIVLTSPNAELSAR,0.6666666666666666,0,-31.38191795349121
+182,"['V', 'S', 'Q', 'A', 'L', 'D', 'I', 'L', 'T', 'Y', 'T', 'N', 'K']",VSQALDLITYTNK,VSQALDILTYTNK,VSQALDLITYTNK,0.8461538461538461,0,-0.4679920375347137
+183,"['E', 'Q', 'I', 'I', 'F', 'P', 'E', 'I', 'D', 'Y', 'D', 'K']",EQILFPELDYDK,EQIIFPEIDYDK,EQILFPELDYDK,0.8333333333333334,0,-0.7663918137550354
+184,"['D', 'V', 'V', 'T', 'Q', 'P', 'Q', 'A']",DVVTQPQA,DVVTQPQA,DVVTQPQA,1.0,1,-0.13701231777668
+185,"['T', 'G', 'V', 'S', 'N', 'T', 'L', 'E', 'N', 'E', 'F', 'K']",TGGSDQIENEFK,TGVSNTLENEFK,TGGSDQIENEFK,0.6666666666666666,0,-5.6121320724487305
+186,"['L', 'S', 'D', 'E', 'V', 'T', 'D', 'S', 'P', 'M', 'V', 'D', 'K']",LSDEVTDSPM[UNIMOD:35]VDK,LSDEVTDSPMVDK,LSDEVTDSPMVDK,1.0,1,-0.0445289388298988
+187,"['T', 'V', 'N', 'N', 'D', 'T', 'L', 'T', 'I', 'R']",TVNNDTLTLR,TVNNDTLTIR,TVNNDTLTLR,0.9,0,-0.3877193927764892
+188,"['V', 'Y', 'L', 'Q', 'C', 'F', 'D', 'A', 'D', 'E', 'L', 'K']",VYLQC[UNIMOD:4]FDADELK,VYLQCFDADELK,VYLQCFDADELK,1.0,1,-0.3040086328983307
+189,"['V', 'T', 'V', 'P', 'L', 'F', 'E', 'G', 'V', 'Q', 'K']",VTVPLFEGVQK,VTVPLFEGVQK,VTVPLFEGVQK,1.0,1,-0.0847466513514518
+190,"['E', 'A', 'G', 'V', 'Y', 'M', 'R']",EAGVYMR,EAGVYMR,EAGVYMR,1.0,1,-0.041564829647541
+191,"['D', 'D', 'E', 'V', 'I', 'V', 'L', 'T', 'G', 'K']",DDEVIVLTGK,DDEVIVLTGK,DDEVIVLTGK,1.0,1,-0.0133295729756355
+192,"['T', 'G', 'T', 'P', 'A', 'A', 'Q', 'I', 'G', 'L', 'K']",TGTPAAQLGLK,TGTPAAQIGLK,TGTPAAQLGLK,0.9090909090909091,0,-0.0538035109639167
+193,"['D', 'M', 'T', 'C', 'Q', 'E', 'F', 'I', 'D', 'L', 'N', 'P', 'K']",LTC[UNIMOD:4]QESFFDLNPK,DMTCQEFIDLNPK,LTCQESFFDLNPK,0.46153846153846156,0,-10.278264045715332
+194,"['V', 'S', 'Q', 'A', 'L', 'D', 'I', 'L', 'T', 'Y', 'T', 'N', 'K']",VSQALDLITYTNK,VSQALDILTYTNK,VSQALDLITYTNK,0.8461538461538461,0,-0.5822373628616333
+195,"['T', 'I', 'N', 'D', 'Y', 'G', 'A', 'L', 'T', 'P', 'K']",TINDYGALTPK,TINDYGALTPK,TINDYGALTPK,1.0,1,-0.0739974379539489
+196,"['V', 'A', 'F', 'T', 'A', 'L', 'V', 'E', 'K']",AVFTALVEK,VAFTALVEK,AVFTALVEK,0.7777777777777778,0,-3.777017593383789
+197,"['I', 'A', 'H', 'W', 'V', 'G', 'Q', 'G', 'A', 'T', 'I', 'S', 'D', 'R']",LAHWALVGATISDR,IAHWVGQGATISDR,LAHWALVGATISDR,0.7142857142857143,0,-9.336623191833496
+198,"['Q', 'D', 'L', 'Q', 'A', 'L', 'L', 'G', 'K']",LLNLEQAGK,QDLQALLGK,LLNLEQAGK,0.2222222222222222,0,-0.1130867153406143
+199,"['A', 'E', 'A', 'A', 'P', 'A', 'A', 'T', 'G', 'G', 'G', 'I', 'P', 'G', 'M', 'L', 'P', 'W', 'P', 'K']",AEAAPAAPAATPGMLPWPK,AEAAPAATGGGIPGMLPWPK,AEAAPAAPAATPGMLPWPK,0.35,0,-6.287688732147217
+200,"['V', 'A', 'F', 'T', 'A', 'L', 'V', 'E', 'K']",VAFTALVEK,VAFTALVEK,VAFTALVEK,1.0,1,-0.4871017932891845
+201,"['K', 'G', 'D', 'V', 'I', 'I', 'G', 'A', 'N', 'Q', 'Q', 'A', 'V', 'K']",GKGDVILANQQAVK,KGDVIIGANQQAVK,GKGDVILANQQAVK,0.5714285714285714,0,-19.509445190429688
+202,"['A', 'G', 'V', 'N', 'G', 'L', 'F', 'T', 'D', 'F', 'P', 'D', 'K']",AGVGNLFTDFPDK,AGVNGLFTDFPDK,AGVGNLFTDFPDK,0.8461538461538461,0,-2.176074504852295
+203,"['I', 'Q', 'L', 'G', 'P', 'F', 'A', 'S', 'K']",IDALYLPR,IQLGPFASK,IDALYLPR,0.1111111111111111,0,-0.7963197827339172
+204,"['V', 'Y', 'L', 'Q', 'C', 'F', 'D', 'A', 'D', 'E', 'L', 'K']",VYIQC[UNIMOD:4]FDADELK,VYLQCFDADELK,VYIQCFDADELK,0.9166666666666666,0,-4.06654167175293
+205,"['N', 'A', 'P', 'P', 'P', 'T', 'K', 'P', 'V', 'E', 'T', 'Q', 'T', 'Q', 'S', 'T', 'V', 'P', 'D', 'K']",NAPPPTKPVETQTQTSVPDK,NAPPPTKPVETQTQSTVPDK,NAPPPTKPVETQTQTSVPDK,0.9,0,-3.724591255187988
+206,"['S', 'L', 'S', 'T', 'E', 'A', 'T', 'A', 'K']",VSTEVATAK,SLSTEATAK,VSTEVATAK,0.4444444444444444,0,-9.075451850891112
+207,"['T', 'S', 'H', 'I', 'T', 'V', 'V', 'V', 'S', 'D', 'R']",TSHLTVVVSDR,TSHITVVVSDR,TSHLTVVVSDR,0.9090909090909091,0,-0.9823261499404908
+208,"['I', 'A', 'H', 'W', 'V', 'G', 'Q', 'G', 'A', 'T', 'I', 'S', 'D', 'R']",[UNIMOD:5]SVSVSDTLR,IAHWVGQGATISDR,SVSVSDTLR,0.0,0,-19.12789535522461
+209,"['G', 'Q', 'H', 'F', 'D', 'I', 'Y', 'Q', 'G', 'I', 'G', 'P', 'E', 'A', 'G', 'H', 'R']",QGLGQHFDLYGPEAGHR,GQHFDIYQGIGPEAGHR,QGLGQHFDLYGPEAGHR,0.4117647058823529,0,-6.655642509460449
+210,"['A', 'L', 'D', 'I', 'R', 'P', 'P', 'A', 'Q', 'P', 'L', 'A', 'L', 'V', 'S', 'G', 'A', 'R']",ALDLRPPAQPLALVSQR,ALDIRPPAQPLALVSGAR,ALDLRPPAQPLALVSQR,0.7777777777777778,0,-1.1433486938476562
+211,"['N', 'K', 'P', 'G', 'V', 'Y', 'T', 'K']",NKPGVYTK,NKPGVYTK,NKPGVYTK,1.0,1,-0.0046339044347405
+212,"['V', 'I', 'E', 'L', 'Q', 'G', 'I', 'A', 'G', 'T', 'S', 'A', 'A', 'R']",VLELQGLAGTSAAR,VIELQGIAGTSAAR,VLELQGLAGTSAAR,0.8571428571428571,0,-0.6736297607421875
+213,"['V', 'D', 'D', 'Y', 'I', 'I', 'K']",VDDYLLK,VDDYIIK,VDDYLLK,0.7142857142857143,0,-3.1211912631988525
+214,"['S', 'D', 'V', 'M', 'V', 'V', 'G', 'F', 'D', 'G', 'T', 'P', 'D', 'G', 'E', 'K']",ASTSSVLGFDSAPDGEK,SDVMVVGFDGTPDGEK,ASTSSVLGFDSAPDGEK,0.0625,0,-8.642736434936523
+215,"['Y', 'T', 'N', 'G', 'G', 'L', 'T', 'V', 'T', 'P', 'G', 'I', 'G', 'V', 'Q', 'W', 'N', 'S', 'E', 'N', 'Q', 'N', 'E', 'Y', 'Y', 'Y', 'G', 'V', 'S', 'R']",GIGVQNSLWTPGIGVQNSENQNEYYYGVSR,YTNGGLTVTPGIGVQWNSENQNEYYYGVSR,GIGVQNSLWTPGIGVQNSENQNEYYYGVSR,0.4666666666666667,0,-13.905169486999512
+216,"['S', 'T', 'V', 'L', 'A', 'P', 'T', 'T', 'V', 'V', 'T', 'R']",FFATGAYPMREDSTFK,STVLAPTTVVTR,FFATGAYPMREDSTFK,0.0,0,-16.201019287109375
+217,"['S', 'W', 'T', 'G', 'L', 'I', 'S', 'T', 'G', 'I', 'T', 'Y', 'K']",SWTGILSTGLTYK,SWTGLISTGITYK,SWTGILSTGLTYK,0.7692307692307693,0,-1.7106825113296509
+218,"['N', 'L', 'N', 'G', 'Q', 'N', 'G', 'T', 'I', 'S', 'L', 'R']",NLDGQNTAVSLR,NLNGQNGTISLR,NLDGQNTAVSLR,0.6666666666666666,0,-3.220871686935425
+219,"['Q', 'S', 'G', 'F', 'L', 'D', 'P', 'V', 'N', 'Y', 'R']",DALPLMEANYR,QSGFLDPVNYR,DALPLMEANYR,0.36363636363636365,0,-4.5878376960754395
+220,"['V', 'D', 'R', 'P', 'T', 'A', 'E', 'C', 'A', 'A', 'A', 'L', 'D', 'K']",VRDTPAEC[UNIMOD:4]AAALDK,VDRPTAECAAALDK,VRDTPAECAAALDK,0.7142857142857143,0,-1.4070920944213867
+221,"['E', 'E', 'V', 'P', 'D', 'N', 'P', 'P', 'N', 'E', 'I', 'Y', 'A', 'T', 'A', 'Q', 'Q', 'K']",[UNIMOD:385]EEDPDNPPNELYATAQQK,EEVPDNPPNEIYATAQQK,EEDPDNPPNELYATAQQK,0.8888888888888888,0,-16.14114761352539
+222,"['S', 'G', 'E', 'G', 'L', 'Y', 'F', 'I', 'D', 'K']",SGEGLYFIDK,SGEGLYFIDK,SGEGLYFIDK,1.0,1,-0.0744467601180076
+223,"['Y', 'D', 'S', 'S', 'A', 'T', 'L', 'D', 'E', 'M', 'K']",GTYDETADEMK,YDSSATLDEMK,GTYDETADEMK,0.45454545454545453,0,-14.639836311340332
+224,"['T', 'I', 'V', 'S', 'D', 'G', 'K', 'P', 'Q', 'T', 'D', 'N', 'D', 'T', 'G', 'M', 'I', 'S', 'Y', 'K']",GIETAVAVGKPDVGDEYQAPK,TIVSDGKPQTDNDTGMISYK,GIETAVAVGKPDVGDEYQAPK,0.05,0,-4.998814582824707
+225,"['V', 'T', 'L', 'D', 'P', 'L', 'R']",PSLDLLR,VTLDPLR,PSLDLLR,0.5714285714285714,0,-0.3204845786094665
+226,"['F', 'G', 'Q', 'G', 'E', 'A', 'A', 'P', 'V', 'V', 'A', 'P', 'A', 'P', 'A', 'P', 'A', 'P', 'E', 'V', 'Q', 'T', 'K']",VAGAFGQEAPVPAPAPAPEVQTK,FGQGEAAPVVAPAPAPAPEVQTK,VAGAFGQEAPVPAPAPAPEVQTK,0.5217391304347826,0,-16.080862045288086
+227,"['D', 'I', 'Y', 'P', 'I', 'S', 'A', 'K']",DIYPISAK,DIYPISAK,DIYPISAK,1.0,1,-0.4007211625576019
+228,"['T', 'I', 'V', 'S', 'D', 'G', 'K', 'P', 'Q', 'T', 'D', 'N', 'D', 'T', 'G', 'M', 'I', 'S', 'Y', 'K']",TIVSDGKPQTDNDTGMLSYK,TIVSDGKPQTDNDTGMISYK,TIVSDGKPQTDNDTGMLSYK,0.95,0,-0.4618851840496063
+229,"['F', 'W', 'V', 'E', 'S', 'E', 'K']",FWVESEK,FWVESEK,FWVESEK,1.0,1,-0.0041747791692614
+230,"['L', 'V', 'I', 'E', 'S', 'G', 'D', 'S', 'A', 'Q', 'S', 'R']",LVIESGDSAQSR,LVIESGDSAQSR,LVIESGDSAQSR,1.0,1,-3.105796813964844
+231,"['G', 'T', 'N', 'T', 'V', 'I', 'V', 'L', 'P', 'I', 'G', 'I', 'G', 'Q', 'L', 'G', 'K']",LVGTNTVLPLGLGQLGK,GTNTVIVLPIGIGQLGK,LVGTNTVLPLGLGQLGK,0.5882352941176471,0,-14.130264282226562
+232,"['L', 'I', 'G', 'S', 'D', 'D', 'Q', 'S', 'D', 'I', 'A', 'L', 'L', 'Q', 'I', 'Q', 'N', 'P', 'S', 'K']",GSDDGSDDSGLAILQIQNPSK,LIGSDDQSDIALLQIQNPSK,GSDDGSDDSGLAILQIQNPSK,0.0,0,-11.024152755737305
+233,"['R', 'D', 'D', 'E', 'V', 'I', 'V', 'L', 'T', 'G', 'K']",DRDEVLVLTGK,RDDEVIVLTGK,DRDEVLVLTGK,0.7272727272727273,0,-1.6471775770187378
+234,"['D', 'Q', 'F', 'V', 'Q', 'P', 'V', 'V', 'K']",DQFVQPVVK,DQFVQPVVK,DQFVQPVVK,1.0,1,-0.0027019251137971
+235,"['K', 'D', 'D', 'G', 'N', 'T', 'I', 'M', 'V', 'V', 'Q', 'K']",KDDGNTIMVVQK,KDDGNTIMVVQK,KDDGNTIMVVQK,1.0,1,-0.1956640183925628
+236,"['Y', 'S', 'G', 'F', 'L', 'N', 'N', 'Y', 'S', 'D', 'L', 'K']",YSGLINNYSDLK,YSGFLNNYSDLK,YSGLINNYSDLK,0.8333333333333334,0,-5.378366947174072
+237,"['G', 'N', 'E', 'S', 'I', 'Y', 'L', 'L', 'M', 'R']",ENLNIDGSHLYLLMR,GNESIYLLMR,ENLNIDGSHLYLLMR,0.2,0,-15.47377872467041
+238,"['D', 'M', 'T', 'C', 'Q', 'E', 'F', 'I', 'D', 'L', 'N', 'P', 'K']",DM[UNIMOD:35]TC[UNIMOD:4]QEFLDLNPK,DMTCQEFIDLNPK,DMTCQEFLDLNPK,0.9230769230769231,0,-0.3047026395797729
+239,"['V', 'A', 'Q', 'E', 'M', 'Q', 'K']",VAQEMQK,VAQEMQK,VAQEMQK,1.0,1,-4.938623428344727
+240,"['Y', 'D', 'S', 'S', 'A', 'T', 'L', 'D', 'E', 'M', 'K']",YDPSQTYVEDGYDQR,YDSSATLDEMK,YDPSQTYVEDGYDQR,0.45454545454545453,0,-2.6858277320861816
+241,"['V', 'S', 'Q', 'A', 'L', 'D', 'I', 'L', 'T', 'Y', 'T', 'N', 'K']",VSQALDLITYTNK,VSQALDILTYTNK,VSQALDLITYTNK,0.8461538461538461,0,-0.7272558212280273
+242,"['A', 'E', 'E', 'A', 'G', 'V', 'D', 'L', 'V', 'E', 'I', 'S', 'P', 'N', 'A', 'E', 'P', 'P', 'V', 'C', 'R']",AEEAGVDLVELSPNAEPPVC[UNIMOD:4]R,AEEAGVDLVEISPNAEPPVCR,AEEAGVDLVELSPNAEPPVCR,0.9523809523809523,0,-1.3513529300689695
+243,"['I', 'L', 'A', 'D', 'I', 'A', 'V', 'F', 'D', 'K']",LLADLAVFDK,ILADIAVFDK,LLADLAVFDK,0.8,0,-0.2373759746551513
+244,"['S', 'A', 'Q', 'G', 'T', 'A', 'G', 'P', 'D', 'F', 'R']",[UNIMOD:385]SATTQAPSTMK,SAQGTAGPDFR,SATTQAPSTMK,0.2727272727272727,0,-25.239164352416992
+245,"['L', 'T', 'N', 'T', 'D', 'L', 'S', 'F', 'G', 'P', 'F', 'K']",LTNTDISFGPFK,LTNTDLSFGPFK,LTNTDISFGPFK,0.9166666666666666,0,-1.0511983633041382
+246,"['K', 'V', 'P', 'Q', 'V', 'S', 'T', 'P', 'T', 'L', 'V', 'E', 'V', 'S', 'R']",[UNIMOD:385]QVPQVSTTVPEEIAR,KVPQVSTPTLVEVSR,QVPQVSTTVPEEIAR,0.5333333333333333,0,-31.63568115234375
+247,"['A', 'V', 'L', 'E', 'V', 'A', 'G', 'V', 'H', 'N', 'V', 'L', 'A', 'K']",AVLEVAGVHNVLAK,AVLEVAGVHNVLAK,AVLEVAGVHNVLAK,1.0,1,-0.0955845713615417
+248,"['I', 'L', 'L', 'I', 'N', 'P', 'T', 'D', 'S', 'D', 'A', 'V', 'G', 'N', 'A', 'V', 'K']",IILLNPTDSDAVGNAVK,ILLINPTDSDAVGNAVK,IILLNPTDSDAVGNAVK,0.8823529411764706,0,-0.3809432685375213
+249,"['S', 'T', 'E', 'T', 'N', 'P', 'L', 'Y', 'W', 'L', 'R']",STETNPIYWLR,STETNPLYWLR,STETNPIYWLR,0.9090909090909091,0,-0.1740967035293579
+250,"['A', 'A', 'V', 'E', 'E', 'G', 'V', 'V', 'A', 'G', 'G', 'G', 'V', 'A', 'L', 'I', 'R']",AAVEEGVVAGAAAALLR,AAVEEGVVAGGGVALIR,AAVEEGVVAGAAAALLR,0.7647058823529411,0,-0.9121488332748412
+251,"['L', 'P', 'I', 'V', 'V', 'Y', 'T', 'P', 'D', 'N', 'V', 'D', 'V', 'K']",[UNIMOD:385]VLVVDNYPDNVDVK,LPIVVYTPDNVDVK,VLVVDNYPDNVDVK,0.5714285714285714,0,-26.63251495361328
+252,"['L', 'T', 'L', 'M', 'S', 'D', 'D', 'L', 'T', 'N', 'V', 'T', 'V', 'K']",LTLM[UNIMOD:35]SDDLTNVTVK,LTLMSDDLTNVTVK,LTLMSDDLTNVTVK,1.0,1,-0.4014274179935455
+253,"['S', 'V', 'D', 'V', 'G', 'T', 'W', 'I', 'A', 'G', 'V', 'G', 'Y', 'R']",SVDVGTWLAGVGYR,SVDVGTWIAGVGYR,SVDVGTWLAGVGYR,0.9285714285714286,0,-0.1378629356622696
+254,"['E', 'F', 'I', 'D', 'S', 'S', 'Q', 'P', 'P', 'L', 'S', 'E', 'V', 'N', 'Q', 'E', 'K']",GAFLDSSEPPLSEVNQEK,EFIDSSQPPLSEVNQEK,GAFLDSSEPPLSEVNQEK,0.11764705882352941,0,-24.297080993652344
+255,"['A', 'V', 'A', 'A', 'V', 'N', 'G', 'P', 'I', 'A', 'Q', 'A', 'L', 'I', 'G', 'K']",[UNIMOD:385]GAAGAAVAAAVLGAAALGK,AVAAVNGPIAQALIGK,GAAGAAVAAAVLGAAALGK,0.125,0,-43.55839920043945
+256,"['S', 'G', 'N', 'A', 'N', 'T', 'D', 'Y', 'N', 'A', 'A', 'I', 'A', 'L', 'V', 'Q', 'D', 'K']",SGQDTSGNANAAIALVQDK,SGNANTDYNAAIALVQDK,SGQDTSGNANAAIALVQDK,0.16666666666666666,0,-19.763774871826172
+257,"['Q', 'A', 'I', 'T', 'Q', 'L', 'E', 'A', 'L', 'D', 'N', 'R']",VVVTQLEALDNR,QAITQLEALDNR,VVVTQLEALDNR,0.75,0,-7.050718307495117
+258,"['Q', 'G', 'E', 'F', 'Q', 'Y', 'P', 'I', 'Y', 'R']",QGEFQYPIYR,QGEFQYPIYR,QGEFQYPIYR,1.0,1,-0.7173354625701904
+259,"['N', 'D', 'T', 'Y', 'L', 'E', 'Y', 'E', 'A', 'F', 'A', 'K']",NDTYLEYEAFAK,NDTYLEYEAFAK,NDTYLEYEAFAK,1.0,1,-0.0691713094711303
+260,"['N', 'A', 'I', 'P', 'S', 'G', 'I', 'P', 'D', 'E', 'S', 'V', 'P', 'L', 'Y', 'L', 'Q', 'R']",NALPSGLPDESVPLYLQR,NAIPSGIPDESVPLYLQR,NALPSGLPDESVPLYLQR,0.8888888888888888,0,-1.7052688598632812
+261,"['R', 'P', 'D', 'G', 'S', 'V', 'I', 'R']",PDSGVIFR,RPDGSVIR,PDSGVIFR,0.25,0,-21.980234146118164
+262,"['M', 'Q', 'Q', 'L', 'D', 'S', 'I', 'I', 'S', 'A', 'K']",[UNIMOD:385]AAEAERMQQLDSLLSAK,MQQLDSIISAK,AAEAERMQQLDSLLSAK,0.0,0,-22.60689163208008
+263,"['N', 'L', 'T', 'S', 'Q', 'M', 'V', 'E', 'Y', 'G', 'Q', 'V', 'K']",NLEYGQVK,NLTSQMVEYGQVK,NLEYGQVK,0.23076923076923078,0,-2.6488072872161865
+264,"['V', 'V', 'L', 'A', 'S', 'N', 'G', 'S', 'Q', 'V', 'T', 'V', 'S', 'P', 'R']",VVLASNGSQVTVSPR,VVLASNGSQVTVSPR,VVLASNGSQVTVSPR,1.0,1,-0.0636170804500579
+265,"['V', 'V', 'Y', 'R', 'P', 'D', 'I', 'N', 'Q', 'G', 'N', 'Y', 'L', 'T', 'A', 'N', 'D', 'V', 'S', 'K']",GYTANDVVANLEAQISRPDSK,VVYRPDINQGNYLTANDVSK,GYTANDVVANLEAQISRPDSK,0.05,0,-19.7556209564209
+266,"['N', 'Y', 'I', 'T', 'E', 'S', 'G', 'K']",NYLTESGK,NYITESGK,NYLTESGK,0.875,0,-3.702744245529175
+267,"['S', 'L', 'D', 'L', 'D', 'S', 'I', 'I', 'A', 'E', 'V', 'K']",SLDLDSIIAEVK,SLDLDSIIAEVK,SLDLDSIIAEVK,1.0,1,-0.587660014629364
+268,"['M', 'Q', 'A', 'A', 'S', 'G', 'Q', 'L', 'Q', 'Q', 'S', 'H', 'L', 'L', 'K']",MQAASGQLQQSHIIK,MQAASGQLQQSHLLK,MQAASGQLQQSHIIK,0.8666666666666667,0,-0.2242899239063263
+269,"['N', 'L', 'T', 'S', 'Q', 'M', 'V', 'E', 'Y', 'G', 'Q', 'V', 'K']",NLTSQMVEYGQVK,NLTSQMVEYGQVK,NLTSQMVEYGQVK,1.0,1,-0.0101363360881805
+270,"['Q', 'I', 'V', 'L', 'N', 'C', 'G', 'E', 'E', 'P', 'S', 'V', 'V', 'A', 'N', 'T', 'V', 'K']",QIVVNC[UNIMOD:4]GEEPSVVANTVK,QIVLNCGEEPSVVANTVK,QIVVNCGEEPSVVANTVK,0.9444444444444444,0,-2.812889575958252
+271,"['D', 'G', 'A', 'Y', 'D', 'L', 'V', 'V', 'P', 'S', 'T', 'Y', 'Y', 'V', 'D', 'K']",[UNIMOD:385]DDGAYDLVPSTYYVDK,DGAYDLVVPSTYYVDK,DDGAYDLVPSTYYVDK,0.625,0,-27.779569625854492
+272,"['I', 'G', 'S', 'D', 'A', 'Y', 'N', 'Q', 'G', 'L', 'S', 'E', 'R']",STAALSTSVSNEYNQGLSER,IGSDAYNQGLSER,STAALSTSVSNEYNQGLSER,0.07692307692307693,0,-20.91297149658203
+273,"['A', 'N', 'L', 'T', 'A', 'Q', 'I', 'N', 'K']",ANITAQLNK,ANLTAQINK,ANITAQLNK,0.7777777777777778,0,-2.39658784866333
+274,"['A', 'V', 'I', 'V', 'I', 'M', 'G', 'D', 'D', 'P', 'K']",AVLVLMGDDPK,AVIVIMGDDPK,AVLVLMGDDPK,0.8181818181818182,0,-0.5945389866828918
+275,"['S', 'I', 'L', 'S', 'E', 'L', 'V', 'R']",SILSELVR,SILSELVR,SILSELVR,1.0,1,-0.3101150393486023
+276,"['A', 'P', 'V', 'V', 'V', 'P', 'A', 'G', 'V', 'D', 'V', 'K']",VAPVVPAGVDVK,APVVVPAGVDVK,VAPVVPAGVDVK,0.75,0,-12.153100967407228
+277,"['Y', 'T', 'A', 'A', 'I', 'T', 'G', 'A', 'E', 'G', 'K']",YTAAITGAEGK,YTAAITGAEGK,YTAAITGAEGK,1.0,1,-0.1166767328977584
+278,"['V', 'E', 'G', 'D', 'T', 'K', 'P', 'E', 'L', 'E', 'L', 'T', 'L', 'K']",GLDITKPEIEITLK,VEGDTKPELELTLK,GLDITKPEIEITLK,0.5714285714285714,0,-15.36362648010254
+279,"['I', 'N', 'L', 'L', 'D', 'D', 'N', 'Q', 'F', 'T', 'R']",INLLDDNQFTR,INLLDDNQFTR,INLLDDNQFTR,1.0,1,-0.4927231669425964
+280,"['S', 'G', 'P', 'C', 'V', 'E', 'G', 'G', 'P', 'D', 'N', 'V', 'A', 'Q', 'Q', 'F', 'Y', 'D', 'Y', 'R']",GEIPDPC[UNIMOD:4]GSQQAQQFYDYR,SGPCVEGGPDNVAQQFYDYR,GEIPDPCGSQQAQQFYDYR,0.1,0,-18.161314010620117
+281,"['N', 'A', 'D', 'L', 'P', 'L', 'A', 'Q', 'A', 'A', 'I', 'D', 'R']",NADLPLAQAALDR,NADLPLAQAAIDR,NADLPLAQAALDR,0.9230769230769231,0,-0.6201924085617065
+282,"['L', 'Q', 'L', 'T', 'D', 'S', 'Y', 'Q', 'L', 'L', 'E', 'K']",LQLTDSYQLLEK,LQLTDSYQLLEK,LQLTDSYQLLEK,1.0,1,-2.457451105117798
+283,"['K', 'V', 'P', 'Q', 'V', 'S', 'T', 'P', 'T', 'L', 'V', 'E', 'V', 'S', 'R']",KVPQVSTPTLVEVSR,KVPQVSTPTLVEVSR,KVPQVSTPTLVEVSR,1.0,1,-0.1153435036540031
+284,"['S', 'I', 'V', 'V', 'A', 'I', 'E', 'R']",SIVVAIER,SIVVAIER,SIVVAIER,1.0,1,-1.143999695777893
+285,"['A', 'Q', 'Y', 'D', 'T', 'V', 'L', 'A', 'N', 'E', 'V', 'T', 'A', 'R']",AQAQQFLANEVTAR,AQYDTVLANEVTAR,AQAQQFLANEVTAR,0.7142857142857143,0,-8.922266960144043
+286,"['Q', 'G', 'V', 'D', 'A', 'D', 'I', 'N', 'G', 'L', 'R']",[UNIMOD:385]QGVEADINGLR,QGVDADINGLR,QGVEADINGLR,0.9090909090909091,0,-12.376530647277832
+287,"['E', 'V', 'P', 'A', 'A', 'I', 'Q', 'K']",EVPAAIQK,EVPAAIQK,EVPAAIQK,1.0,1,-0.1559295654296875
+288,"['E', 'A', 'G', 'V', 'Y', 'M', 'R']",EAGVYMR,EAGVYMR,EAGVYMR,1.0,1,-0.0141461351886391
+289,"['S', 'D', 'E', 'E', 'Q', 'T', 'S', 'T', 'T', 'T', 'D', 'T', 'P', 'A', 'T', 'P', 'A', 'R']",[UNIMOD:385]GASTTSTTSTTTDTPATPAR,SDEEQTSTTTDTPATPAR,GASTTSTTSTTTDTPATPAR,0.16666666666666666,0,-20.352113723754883
+290,"['N', 'I', 'G', 'I', 'Y', 'P', 'E', 'I', 'K']",NIGIYPEIK,NIGIYPEIK,NIGIYPEIK,1.0,1,-0.0267965979874134
+291,"['A', 'Q', 'Q', 'Y', 'Q', 'Q', 'Q', 'L', 'G', 'Q', 'K']",AQQYQQQLGQK,AQQYQQQLGQK,AQQYQQQLGQK,1.0,1,-1.1685248613357544
+292,"['E', 'F', 'Y', 'E', 'K', 'P', 'T', 'T', 'E', 'R']",EFYEKGQPSSK,EFYEKPTTER,EFYEKGQPSSK,0.5,0,-0.2337680011987686
+293,"['A', 'L', 'V', 'S', 'P', 'E', 'A', 'I', 'G', 'S', 'L', 'I', 'V', 'T', 'K']",ALVSPEALGSLIVTK,ALVSPEAIGSLIVTK,ALVSPEALGSLIVTK,0.9333333333333333,0,-0.864969789981842
+294,"['L', 'V', 'A', 'D', 'L', 'I', 'R']",LVADLIR,LVADLIR,LVADLIR,1.0,1,-0.8994892835617065
+295,"['I', 'Y', 'A', 'D', 'V', 'N', 'G', 'F', 'L', 'D', 'P', 'V', 'D', 'F', 'R']",YIYNGEYADPVDFR,IYADVNGFLDPVDFR,YIYNGEYADPVDFR,0.0,0,-14.016677856445312
+296,"['W', 'T', 'L', 'E', 'G', 'I', 'E', 'T', 'R']",WTLEGIETR,WTLEGIETR,WTLEGIETR,1.0,1,-0.1154612675309181
+297,"['N', 'D', 'T', 'Y', 'L', 'E', 'Y', 'E', 'A', 'F', 'A', 'K']",NDTYLEYEAFAK,NDTYLEYEAFAK,NDTYLEYEAFAK,1.0,1,-0.0553970746695995
+298,"['Q', 'L', 'D', 'Q', 'T', 'T', 'Q', 'R']",QLDQTTQR,QLDQTTQR,QLDQTTQR,1.0,1,-0.0153473233804106
+299,"['F', 'E', 'N', 'M', 'G', 'A', 'Q', 'M', 'V', 'K']",FENMGAQMVK,FENMGAQMVK,FENMGAQMVK,1.0,1,-0.0242201965302228
+300,"['I', 'F', 'S', 'S', 'A', 'A', 'Y', 'N', 'A', 'G', 'P', 'G', 'R']",LFSSAAYNAGPGR,IFSSAAYNAGPGR,LFSSAAYNAGPGR,0.9230769230769231,0,-0.2638799250125885
+301,"['V', 'E', 'D', 'A', 'L', 'H', 'A', 'T', 'R']",[UNIMOD:385]LENAIHATR,VEDALHATR,LENAIHATR,0.6666666666666666,0,-17.699386596679688
+302,"['V', 'A', 'F', 'Q', 'A', 'V', 'I', 'K']",VAFQAVLK,VAFQAVIK,VAFQAVLK,0.875,0,-0.0702259466052055
+303,"['S', 'T', 'E', 'T', 'N', 'P', 'L', 'Y', 'W', 'L', 'R']",STETNPLYWLR,STETNPLYWLR,STETNPLYWLR,1.0,1,-0.3382771909236908
+304,"['F', 'L', 'A', 'D', 'D', 'P', 'Q', 'A', 'V', 'A', 'D', 'L', 'S', 'R']",FLDADPQAVADLSR,FLADDPQAVADLSR,FLDADPQAVADLSR,0.8571428571428571,0,-0.7773906588554382
+305,"['T', 'G', 'Q', 'A', 'V', 'E', 'L', 'F', 'N', 'Q', 'L', 'P', 'Q', 'E', 'L', 'N', 'D', 'A', 'Q', 'R']",TGQAVELFNQIPQELNDAQR,TGQAVELFNQLPQELNDAQR,TGQAVELFNQIPQELNDAQR,0.95,0,-1.7041975259780884
+306,"['N', 'I', 'G', 'I', 'Y', 'P', 'E', 'I', 'K']",NIGIYPEIK,NIGIYPEIK,NIGIYPEIK,1.0,1,-0.0235498361289501
+307,"['S', 'A', 'L', 'V', 'I', 'Q', 'T', 'L', 'A', 'N', 'G', 'A', 'V', 'R']",MTMNPVTGLVLQGQLAREK,SALVIQTLANGAVR,MTMNPVTGLVLQGQLAREK,0.07142857142857142,0,-14.509056091308594
+308,"['L', 'A', 'L', 'D', 'L', 'L', 'E', 'Q', 'I', 'K']",LALDLLEQLK,LALDLLEQIK,LALDLLEQLK,0.9,0,-0.9561089277267456
+309,"['N', 'Q', 'Y', 'Y', 'G', 'I', 'T', 'A', 'G', 'P', 'A', 'Y', 'R']",NQYYGLTAGPAYR,NQYYGITAGPAYR,NQYYGLTAGPAYR,0.9230769230769231,0,-0.0329112783074379
+310,"['V', 'D', 'G', 'L', 'H', 'Y', 'F', 'S', 'D', 'N', 'K']",AVPADFNGSGFGR,VDGLHYFSDNK,AVPADFNGSGFGR,0.0,0,-2.105945587158203
+311,"['I', 'L', 'N', 'Y', 'T', 'N', 'T', 'E', 'M', 'K']",ILNYTNTEMK,ILNYTNTEMK,ILNYTNTEMK,1.0,1,-0.1119394302368164
+312,"['I', 'V', 'E', 'L', 'E', 'A', 'P', 'Q', 'L', 'P', 'R']",LVELEAPQLPR,IVELEAPQLPR,LVELEAPQLPR,0.9090909090909091,0,-1.7993454933166504
+313,"['T', 'Q', 'G', 'L', 'G', 'P', 'A', 'N', 'P', 'I', 'A', 'S', 'N', 'S', 'T', 'A', 'E', 'G', 'K']",TQGAVMSTAEGK,TQGLGPANPIASNSTAEGK,TQGAVMSTAEGK,0.15789473684210525,0,-3.752019166946411
+314,"['D', 'I', 'T', 'A', 'D', 'V', 'L', 'K']",DITADVLK,DITADVLK,DITADVLK,1.0,1,-0.3955049216747284
+315,"['G', 'I', 'W', 'N', 'H', 'G', 'S', 'P', 'L', 'F', 'M', 'E', 'I', 'E', 'P', 'R']",DLNQHGSPLFMELEPR,GIWNHGSPLFMEIEPR,DLNQHGSPLFMELEPR,0.6875,0,-4.277309894561768
+316,"['F', 'V', 'L', 'E', 'S', 'V', 'N', 'G', 'K', 'P', 'V', 'T', 'S', 'D', 'K']",FVLESVNGKPVTSDK,FVLESVNGKPVTSDK,FVLESVNGKPVTSDK,1.0,1,-2.064136505126953
+317,"['I', 'E', 'P', 'G', 'E', 'L', 'Y', 'N', 'G', 'T', 'K']",IEPGELYNGTK,IEPGELYNGTK,IEPGELYNGTK,1.0,1,-0.6101745367050171
+318,"['S', 'L', 'A', 'T', 'A', 'A', 'G', 'A', 'V', 'A', 'G', 'G', 'V', 'A', 'G', 'Q', 'G', 'V', 'Q', 'S', 'A', 'M', 'N', 'K']",[UNIMOD:1]GAAGAAGSLGAGAAAGGAGVQSAM[UNIMOD:35]NK,SLATAAGAVAGGVAGQGVQSAMNK,GAAGAAGSLGAGAAAGGAGVQSAMNK,0.2916666666666667,0,-35.29920196533203
+319,"['L', 'V', 'A', 'D', 'S', 'I', 'T', 'S', 'Q', 'L', 'E', 'R']",LVADSLTSQLER,LVADSITSQLER,LVADSLTSQLER,0.9166666666666666,0,-0.616448163986206
+320,"['A', 'A', 'V', 'T', 'M', 'P', 'S', 'S', 'K']",AAVTMPSSK,AAVTMPSSK,AAVTMPSSK,1.0,1,-0.0322841554880142
+321,"['Y', 'I', 'E', 'V', 'H', 'N', 'P', 'L', 'S', 'T', 'T', 'E', 'A', 'Q', 'F', 'E', 'G', 'Q', 'E', 'I', 'V', 'P', 'I', 'T', 'L', 'T', 'K']",[UNIMOD:385]TSPLTPKIYEVHNPLTTVNAQVPLTLTK,YIEVHNPLSTTEAQFEGQEIVPITLTK,TSPLTPKIYEVHNPLTTVNAQVPLTLTK,0.0,0,-42.188533782958984
+322,"['D', 'A', 'Q', 'S', 'A', 'L', 'T', 'V', 'S', 'E', 'T', 'T', 'F', 'G', 'R']",DAQSALTVSETTFGR,DAQSALTVSETTFGR,DAQSALTVSETTFGR,1.0,1,-0.3957160115242004
+323,"['T', 'Q', 'G', 'L', 'G', 'P', 'A', 'N', 'P', 'I', 'A', 'S', 'N', 'S', 'T', 'A', 'E', 'G', 'K']",TQGPGPQGPLAAC[UNIMOD:4]ATAEGK,TQGLGPANPIASNSTAEGK,TQGPGPQGPLAACATAEGK,0.631578947368421,0,-7.505476474761963
+324,"['I', 'V', 'Q', 'V', 'P', 'F', 'A', 'E', 'L', 'V', 'K']",LVQVPFAEIVK,IVQVPFAELVK,LVQVPFAEIVK,0.8181818181818182,0,-0.3739369511604309
+325,"['S', 'L', 'E', 'Q', 'Y', 'F', 'G', 'R']",SLEQYFGR,SLEQYFGR,SLEQYFGR,1.0,1,-0.122597336769104
+326,"['S', 'G', 'E', 'T', 'E', 'D', 'A', 'T', 'I', 'A', 'D', 'L', 'A', 'V', 'G', 'T', 'A', 'A', 'G', 'Q', 'I', 'K']",SGETEDAVIADLAVGTAAGQLK,SGETEDATIADLAVGTAAGQIK,SGETEDAVIADLAVGTAAGQLK,0.9090909090909091,0,-2.0105886459350586
+327,"['T', 'G', 'D', 'T', 'V', 'N', 'D', 'E', 'D', 'I', 'S', 'N', 'T', 'I', 'R']",TGDTVNDEDLSSQLR,TGDTVNDEDISNTIR,TGDTVNDEDLSSQLR,0.7333333333333333,0,-0.4357642531394958
+328,"['F', 'N', 'S', 'S', 'L', 'S', 'E', 'D', 'G', 'Q', 'R']",FNSSLSEDGQR,FNSSLSEDGQR,FNSSLSEDGQR,1.0,1,-0.2902423441410064
+329,"['N', 'Y', 'T', 'I', 'T', 'Q', 'R']",NYTLTQR,NYTITQR,NYTLTQR,0.8571428571428571,0,-0.2845596373081207
+330,"['E', 'L', 'A', 'N', 'V', 'Q', 'D', 'L', 'T', 'V', 'R']",ELANVQDLTVR,ELANVQDLTVR,ELANVQDLTVR,1.0,1,-0.4230048060417175
+331,"['I', 'P', 'L', 'D', 'A', 'D', 'L', 'R']",LPLDADIR,IPLDADLR,LPLDADIR,0.75,0,-0.7157146334648132
+332,"['A', 'A', 'A', 'F', 'E', 'G', 'E', 'L', 'I', 'P', 'A', 'S', 'Q', 'I', 'D', 'R']",AAAFEGELLPASQLDR,AAAFEGELIPASQIDR,AAAFEGELLPASQLDR,0.875,0,-0.4684337675571441
+333,"['S', 'N', 'N', 'T', 'E', 'P', 'T', 'W', 'F', 'P', 'D', 'S', 'Q', 'N', 'L', 'A', 'F', 'T', 'S', 'D', 'Q', 'A', 'G', 'R', 'P', 'Q', 'V', 'Y', 'K']",GASNNTPTWFPDSQNLAFTSDAQGRPNLYK,SNNTEPTWFPDSQNLAFTSDQAGRPQVYK,GASNNTPTWFPDSQNLAFTSDAQGRPNLYK,0.034482758620689655,0,-14.131168365478516
+334,"['F', 'N', 'Q', 'I', 'G', 'S', 'L', 'T', 'E', 'T', 'L', 'A', 'A', 'I', 'K']",[UNIMOD:1]TLFNQITETLAAIK,FNQIGSLTETLAAIK,TLFNQITETLAAIK,0.06666666666666667,0,-26.70607566833496
+335,"['D', 'Y', 'D', 'T', 'D', 'V', 'Y', 'P', 'V', 'P', 'V', 'I', 'N', 'Y', 'E', 'G', 'D', 'N', 'F', 'W', 'F', 'R']",VDYDTDYPVPVINYEGDNFWFR,DYDTDVYPVPVINYEGDNFWFR,VDYDTDYPVPVINYEGDNFWFR,0.7272727272727273,0,-18.188640594482425
+336,"['E', 'F', 'G', 'V', 'N', 'L', 'A', 'K']",EFGVNLAK,EFGVNLAK,EFGVNLAK,1.0,1,-0.0519380457699298
+337,"['A', 'A', 'A', 'F', 'E', 'G', 'E', 'L', 'I', 'P', 'A', 'S', 'Q', 'I', 'D', 'R']",AAAAAAFESLPASQDLR,AAAFEGELIPASQIDR,AAAAAAFESLPASQDLR,0.25,0,-14.330275535583496
+338,"['G', 'A', 'E', 'Q', 'I', 'Y', 'I', 'P', 'V', 'L', 'I', 'K']",GAEQIYLPVIIK,GAEQIYIPVLIK,GAEQIYLPVIIK,0.8333333333333334,0,-8.096531867980957
+339,"['L', 'G', 'E', 'T', 'G', 'D', 'A', 'I', 'A', 'K']",LGETGDALAK,LGETGDAIAK,LGETGDALAK,0.9,0,-2.686391830444336
+340,"['Y', 'E', 'Y', 'S', 'V', 'A', 'E', 'Y', 'Y', 'T', 'E', 'R']",YAYEYEYYTER,YEYSVAEYYTER,YAYEYEYYTER,0.25,0,-5.5757880210876465
+341,"['A', 'L', 'D', 'I', 'R', 'P', 'P', 'A', 'Q', 'P', 'L', 'A', 'L', 'V', 'S', 'G', 'A', 'R']",ALDLRPPAQPLALVSGAR,ALDIRPPAQPLALVSGAR,ALDLRPPAQPLALVSGAR,0.9444444444444444,0,-0.915832817554474
+342,"['A', 'S', 'T', 'T', 'M', 'D', 'V', 'Q', 'S', 'A', 'A', 'D', 'D', 'T', 'G', 'L', 'P', 'M', 'L', 'V', 'V', 'R']",GSATMDQVVDQYVGLPMIVVR,ASTTMDVQSAADDTGLPMLVVR,GSATMDQVVDQYVGLPMIVVR,0.22727272727272727,0,-28.043704986572266
+343,"['A', 'E', 'M', 'S', 'E', 'Y', 'L', 'F', 'D', 'K']",AEMSEYLFDK,AEMSEYLFDK,AEMSEYLFDK,1.0,1,-0.019890159368515
+344,"['T', 'G', 'A', 'A', 'L', 'T', 'L', 'D', 'G', 'A', 'T', 'F', 'S', 'S', 'E', 'T', 'T', 'L', 'N', 'N', 'G', 'T', 'N', 'T', 'I', 'P', 'F', 'Q', 'A', 'R']",LLTGAAATLTSAAATLFINNGTNTLPFQAR,TGAALTLDGATFSSETTLNNGTNTIPFQAR,LLTGAAATLTSAAATLFINNGTNTLPFQAR,0.36666666666666664,0,-22.06134605407715
+345,"['M', 'Q', 'A', 'A', 'S', 'G', 'Q', 'L', 'Q', 'Q', 'S', 'H', 'L', 'L', 'K']",MQAASGQLQQSHIIK,MQAASGQLQQSHLLK,MQAASGQLQQSHIIK,0.8666666666666667,0,-0.3653929829597473
+346,"['Y', 'D', 'S', 'S', 'A', 'T', 'L', 'D', 'E', 'M', 'K']",[UNIMOD:385]NSSSDRYDSSATLDEMK,YDSSATLDEMK,NSSSDRYDSSATLDEMK,0.2727272727272727,0,-25.534154891967773
+347,"['T', 'Q', 'F', 'T', 'G', 'D', 'T', 'A', 'S', 'L', 'L', 'V', 'E', 'N', 'G', 'R']",SATQFTDASLLVENGR,TQFTGDTASLLVENGR,SATQFTDASLLVENGR,0.5625,0,-16.90151596069336
+348,"['V', 'D', 'Q', 'L', 'S', 'N', 'D', 'V', 'N', 'A', 'M', 'R']",VDQLSNDVNAMR,VDQLSNDVNAMR,VDQLSNDVNAMR,1.0,1,-0.0371133051812648
+349,"['D', 'G', 'S', 'V', 'V', 'V', 'L', 'G', 'Y', 'T', 'D', 'R']",DGSVVVLGYTDR,DGSVVVLGYTDR,DGSVVVLGYTDR,1.0,1,-0.1155471801757812
+350,"['G', 'Q', 'I', 'Q', 'E', 'N', 'Q', 'Y', 'Q', 'L', 'N', 'Q', 'V', 'V', 'E', 'R']",GQNQLNQVVER,GQIQENQYQLNQVVER,GQNQLNQVVER,0.3125,0,-3.2803213596343994
+351,"['N', 'G', 'G', 'V', 'A', 'G', 'N', 'T', 'T', 'V', 'N', 'Q', 'K']",NGGVAGGSATVNQK,NGGVAGNTTVNQK,NGGVAGGSATVNQK,0.46153846153846156,0,-1.6960631608963013
+352,"['I', 'E', 'Q', 'A', 'P', 'G', 'Q', 'H', 'G', 'A', 'R']",LEQAPGQHGAR,IEQAPGQHGAR,LEQAPGQHGAR,0.9090909090909091,0,-0.7663475871086121
+353,"['G', 'Q', 'N', 'E', 'D', 'Q', 'N', 'V', 'G', 'I', 'K']",GQNEDQNVGIK,GQNEDQNVGIK,GQNEDQNVGIK,1.0,1,-0.9087653756141664
+354,"['I', 'N', 'E', 'G', 'P', 'Y', 'Q', 'F', 'E', 'S', 'E', 'G', 'K']",LNEGPYQFESEGK,INEGPYQFESEGK,LNEGPYQFESEGK,0.9230769230769231,0,-0.6368089318275452
+355,"['M', 'S', 'L', 'V', 'N', 'I', 'T', 'P', 'D', 'A', 'D', 'G', 'T', 'T', 'L', 'T', 'L', 'R']",MSIVNLTPDADGTTLTLR,MSLVNITPDADGTTLTLR,MSIVNLTPDADGTTLTLR,0.8888888888888888,0,-4.110886573791504
+356,"['G', 'D', 'A', 'L', 'E', 'M', 'L', 'D', 'R']",GDALEMLDR,GDALEMLDR,GDALEMLDR,1.0,1,-0.1084328889846801
+357,"['T', 'D', 'S', 'A', 'Q', 'V', 'A', 'E', 'I', 'V', 'A', 'V', 'M', 'G', 'N', 'A', 'S', 'V', 'A', 'S', 'R']",TDSAQVAELVAVMGNASVASR,TDSAQVAEIVAVMGNASVASR,TDSAQVAELVAVMGNASVASR,0.9523809523809523,0,-2.3806684017181396
+358,"['Q', 'W', 'I', 'L', 'G', 'L', 'P', 'G', 'D', 'A', 'T', 'D', 'Y', 'K']",QWLLGLPGDATDYK,QWILGLPGDATDYK,QWLLGLPGDATDYK,0.9285714285714286,0,-0.6420302987098694
+359,"['A', 'E', 'A', 'A', 'P', 'A', 'A', 'T', 'G', 'G', 'G', 'I', 'P', 'G', 'M', 'L', 'P', 'W', 'P', 'K']",GAKAEAEAPAAPGMLPWPK,AEAAPAATGGGIPGMLPWPK,GAKAEAEAPAAPGMLPWPK,0.1,0,-18.82871437072754
+360,"['G', 'T', 'A', 'M', 'N', 'P', 'V', 'D', 'H', 'P', 'H', 'G', 'G', 'G', 'E', 'G', 'R']",[UNIMOD:385]TGTQGMNMATK,GTAMNPVDHPHGGGEGR,TGTQGMNMATK,0.0,0,-20.82178497314453
+361,"['S', 'I', 'D', 'P', 'G', 'L', 'F', 'D', 'Q', 'L', 'Y', 'R']",SLDPGLFDQIYR,SIDPGLFDQLYR,SLDPGLFDQIYR,0.8333333333333334,0,-0.4306639432907104
+362,"['Y', 'W', 'H', 'D', 'G', 'G', 'Q', 'W', 'N', 'D', 'D', 'A', 'E', 'L', 'N', 'F', 'G', 'N', 'G', 'N', 'F', 'N', 'V', 'R']",AGEYWHDGGQWSAELNFGNGNFNVR,YWHDGGQWNDDAELNFGNGNFNVR,AGEYWHDGGQWSAELNFGNGNFNVR,0.0,0,-27.671520233154297
+363,"['G', 'G', 'Y', 'F', 'P', 'V', 'P', 'P', 'V', 'D', 'S', 'A', 'Q', 'D', 'I', 'R']",[UNIMOD:385]VNYNFPPVDGAGTDLR,GGYFPVPPVDSAQDIR,VNYNFPPVDGAGTDLR,0.25,0,-27.189281463623047
+364,"['A', 'D', 'I', 'D', 'Y', 'N', 'T', 'S', 'E', 'A', 'H', 'T', 'T', 'Y', 'G', 'V', 'I', 'G', 'V', 'K']",ASGTLEASEDVHAHQALLGVK,ADIDYNTSEAHTTYGVIGVK,ASGTLEASEDVHAHQALLGVK,0.15,0,-24.720638275146484
+365,"['L', 'E', 'V', 'V', 'V', 'N', 'E', 'R']",LEVVVNER,LEVVVNER,LEVVVNER,1.0,1,-0.5613420009613037
+366,"['A', 'E', 'T', 'Y', 'T', 'G', 'G', 'L', 'K']",GETYTGGLK,AETYTGGLK,GETYTGGLK,0.8888888888888888,0,-13.227208137512209
+367,"['V', 'Y', 'A', 'A', 'I', 'E', 'A', 'G', 'D', 'K']",VYAALEAGDK,VYAAIEAGDK,VYAALEAGDK,0.9,0,-0.1307938545942306
+368,"['I', 'E', 'G', 'V', 'P', 'E', 'S', 'N', 'I', 'S', 'R']",LEGVPESNLSR,IEGVPESNISR,LEGVPESNLSR,0.8181818181818182,0,-0.8009037375450134
+369,"['V', 'T', 'I', 'P', 'G', 'S', 'D', 'N', 'E', 'Y', 'Y', 'K']",ILSSPGSDNEPGSDNEYYK,VTIPGSDNEYYK,ILSSPGSDNEPGSDNEYYK,0.0,0,-8.87346076965332
+370,"['G', 'N', 'T', 'S', 'L', 'Y', 'D', 'H', 'N', 'N', 'N', 'T', 'S', 'D', 'Y', 'S', 'K']",GNGNTSTNYDHYSDYSK,GNTSLYDHNNNTSDYSK,GNGNTSTNYDHYSDYSK,0.4117647058823529,0,-16.96068000793457
+371,"['A', 'Q', 'A', 'F', 'E', 'Q', 'D', 'R']",TSTELATAK,AQAFEQDR,TSTELATAK,0.0,0,-2.947493553161621
+372,"['S', 'L', 'E', 'Q', 'Y', 'F', 'G', 'R']",SLEQYFGR,SLEQYFGR,SLEQYFGR,1.0,1,-0.3809112906455993
+373,"['A', 'L', 'N', 'L', 'Q', 'D', 'K']",ALNLQDK,ALNLQDK,ALNLQDK,1.0,1,-0.5322306156158447
+374,"['R', 'H', 'P', 'E', 'Y', 'A', 'V', 'S', 'V', 'L', 'L', 'R']",YAVSVLLR,RHPEYAVSVLLR,YAVSVLLR,0.0,0,-5.206423282623291
+375,"['L', 'A', 'L', 'D', 'G', 'D', 'L', 'I', 'R']",LALDGDLLR,LALDGDLIR,LALDGDLLR,0.8888888888888888,0,-1.0225112438201904
+376,"['G', 'G', 'W', 'T', 'V', 'I', 'Q', 'N', 'R']",LWTVLQGGR,GGWTVIQNR,LWTVLQGGR,0.1111111111111111,0,-5.331042766571045
+377,"['F', 'S', 'L', 'G', 'A', 'G', 'V', 'G', 'V', 'V', 'E', 'H', 'P', 'Y', 'K']",FSLGAGVGVVEHPYK,FSLGAGVGVVEHPYK,FSLGAGVGVVEHPYK,1.0,1,-2.499927759170532
+378,"['V', 'A', 'Q', 'E', 'M', 'Q', 'K']",GPGLPTQK,VAQEMQK,GPGLPTQK,0.0,0,-10.35871696472168
+379,"['G', 'N', 'N', 'Q', 'P', 'D', 'I', 'Q', 'K']",GNNQPDIQK,GNNQPDIQK,GNNQPDIQK,1.0,1,-0.1880291998386383
+380,"['T', 'G', 'V', 'S', 'N', 'T', 'L', 'E', 'N', 'E', 'F', 'K']",SAVSNTLENEFK,TGVSNTLENEFK,SAVSNTLENEFK,0.8333333333333334,0,-0.1808046251535415
+381,"['A', 'V', 'Y', 'Q', 'Q', 'V', 'I', 'S', 'K']",AVYQQVISK,AVYQQVISK,AVYQQVISK,1.0,1,-0.2188103049993515
+382,"['L', 'L', 'S', 'P', 'E', 'V', 'A', 'N', 'D', 'K']",LLSPEVANDK,LLSPEVANDK,LLSPEVANDK,1.0,1,-1.2866963148117063
+383,"['T', 'L', 'E', 'G', 'W', 'G', 'Y', 'D', 'Y', 'Y', 'V', 'F', 'D', 'K']",TLEGWGYDYYVFDK,TLEGWGYDYYVFDK,TLEGWGYDYYVFDK,1.0,1,-2.2834584712982178
+384,"['V', 'D', 'D', 'Y', 'I', 'I', 'K']",VDDYLLK,VDDYIIK,VDDYLLK,0.7142857142857143,0,-0.9449881911277772
+385,"['T', 'L', 'Y', 'P', 'D', 'A', 'E', 'T', 'I', 'K']",TLYPDAETIK,TLYPDAETIK,TLYPDAETIK,1.0,1,-0.2140204757452011
+386,"['G', 'N', 'T', 'G', 'E', 'N', 'L', 'L', 'A', 'L', 'L', 'E', 'G', 'R']",GNTGENLLALLEGR,GNTGENLLALLEGR,GNTGENLLALLEGR,1.0,1,-3.0511374473571777
+387,"['L', 'G', 'E', 'H', 'N', 'I', 'E', 'V', 'L', 'E', 'G', 'N', 'E', 'Q', 'F', 'I', 'N', 'A', 'A', 'K']",LGEHNIDVLEGNEQFLNGVK,LGEHNIEVLEGNEQFINAAK,LGEHNIDVLEGNEQFLNGVK,0.8,0,-2.671525478363037
+388,"['E', 'I', 'S', 'M', 'S', 'I', 'K']",EISM[UNIMOD:35]SIK,EISMSIK,EISMSIK,1.0,1,-0.0733492001891136
+389,"['V', 'N', 'I', 'N', 'G', 'G', 'A', 'P', 'Q', 'R']",VNLNGGAPQR,VNINGGAPQR,VNLNGGAPQR,0.9,0,-0.2327954918146133
+390,"['L', 'L', 'V', 'H', 'P', 'S', 'T', 'S', 'P', 'V', 'P', 'K']",ILVHPSTSPVPK,LLVHPSTSPVPK,ILVHPSTSPVPK,0.9166666666666666,0,-0.2182270884513855
+391,"['G', 'P', 'E', 'G', 'L', 'M', 'P', 'S', 'D', 'D', 'T', 'L', 'K']",AVGPEMNAGSDAIK,GPEGLMPSDDTLK,AVGPEMNAGSDAIK,0.07692307692307693,0,-19.237316131591797
+392,"['N', 'A', 'P', 'P', 'P', 'T', 'K', 'P', 'V', 'E', 'T', 'Q', 'T', 'Q', 'S', 'T', 'V', 'P', 'D', 'K']",PPPPTKPDLTQSEDSSVPDK,NAPPPTKPVETQTQSTVPDK,PPPPTKPDLTQSEDSSVPDK,0.35,0,-18.67786407470703
+393,"['Y', 'E', 'Y', 'S', 'V', 'A', 'E', 'Y', 'Y', 'T', 'E', 'R']",YEYSVAEYYTER,YEYSVAEYYTER,YEYSVAEYYTER,1.0,1,-0.0609343834221363
+394,"['S', 'T', 'P', 'F', 'A', 'A', 'Q', 'V', 'A', 'A', 'E', 'R']",ATPFAAQVAAER,STPFAAQVAAER,ATPFAAQVAAER,0.9166666666666666,0,-9.433995246887209
+395,"['V', 'A', 'T', 'V', 'S', 'L', 'P', 'R']",VATVSLPR,VATVSLPR,VATVSLPR,1.0,1,-0.1702428460121154
+396,"['S', 'L', 'A', 'T', 'A', 'A', 'G', 'A', 'V', 'A', 'G', 'G', 'V', 'A', 'G', 'Q', 'G', 'V', 'Q', 'S', 'A', 'M', 'N', 'K']",SLVTAAGAAAGGVAGGAGVQSAM[UNIMOD:35]GGK,SLATAAGAVAGGVAGQGVQSAMNK,SLVTAAGAAAGGVAGGAGVQSAMGGK,0.5416666666666666,0,-6.4025959968566895
+397,"['Y', 'A', 'G', 'A', 'L', 'V', 'L', 'G', 'Q', 'Y', 'Y', 'K']",YAGALVIGQYYK,YAGALVLGQYYK,YAGALVIGQYYK,0.9166666666666666,0,-0.5005014538764954
+398,"['I', 'A', 'I', 'V', 'N', 'M', 'G', 'S', 'L', 'F', 'Q', 'Q', 'V', 'A', 'Q', 'K']",LALVNM[UNIMOD:35]GSVFQQVAQK,IAIVNMGSLFQQVAQK,LALVNMGSVFQQVAQK,0.8125,0,-3.451056957244873
+399,"['G', 'N', 'N', 'L', 'T', 'V', 'S', 'A', 'D', 'L', 'Y', 'K']",GNNITVSADLYK,GNNLTVSADLYK,GNNITVSADLYK,0.9166666666666666,0,-0.8212968707084656
+400,"['E', 'A', 'L', 'S', 'Y', 'T', 'P', 'G', 'V', 'S', 'V', 'G', 'T', 'R']",AAAVSYTPGVGSISR,EALSYTPGVSVGTR,AAAVSYTPGVGSISR,0.07142857142857142,0,-20.350006103515625
+401,"['I', 'V', 'D', 'E', 'Q', 'P', 'G', 'A', 'E', 'C', 'Q', 'L', 'I', 'G', 'T', 'A', 'T', 'G', 'K']",LVDEQPGAEC[UNIMOD:4]QLIGTATGK,IVDEQPGAECQLIGTATGK,LVDEQPGAECQLIGTATGK,0.9473684210526315,0,-3.2968814373016357
+402,"['Q', 'W', 'I', 'L', 'G', 'L', 'P', 'G', 'D', 'A', 'T', 'D', 'Y', 'K']",QWLLGLPGDATDYK,QWILGLPGDATDYK,QWLLGLPGDATDYK,0.9285714285714286,0,-0.4650200307369232
+403,"['K', 'V', 'V', 'M', 'T', 'G', 'P', 'S', 'K']",NKTLDINK,KVVMTGPSK,NKTLDINK,0.0,0,-2.875699281692505
+404,"['L', 'P', 'E', 'Y', 'T', 'P', 'D', 'V', 'N', 'Q', 'L', 'Y', 'D', 'A', 'L', 'Y', 'N', 'K']",LPEYTPDVNQLYDALYNK,LPEYTPDVNQLYDALYNK,LPEYTPDVNQLYDALYNK,1.0,1,-0.1852871924638748
+405,"['A', 'Q', 'Q', 'Y', 'Q', 'Q', 'Q', 'L', 'G', 'Q', 'K']",AQQYQQQLGQK,AQQYQQQLGQK,AQQYQQQLGQK,1.0,1,-4.149691104888916
+406,"['S', 'Q', 'S', 'T', 'S', 'L', 'I', 'E', 'R']",AQSTSLLER,SQSTSLIER,AQSTSLLER,0.7777777777777778,0,-11.47458839416504
+407,"['T', 'A', 'S', 'V', 'T', 'P', 'S', 'S', 'A', 'V', 'P', 'K']",TASVTPSSAVPK,TASVTPSSAVPK,TASVTPSSAVPK,1.0,1,-0.1796018183231353
+408,"['I', 'A', 'Y', 'V', 'V', 'Q', 'T', 'N', 'G', 'G', 'Q', 'F', 'P', 'Y', 'E', 'L', 'R']",EKIAYVLNASFPYELR,IAYVVQTNGGQFPYELR,EKIAYVLNASFPYELR,0.058823529411764705,0,-14.4102783203125
+409,"['S', 'L', 'E', 'Q', 'Y', 'F', 'G', 'R']",SLEQYFGR,SLEQYFGR,SLEQYFGR,1.0,1,-3.167350053787231
+410,"['E', 'F', 'A', 'D', 'N', 'L', 'D', 'S', 'D', 'F', 'K']",EFADNIDSDFK,EFADNLDSDFK,EFADNIDSDFK,0.9090909090909091,0,-1.613990068435669
+411,"['G', 'Q', 'P', 'A', 'V', 'G', 'P', 'E', 'T', 'K']",GQPAVGPETK,GQPAVGPETK,GQPAVGPETK,1.0,1,-2.171251058578491
+412,"['Y', 'A', 'G', 'H', 'T', 'A', 'S', 'D', 'E', 'V', 'F', 'E', 'K']",YAGHTASDEVFEK,YAGHTASDEVFEK,YAGHTASDEVFEK,1.0,1,-1.9503285884857176
+413,"['L', 'A', 'L', 'D', 'G', 'D', 'L', 'I', 'R']",LALDGDLLR,LALDGDLIR,LALDGDLLR,0.8888888888888888,0,-0.3987517356872558
+414,"['L', 'A', 'Y', 'V', 'T', 'F', 'E', 'S', 'G', 'R']",LAYVTFESGR,LAYVTFESGR,LAYVTFESGR,1.0,1,-0.2159617096185684
+415,"['I', 'F', 'V', 'D', 'E', 'G', 'P', 'S', 'M', 'K']",LFVDEGPSM[UNIMOD:35]K,IFVDEGPSMK,LFVDEGPSMK,0.9,0,-0.0312139578163623
+416,"['M', 'A', 'N', 'Q', 'A', 'N', 'I', 'P', 'V', 'I', 'T', 'L', 'D', 'R']",M[UNIMOD:35]ANQANLPVITLDR,MANQANIPVITLDR,MANQANLPVITLDR,0.9285714285714286,0,-0.2296859920024871
+417,"['G', 'A', 'S', 'G', 'Y', 'L', 'P', 'E', 'H', 'T', 'L', 'P', 'A', 'K']",GASGYLPEHTLPAK,GASGYLPEHTLPAK,GASGYLPEHTLPAK,1.0,1,-1.6875964403152466
+418,"['Q', 'F', 'N', 'N', 'I', 'G', 'A', 'T', 'T', 'P', 'V', 'V', 'P', 'F', 'R']",QFNNLGATTPVVPFR,QFNNIGATTPVVPFR,QFNNLGATTPVVPFR,0.9333333333333333,0,-2.1944594383239746
+419,"['A', 'G', 'D', 'N', 'A', 'P', 'M', 'A', 'Y', 'I', 'E', 'L', 'V', 'D', 'R']",AGNDAPMAYIELVDR,AGDNAPMAYIELVDR,AGNDAPMAYIELVDR,0.8666666666666667,0,-1.0026278495788574
+420,"['A', 'L', 'N', 'E', 'I', 'N', 'Q', 'F', 'Y', 'Q', 'K']",AINEINQFYQK,ALNEINQFYQK,AINEINQFYQK,0.9090909090909091,0,-0.3849497437477112
+421,"['A', 'E', 'A', 'A', 'P', 'A', 'A', 'T', 'G', 'G', 'G', 'I', 'P', 'G', 'M', 'L', 'P', 'W', 'P', 'K']",AEAEAAPAAPAPGMLPWPK,AEAAPAATGGGIPGMLPWPK,AEAEAAPAAPAPGMLPWPK,0.2,0,-4.428094387054443
+422,"['F', 'M', 'V', 'A', 'N', 'N', 'A', 'E', 'L', 'E', 'R']",[UNIMOD:1]LMVANNASQATK,FMVANNAELER,LMVANNASQATK,0.5454545454545454,0,-21.253822326660156
+423,"['D', 'L', 'N', 'N', 'E', 'S', 'T', 'P', 'M', 'A', 'F', 'E', 'N', 'I', 'K']",VINNEVTPMAFENIK,DLNNESTPMAFENIK,VINNEVTPMAFENIK,0.8,0,-16.162052154541016
+424,"['V', 'L', 'E', 'N', 'A', 'L', 'V', 'P', 'P', 'M', 'G', 'E', 'S', 'T', 'V', 'K']",[UNIMOD:385]NIENALVPPMADTSVK,VLENALVPPMGESTVK,NIENALVPPMADTSVK,0.625,0,-23.47458267211914
+425,"['D', 'L', 'S', 'S', 'N', 'T', 'Q', 'A', 'L', 'T', 'G', 'T', 'N', 'T', 'G', 'G', 'A', 'I', 'D', 'G', 'V', 'S', 'T', 'T', 'D', 'R']",DIDLSAANTGLTNTGQIDGVSTTDR,DLSSNTQALTGTNTGGAIDGVSTTDR,DIDLSAANTGLTNTGQIDGVSTTDR,0.23076923076923078,0,-18.37494850158691
+426,"['D', 'A', 'L', 'P', 'L', 'M', 'E', 'N', 'A', 'Y', 'R']",DALPLMENAYR,DALPLMENAYR,DALPLMENAYR,1.0,1,-0.0359523668885231
+427,"['D', 'P', 'Q', 'L', 'Q', 'V', 'V', 'T', 'N', 'K']",DPQIQVVTNK,DPQLQVVTNK,DPQIQVVTNK,0.9,0,-0.2514228820800781
+428,"['Y', 'A', 'G', 'H', 'T', 'A', 'S', 'D', 'E', 'V', 'F', 'E', 'K']",ALPTSAGLAGHFEK,YAGHTASDEVFEK,ALPTSAGLAGHFEK,0.07692307692307693,0,-28.73719596862793
+429,"['I', 'E', 'P', 'G', 'E', 'L', 'Y', 'N', 'G', 'T', 'K']",IEPGELYNGTK,IEPGELYNGTK,IEPGELYNGTK,1.0,1,-0.1258543729782104
+430,"['Y', 'W', 'H', 'D', 'G', 'G', 'Q', 'W', 'N', 'D', 'D', 'A', 'E', 'L', 'N', 'F', 'G', 'N', 'G', 'N', 'F', 'N', 'V', 'R']",DYWHDGQWGNDNFNFGNGNFNVR,YWHDGGQWNDDAELNFGNGNFNVR,DYWHDGQWGNDNFNFGNGNFNVR,0.16666666666666666,0,-14.91191577911377
+431,"['S', 'D', 'I', 'A', 'L', 'I', 'Q', 'I', 'Q', 'N', 'P', 'K']",LSDLAIQIQNPK,SDIALIQIQNPK,LSDLAIQIQNPK,0.5833333333333334,0,-6.174262046813965
+432,"['E', 'V', 'F', 'Q', 'M', 'A', 'L', 'R']",EVFQMALR,EVFQMALR,EVFQMALR,1.0,1,-0.1383028179407119
+433,"['N', 'L', 'N', 'Q', 'Y', 'Q', 'T', 'R']",[UNIMOD:1]ALNQYAASR,NLNQYQTR,ALNQYAASR,0.5,0,-21.88825225830078
+434,"['S', 'S', 'L', 'Q', 'F', 'I', 'D', 'P', 'K']",SSLQFIDPK,SSLQFIDPK,SSLQFIDPK,1.0,1,-0.8432875275611877
+435,"['S', 'L', 'A', 'T', 'A', 'A', 'G', 'A', 'V', 'A', 'G', 'G', 'V', 'A', 'G', 'Q', 'G', 'V', 'Q', 'S', 'A', 'M', 'N', 'K']",GFGAGGAVGAGVGAGVGQGAVLENK,SLATAAGAVAGGVAGQGVQSAMNK,GFGAGGAVGAGVGAGVGQGAVLENK,0.20833333333333334,0,-21.180503845214844
+436,"['V', 'V', 'E', 'P', 'L', 'I', 'T', 'L', 'A', 'K']",VVEPLITLAK,VVEPLITLAK,VVEPLITLAK,1.0,1,-1.0024956464767456
+437,"['I', 'A', 'T', 'M', 'G', 'S', 'T', 'D', 'A', 'A', 'S', 'V', 'R']",IATMGSTDAASVR,IATMGSTDAASVR,IATMGSTDAASVR,1.0,1,-0.8860418796539307
+438,"['D', 'L', 'S', 'S', 'N', 'T', 'Q', 'A', 'L', 'T', 'G', 'T', 'N', 'T', 'G', 'G', 'A', 'I', 'D', 'G', 'V', 'S', 'T', 'T', 'D', 'R']",ASSQSSSSTNTGSSQGQDLMVDATGK,DLSSNTQALTGTNTGGAIDGVSTTDR,ASSQSSSSTNTGSSQGQDLMVDATGK,0.15384615384615385,0,-29.535186767578125
+439,"['M', 'Q', 'Q', 'L', 'D', 'S', 'I', 'I', 'S', 'A', 'K']",MQQLDSLLSAK,MQQLDSIISAK,MQQLDSLLSAK,0.8181818181818182,0,-0.1350099444389343
+440,"['Y', 'S', 'G', 'F', 'L', 'N', 'N', 'Y', 'S', 'D', 'L', 'K']",[UNIMOD:1]LEGLINNYSDLK,YSGFLNNYSDLK,LEGLINNYSDLK,0.6666666666666666,0,-24.88687515258789
+441,"['G', 'V', 'G', 'E', 'D', 'I', 'S', 'D', 'G', 'G', 'N', 'A', 'I', 'S', 'G', 'A', 'A', 'T', 'K']",GVGEDISDGGNAISGAATK,GVGEDISDGGNAISGAATK,GVGEDISDGGNAISGAATK,1.0,1,-3.586554765701294
+442,"['L', 'Q', 'L', 'V', 'G', 'V', 'G', 'Y', 'R']",LQLVGVGYR,LQLVGVGYR,LQLVGVGYR,1.0,1,-0.2616778016090393
+443,"['V', 'V', 'Y', 'R', 'P', 'D', 'I', 'N', 'Q', 'G', 'N', 'Y', 'L', 'T', 'A', 'N', 'D', 'V', 'S', 'K']",[UNIMOD:385]QAGGDVVYRPDLNYTANDVSK,VVYRPDINQGNYLTANDVSK,QAGGDVVYRPDLNYTANDVSK,0.0,0,-27.282377243041992
+444,"['A', 'D', 'S', 'V', 'A', 'S', 'A', 'L', 'I', 'T', 'Q', 'G', 'V', 'D', 'A', 'S', 'R']",ADSVASALLTQGVDASR,ADSVASALITQGVDASR,ADSVASALLTQGVDASR,0.9411764705882353,0,-0.3538814783096313
+445,"['T', 'Q', 'F', 'T', 'G', 'D', 'T', 'A', 'S', 'L', 'L', 'V', 'E', 'N', 'G', 'R']",TQFTGDTASLLVENGR,TQFTGDTASLLVENGR,TQFTGDTASLLVENGR,1.0,1,-0.0620485991239547
+446,"['Y', 'N', 'Y', 'L', 'I', 'N', 'Q', 'L', 'N', 'I', 'K']",LYNYLNQLQVK,YNYLINQLNIK,LYNYLNQLQVK,0.36363636363636365,0,-11.59678077697754
+447,"['V', 'P', 'G', 'S', 'P', 'D', 'Q', 'V', 'D', 'V', 'V', 'Y', 'K']",VPGSPDQVDVVYK,VPGSPDQVDVVYK,VPGSPDQVDVVYK,1.0,1,-0.3222346305847168
+448,"['K', 'D', 'D', 'G', 'N', 'T', 'I', 'M', 'V', 'V', 'Q', 'K']",KDDGNTIMVVQK,KDDGNTIMVVQK,KDDGNTIMVVQK,1.0,1,-0.8698650598526001
+449,"['A', 'Y', 'S', 'G', 'E', 'G', 'A', 'I', 'A', 'D', 'D', 'A', 'G', 'N', 'V', 'S', 'R']",AYADGEGAAGGGAGESGALADDAGGGVSR,AYSGEGAIADDAGNVSR,AYADGEGAAGGGAGESGALADDAGGGVSR,0.23529411764705882,0,-10.141901969909668
+450,"['D', 'T', 'V', 'E', 'I', 'Q', 'G', 'E', 'V', 'D', 'K']",DTVEIQGEVDK,DTVEIQGEVDK,DTVEIQGEVDK,1.0,1,-0.2776388525962829
+451,"['L', 'S', 'D', 'E', 'V', 'T', 'D', 'S', 'P', 'M', 'V', 'D', 'K']",LSDEVTDSPM[UNIMOD:35]VDK,LSDEVTDSPMVDK,LSDEVTDSPMVDK,1.0,1,-0.0486675314605236
+452,"['S', 'P', 'T', 'Y', 'W', 'N', 'N', 'A', 'K']",GDDDSLYTGN,SPTYWNNAK,GDDDSLYTGN,0.0,0,-13.942058563232422
+453,"['V', 'D', 'Q', 'L', 'S', 'N', 'D', 'V', 'N', 'A', 'M', 'R']",VDQLSNDVNAMR,VDQLSNDVNAMR,VDQLSNDVNAMR,1.0,1,-0.0267588961869478
+454,"['L', 'S', 'D', 'Y', 'G', 'V', 'Q', 'L', 'R']",LSDYGNLLR,LSDYGVQLR,LSDYGNLLR,0.7777777777777778,0,-2.784700393676758
+455,"['Y', 'S', 'G', 'S', 'S', 'Y', 'P', 'F', 'P', 'T', 'T', 'S', 'E', 'T', 'P', 'R']",YSGSSYPFPTTSETPR,YSGSSYPFPTTSETPR,YSGSSYPFPTTSETPR,1.0,1,-1.362626314163208
+456,"['S', 'A', 'T', 'D', 'A', 'A', 'N', 'A', 'A', 'Q', 'N', 'R']",[UNIMOD:1]AATDAAGGPMPGK,SATDAANAAQNR,AATDAAGGPMPGK,0.4166666666666667,0,-18.542863845825195
+457,"['A', 'I', 'I', 'S', 'D', 'V', 'N', 'A', 'S', 'D', 'E', 'D', 'R']",AILSDVNASDEDR,AIISDVNASDEDR,AILSDVNASDEDR,0.9230769230769231,0,-0.2332072556018829
+458,"['G', 'I', 'D', 'G', 'L', 'T', 'A', 'Q', 'L', 'K']",GIDGLTAQLK,GIDGLTAQLK,GIDGLTAQLK,1.0,1,-2.101757287979126
+459,"['Y', 'D', 'S', 'S', 'A', 'T', 'L', 'D', 'E', 'M', 'K']",QKYDSSANAAATLDEMK,YDSSATLDEMK,QKYDSSANAAATLDEMK,0.0,0,-19.05498695373535
+460,"['W', 'E', 'L', 'L', 'Q', 'Q', 'V', 'D', 'T', 'S', 'T', 'R']",WELLQQVDSTTR,WELLQQVDTSTR,WELLQQVDSTTR,0.8333333333333334,0,-1.717607498168945
+461,"['D', 'V', 'F', 'I', 'N', 'A', 'G', 'I', 'K']",DVLEDLVR,DVFINAGIK,DVLEDLVR,0.2222222222222222,0,-5.650102138519287
+462,"['Q', 'A', 'I', 'T', 'Q', 'L', 'E', 'A', 'L', 'D', 'N', 'R']",QALTQLEALDNR,QAITQLEALDNR,QALTQLEALDNR,0.9166666666666666,0,-0.6813324093818665
+463,"['E', 'I', 'E', 'A', 'A', 'Y', 'N', 'E', 'L', 'K']",AEIEAYNELK,EIEAAYNELK,AEIEAYNELK,0.6,0,-13.481304168701172
+464,"['I', 'D', 'G', 'I', 'G', 'L', 'Y', 'R']",LPITGSYR,IDGIGLYR,LPITGSYR,0.375,0,-0.0824207738041877
+465,"['T', 'T', 'V', 'T', 'S', 'G', 'G', 'L', 'Q', 'R']",TTVTGHLYK,TTVTSGGLQR,TTVTGHLYK,0.4,0,-2.2199249267578125
+466,"['T', 'G', 'V', 'S', 'N', 'T', 'L', 'E', 'N', 'E', 'F', 'K']",TGSSSPAPVMEFK,TGVSNTLENEFK,TGSSSPAPVMEFK,0.25,0,-5.878984451293945
+467,"['D', 'G', 'S', 'V', 'V', 'V', 'L', 'G', 'Y', 'T', 'D', 'R']",[UNIMOD:385]AAKVDGSVVVVDRDGSVVVLGYTDR,DGSVVVLGYTDR,AAKVDGSVVVVDRDGSVVVLGYTDR,0.08333333333333333,0,-27.233837127685547
+468,"['A', 'A', 'T', 'Y', 'E', 'Q', 'I', 'K']",VDGSVGAYK,AATYEQIK,VDGSVGAYK,0.0,0,-7.301437377929688
+469,"['D', 'Q', 'G', 'V', 'V', 'V', 'N', 'N', 'V', 'K']",DQGVVVNNVK,DQGVVVNNVK,DQGVVVNNVK,1.0,1,-0.0128466440364718
+470,"['N', 'H', 'D', 'T', 'G', 'V', 'S', 'P', 'V', 'F', 'A', 'G', 'G', 'V', 'E', 'Y', 'A', 'I', 'T', 'P', 'E', 'I', 'A', 'T', 'R']",PNHDTGVSPVFSVEYAITPELATR,NHDTGVSPVFAGGVEYAITPEIATR,PNHDTGVSPVFSVEYAITPELATR,0.0,0,-24.111553192138672
+471,"['G', 'F', 'S', 'S', 'G', 'S', 'A', 'V', 'V', 'S', 'G', 'G', 'S', 'R']",GFSSGSAVVSGGSR,GFSSGSAVVSGGSR,GFSSGSAVVSGGSR,1.0,1,-0.5966345071792603
