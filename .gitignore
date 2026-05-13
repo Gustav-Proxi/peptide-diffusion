@@ -32,3 +32,5 @@ eval/novobench_preds/
 
 # Personal chat folder
 peptide/
+checkpoints/absorbing_seed_*/
+checkpoints/v2/
