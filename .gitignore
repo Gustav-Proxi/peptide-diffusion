@@ -23,3 +23,12 @@ checkpoints/retrain_seed_*/
 
 # OS
 .DS_Store
+
+# Eval data caches and large parquet files
+eval/ecoli_test_parquet/
+eval/blast_cache/
+eval/novobench_cache/
+eval/novobench_preds/
+
+# Personal chat folder
+peptide/

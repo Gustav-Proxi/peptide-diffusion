@@ -1,0 +1,7 @@
+{
+  "model": "instanovo-v1.2.0",
+  "test_set": "ecoli_ev_472",
+  "n_spectra": 472,
+  "aa_recall_pct": 0.0,
+  "pep_acc_pct": 0.0
+}

@@ -15,15 +15,10 @@ try:
 except ImportError:
     raise ImportError("pip install huggingface_hub")
 
-TOKEN = os.environ.get("HUGGINGFACE_TOKEN")
-REPO  = os.environ.get("HF_REPO")
+TOKEN = os.environ.get("HUGGINGFACE_TOKEN")  # optional if already logged in via CLI
+REPO  = os.environ.get("HF_REPO", "Gustav-Proxi/peptide-diffusion-v2")
 
-if not TOKEN:
-    raise ValueError("Set HUGGINGFACE_TOKEN env var")
-if not REPO:
-    raise ValueError("Set HF_REPO env var (e.g. yourname/peptide-diffusion-v2)")
-
-api = HfApi(token=TOKEN)
+api = HfApi(token=TOKEN)  # token=None uses cached CLI credentials
 
 # Create repo if it doesn't exist
 create_repo(REPO, repo_type="model", exist_ok=True, private=False, token=TOKEN)

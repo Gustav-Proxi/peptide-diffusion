@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Peptide Diffusion — Demo Day Deck</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="deck-stage.js"></script>
+<style>
+:root{
+  --bg:#0a0e1a;
+  --bg2:#0f1424;
+  --surface:#161b2e;
+  --surface2:#1c2238;
+  --line:#262d44;
+  --ink:#e8e6e0;
+  --ink2:#b8b5ad;
+  --ink3:#7a7e90;
+  --ink4:#4a4f63;
+  --cyan:#6fc3ec;
+  --cyan2:#9ddff5;
+  --copper:#d97706;
+  --violet:#9d7fd9;
+  --green:#7fcfa0;
+  --red:#e07a7a;
+  --serif:'Instrument Serif',Georgia,serif;
+  --sans:'Inter',-apple-system,sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#000;color:var(--ink);font-family:var(--sans);height:100%;overflow:hidden}
+deck-stage{display:block;height:100vh}
+deck-stage > section{
+  width:1920px;height:1080px;
+  background:var(--bg);
+  color:var(--ink);
+  position:relative;
+  padding:90px 110px;
+  overflow:hidden;
+  font-family:var(--sans);
+}
+/* subtle grain on every slide */
+deck-stage > section::after{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.9 0 0 0 0 0.9 0 0 0 0 0.9 0 0 0 0.4 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity:0.04;mix-blend-mode:overlay;
+}
+
+/* TYPOGRAPHY */
+.eyebrow{
+  font-family:var(--mono);font-size:14px;letter-spacing:0.22em;
+  color:var(--cyan);text-transform:uppercase;font-weight:600;
+  margin-bottom:28px;
+}
+.eyebrow .dot{display:inline-block;width:8px;height:8px;background:var(--cyan);border-radius:50%;margin-right:14px;vertical-align:middle;box-shadow:0 0 12px var(--cyan)}
+h1.title{
+  font-family:var(--serif);font-weight:400;
+  font-size:160px;line-height:0.95;letter-spacing:-0.025em;
+  color:var(--ink);
+  margin-bottom:24px;
+}
+h1.title em{font-style:italic;color:var(--cyan)}
+h2.section-h{
+  font-family:var(--serif);font-weight:400;
+  font-size:96px;line-height:1.0;letter-spacing:-0.02em;
+  color:var(--ink);
+  margin-bottom:36px;
+  text-wrap:balance;
+}
+h2.section-h em{font-style:italic;color:var(--cyan)}
+h2.section-h .copper{color:var(--copper);font-style:italic}
+.dek{
+  font-family:var(--sans);font-weight:300;
+  font-size:34px;line-height:1.4;letter-spacing:-0.01em;
+  color:var(--ink2);max-width:1500px;
+  text-wrap:pretty;
+}
+.dek strong{color:var(--ink);font-weight:600}
+.body{font-size:24px;line-height:1.55;color:var(--ink2)}
+.mono{font-family:var(--mono)}
+
+/* layout */
+.slide-num{
+  position:absolute;bottom:42px;right:60px;
+  font-family:var(--mono);font-size:13px;letter-spacing:0.2em;
+  color:var(--ink4);text-transform:uppercase;
+}
+.brand-tag{
+  position:absolute;top:42px;right:60px;
+  font-family:var(--mono);font-size:13px;letter-spacing:0.18em;
+  color:var(--ink3);text-transform:uppercase;
+}
+.brand-tag .cy{color:var(--cyan)}
+
+/* SLIDE 1 — TITLE */
+.s-title{
+  display:flex;flex-direction:column;justify-content:center;
+  background:radial-gradient(ellipse 1400px 800px at 65% 50%, rgba(111,195,236,0.08) 0%, transparent 60%), var(--bg);
+}
+.s-title h1{font-size:180px;line-height:0.92;max-width:1100px}
+.s-title .pre{
+  font-family:var(--mono);font-size:18px;letter-spacing:0.25em;
+  color:var(--cyan);text-transform:uppercase;font-weight:600;
+  margin-bottom:36px;
+}
+.s-title .sub{
+  font-family:var(--serif);font-style:italic;
+  font-size:48px;color:var(--ink2);margin-top:24px;line-height:1.2;
+}
+.s-title .meta{
+  margin-top:80px;display:flex;gap:48px;align-items:center;
+  font-family:var(--mono);font-size:18px;color:var(--ink3);
+}
+.s-title .meta strong{color:var(--ink2);font-weight:500}
+.s-title .accent-line{
+  position:absolute;left:110px;top:50%;transform:translateY(-50%);
+  width:6px;height:520px;background:linear-gradient(180deg,transparent 0%,var(--cyan) 30%,var(--copper) 70%,transparent 100%);
+  opacity:0.6;
+}
+.s-title .ions{
+  position:absolute;right:90px;top:50%;transform:translateY(-50%);
+  width:540px;height:540px;
+}
+.s-title .ions svg{width:100%;height:100%}
+
+/* GENERIC GRID + CARDS */
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:36px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+
+.card{
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:4px;padding:36px 40px;
+  position:relative;
+}
+.card .label{
+  font-family:var(--mono);font-size:13px;letter-spacing:0.18em;
+  color:var(--ink3);text-transform:uppercase;margin-bottom:16px;
+}
+.card h3{
+  font-family:var(--serif);font-size:42px;font-weight:400;
+  line-height:1.1;color:var(--ink);margin-bottom:18px;letter-spacing:-0.01em;
+}
+.card p{font-size:22px;line-height:1.5;color:var(--ink2)}
+
+/* HUGE STATS */
+.hstat-row{display:flex;gap:90px;margin-top:60px}
+.hstat .num{
+  font-family:var(--serif);font-size:140px;line-height:1;letter-spacing:-0.025em;
+  color:var(--ink);
+}
+.hstat .num .pct{font-size:0.5em;color:var(--ink3);font-style:italic}
+.hstat .num.cy{color:var(--cyan)}
+.hstat .num.copper{color:var(--copper)}
+.hstat .num.violet{color:var(--violet)}
+.hstat .lbl{
+  font-family:var(--mono);font-size:14px;letter-spacing:0.2em;
+  color:var(--ink3);text-transform:uppercase;margin-top:14px;
+}
+.hstat .delta{
+  font-family:var(--mono);font-size:18px;color:var(--cyan);margin-top:10px;
+}
+.hstat .delta.copper{color:var(--copper)}
+
+/* SLIDE 2 — PROBLEM */
+.s-problem .grid-2{margin-top:50px}
+.problem-vis{
+  background:var(--surface);border:1px solid var(--line);border-radius:4px;
+  padding:48px;height:680px;position:relative;display:flex;flex-direction:column;justify-content:center;
+}
+.problem-vis svg{width:100%;height:100%}
+
+/* SLIDE 3 — APPROACH */
+.approach-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px;margin-top:50px}
+.approach-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:4px;
+  padding:42px 36px;height:540px;position:relative;
+  display:flex;flex-direction:column;
+}
+.approach-card .num-mark{
+  font-family:var(--serif);font-style:italic;font-size:80px;
+  color:var(--cyan);line-height:1;margin-bottom:24px;opacity:0.85;
+}
+.approach-card h3{
+  font-family:var(--serif);font-size:38px;font-weight:400;line-height:1.15;
+  color:var(--ink);margin-bottom:20px;letter-spacing:-0.01em;
+}
+.approach-card p{font-size:21px;line-height:1.55;color:var(--ink2);flex:1}
+.approach-card .formula{
+  font-family:var(--mono);font-size:16px;color:var(--cyan);
+  background:var(--bg2);padding:14px 18px;border-radius:3px;
+  margin-top:18px;border:1px solid var(--line);
+}
+
+/* SLIDE 4 — DIFFUSION */
+.s-diffusion h2.section-h{font-size:80px}
+.diff-stage{
+  margin-top:42px;display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:start;
+}
+.diff-lattice{
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:4px;padding:40px;height:680px;
+}
+.diff-tcap{
+  display:flex;justify-content:space-between;
+  font-family:var(--mono);font-size:14px;color:var(--ink3);margin-bottom:24px;
+  text-transform:uppercase;letter-spacing:0.15em;
+}
+.diff-tcap .t-val{color:var(--cyan)}
+.lattice-cells{
+  display:grid;grid-template-columns:repeat(20,1fr);gap:5px;
+}
+.lc{
+  aspect-ratio:1;border:1px solid var(--line);border-radius:2px;
+  background:var(--bg2);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--mono);font-size:13px;font-weight:600;color:var(--ink3);
+}
+.lc.mask{color:var(--ink4)}
+.lc.committed{background:rgba(111,195,236,0.15);color:var(--cyan);border-color:var(--cyan)}
+.lc.partial{color:var(--ink2);background:rgba(111,195,236,0.05)}
+.lattice-strip{margin-top:14px}
+.lattice-strip + .lattice-strip{margin-top:8px}
+.lattice-strip .lc{aspect-ratio:auto;height:38px;font-size:14px}
+
+.diff-explain h3{
+  font-family:var(--serif);font-size:44px;font-weight:400;line-height:1.1;
+  color:var(--ink);margin-bottom:20px;letter-spacing:-0.01em;
+}
+.diff-explain h3 em{font-style:italic;color:var(--cyan)}
+.diff-explain p{font-size:23px;line-height:1.5;color:var(--ink2);margin-bottom:24px}
+.diff-explain .keystep{
+  background:var(--surface);border:1px solid var(--line);
+  padding:24px 28px;border-radius:4px;margin-bottom:14px;
+}
+.diff-explain .keystep .step-num{
+  font-family:var(--mono);font-size:13px;color:var(--cyan);
+  letter-spacing:0.2em;margin-bottom:8px;text-transform:uppercase;
+}
+.diff-explain .keystep .step-txt{font-size:20px;color:var(--ink2);line-height:1.5}
+
+/* SLIDE 5 — ARCHITECTURE PIPELINE */
+.pipeline{
+  margin-top:60px;
+  display:grid;grid-template-columns:1.1fr 0.6fr 1.1fr 0.6fr 1.1fr;
+  gap:0;align-items:stretch;
+}
+.pipe-step{
+  background:var(--surface);border:1px solid var(--line);border-radius:4px;
+  padding:42px 32px;text-align:center;
+  display:flex;flex-direction:column;justify-content:center;
+  position:relative;min-height:520px;
+}
+.pipe-step.contrib{border-color:var(--cyan);background:linear-gradient(180deg,var(--surface) 0%,rgba(111,195,236,0.05) 100%)}
+.pipe-step .icon{
+  width:96px;height:96px;margin:0 auto 24px;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--bg2);border:1px solid var(--line);border-radius:50%;
+}
+.pipe-step.contrib .icon{border-color:var(--cyan);background:rgba(111,195,236,0.1)}
+.pipe-step h4{
+  font-family:var(--serif);font-size:28px;font-weight:400;color:var(--ink);
+  margin-bottom:12px;line-height:1.2;letter-spacing:-0.005em;
+}
+.pipe-step .tag{
+  font-family:var(--mono);font-size:11px;letter-spacing:0.2em;
+  color:var(--ink3);text-transform:uppercase;margin-bottom:18px;
+}
+.pipe-step.contrib .tag{color:var(--cyan)}
+.pipe-step p{font-size:17px;line-height:1.45;color:var(--ink2)}
+.pipe-step .gain{
+  margin-top:18px;font-family:var(--mono);font-size:15px;color:var(--cyan);
+  padding-top:14px;border-top:1px dashed var(--line);
+}
+.pipe-arrow{
+  display:flex;align-items:center;justify-content:center;
+  position:relative;
+}
+.pipe-arrow::before{
+  content:'';height:1px;width:80%;
+  background:linear-gradient(90deg,transparent 0%,var(--ink4) 20%,var(--ink4) 80%,transparent 100%);
+}
+.pipe-arrow::after{
+  content:'▶';position:absolute;font-size:18px;color:var(--ink4);
+}
+
+/* SLIDE 6 — SELF-COND */
+.sc-grid{
+  margin-top:46px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;
+}
+.sc-vis{
+  background:var(--surface);border:1px solid var(--line);border-radius:4px;
+  padding:60px;height:660px;display:flex;flex-direction:column;justify-content:center;
+}
+.sc-vis svg{width:100%;height:auto}
+
+/* SLIDE 7 — CFID */
+.cfid-vis{
+  background:var(--surface);border:1px solid var(--line);border-radius:4px;
+  padding:48px;height:680px;display:flex;flex-direction:column;justify-content:center;
+}
+.cfid-vis svg{width:100%;height:auto}
+
+/* SLIDE 8 — SGIR */
+.sgir-vis{
+  background:var(--surface);border:1px solid var(--line);border-radius:4px;
+  padding:48px 40px;height:680px;display:flex;flex-direction:column;justify-content:center;
+}
+
+/* SLIDE 9 — RESULTS */
+.s-results{
+  background:radial-gradient(ellipse 1400px 800px at 30% 50%, rgba(111,195,236,0.08) 0%, transparent 60%), var(--bg);
+}
+.s-results .hstat .num{font-size:150px}
+.s-results .hstat-row{margin-top:80px;gap:140px;flex-wrap:nowrap}
+.s-results .hstat{min-width:420px}
+
+/* SLIDE 10 — ABLATION TABLE */
+.s-ablation .grid-4{margin-top:46px}
+.abl-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:4px;
+  padding:30px 28px;position:relative;height:240px;
+  display:flex;flex-direction:column;justify-content:center;
+}
+.abl-card.best{
+  border-color:var(--cyan);
+  background:linear-gradient(180deg,var(--surface) 0%,rgba(111,195,236,0.08) 100%);
+}
+.abl-card.neg{border-color:rgba(224,122,122,0.3)}
+.abl-card .name{
+  font-family:var(--mono);font-size:13px;letter-spacing:0.12em;
+  color:var(--ink2);text-transform:uppercase;margin-bottom:14px;line-height:1.3;
+  padding-right:60px;
+}
+.abl-card .nums{display:flex;gap:48px;margin-bottom:12px}
+.abl-card .num-blk{display:flex;flex-direction:column}
+.abl-card .num-val{
+  font-family:var(--serif);font-size:38px;line-height:1;color:var(--ink);
+}
+.abl-card.best .num-val{color:var(--cyan)}
+.abl-card .num-lbl{
+  font-family:var(--mono);font-size:11px;color:var(--ink3);
+  margin-top:4px;letter-spacing:0.12em;text-transform:uppercase;
+}
+.abl-card .std{
+  font-family:var(--mono);font-size:12px;color:var(--ink3);
+  letter-spacing:0.06em;margin-top:8px;
+}
+.abl-card .badge{
+  position:absolute;top:18px;right:18px;
+  font-family:var(--mono);font-size:10px;letter-spacing:0.15em;
+  padding:4px 10px;border-radius:2px;text-transform:uppercase;font-weight:600;
+}
+.abl-card.best .badge{background:var(--cyan);color:var(--bg)}
+.abl-card.neg .badge{background:rgba(224,122,122,0.2);color:var(--red);border:1px solid rgba(224,122,122,0.3)}
+
+/* SLIDE 11 — NEGATIVE RESULTS */
+.neg-list{
+  margin-top:42px;display:grid;grid-template-columns:1fr 1fr;gap:24px;
+}
+.neg-item{
+  background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--red);
+  border-radius:4px;padding:24px 28px;
+}
+.neg-item .neg-num{
+  font-family:var(--serif);font-style:italic;font-size:36px;color:var(--red);
+  line-height:1;margin-bottom:8px;
+}
+.neg-item h4{
+  font-family:var(--serif);font-size:24px;font-weight:400;color:var(--ink);
+  margin-bottom:8px;letter-spacing:-0.005em;
+}
+.neg-item p{font-size:17px;line-height:1.45;color:var(--ink2)}
+.neg-item .delta{
+  display:inline-block;font-family:var(--mono);font-size:13px;
+  color:var(--red);margin-top:8px;letter-spacing:0.05em;
+}
+
+/* SLIDE 12 — WASTEWATER */
+.ww-grid{
+  margin-top:36px;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
+}
+.ww-card{
+  background:var(--surface);border:1px solid var(--line);border-radius:4px;
+  padding:24px;height:240px;display:flex;flex-direction:column;
+  position:relative;
+}
+.ww-card .ww-seq{
+  font-family:var(--mono);font-size:18px;letter-spacing:0.04em;
+  color:var(--cyan);font-weight:600;margin-bottom:16px;line-height:1.3;
+  word-break:break-all;
+}
+.ww-card .ww-stats{display:flex;gap:24px;margin-top:auto;border-top:1px solid var(--line);padding-top:14px}
+.ww-card .ww-stat{display:flex;flex-direction:column}
+.ww-card .ww-stat-num{font-family:var(--serif);font-size:30px;color:var(--ink);line-height:1}
+.ww-card .ww-stat-lbl{
+  font-family:var(--mono);font-size:10px;letter-spacing:0.15em;
+  color:var(--ink3);margin-top:4px;text-transform:uppercase;
+}
+.ww-card .ww-tag{
+  position:absolute;top:18px;right:18px;
+  font-family:var(--mono);font-size:10px;letter-spacing:0.15em;
+  color:var(--ink3);text-transform:uppercase;
+}
+
+/* SLIDE 13 — CLOSING */
+.s-close{
+  display:flex;flex-direction:column;justify-content:center;
+  background:radial-gradient(ellipse 1400px 800px at 50% 50%, rgba(111,195,236,0.10) 0%, transparent 60%), var(--bg);
+  text-align:center;align-items:center;
+}
+.s-close h1{
+  font-family:var(--serif);font-size:140px;line-height:0.95;letter-spacing:-0.025em;
+  color:var(--ink);margin-bottom:40px;text-wrap:balance;max-width:1500px;
+}
+.s-close h1 em{font-style:italic;color:var(--cyan)}
+.s-close .pills{
+  display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:60px;
+}
+.s-close .pill{
+  font-family:var(--mono);font-size:18px;letter-spacing:0.1em;
+  padding:14px 26px;border:1px solid var(--line);border-radius:100px;
+  color:var(--ink2);text-transform:uppercase;
+}
+.s-close .pill.cy{border-color:var(--cyan);color:var(--cyan)}
+.s-close .credits{
+  margin-top:80px;font-family:var(--mono);font-size:18px;color:var(--ink3);
+  line-height:1.7;
+}
+.s-close .credits strong{color:var(--ink2);font-weight:500}
+</style>
+</head>
+<body>
+
+<script type="application/json" id="speaker-notes">
+[
+  "Hi, I'm presenting Peptide Diffusion — our team's CSE 676 project. Three of us — Vaishak, Akshay, and Sanika — built a deep-learning system that reads protein sequences directly from raw mass-spectrometry data. No reference database needed. We trained an absorbing diffusion model on the Nine-Species benchmark and we're going to walk you through the architecture, the experimental results, and a real-world wastewater application. Our headline number is 76% amino-acid recall and 60% peptide accuracy at five-percent FDR — which beats the published 2025 state-of-the-art by 27 points on peptide accuracy.",
+
+  "Here's the problem we're solving. A mass spectrometer takes a protein sample, breaks each peptide into fragments, and gives you a sparse list of mass-to-charge peaks. That's it. From those peaks, you have to recover the original amino-acid sequence. Existing tools do this by searching a known proteome database — but for environmental samples, novel pathogens, or wastewater, that database doesn't exist. So you need de novo sequencing: read the sequence purely from the spectrum. The classical autoregressive approaches like CasaNovo and InstaNovo are stuck in the 30 to 40 percent peptide-accuracy range. We wanted to do significantly better.",
+
+  "Our approach has three pieces. First, we replace the autoregressive decoder with absorbing diffusion — every position starts as a [MASK] token and the model fills them in iteratively, in any order, using bidirectional context. Second, we add three architectural contributions on top: a learned PeakEncoder that processes raw spectra, a B/Y fragment-ion bias that encodes physics, and self-conditioning that lets the model see its own previous estimate. Third, we use CFID — confidence-filtered iterative decoding — at inference time, plus SGIR ranking on multiple draws.",
+
+  "Let me show you what reverse diffusion actually looks like. We start at timestep T equals 500 with every position fully masked. At each step the model produces a confidence distribution over all 20 amino acids for every position simultaneously. Positions where it's highly confident get committed — these are the cyan cells lighting up here. Positions where it's still uncertain stay masked. By T equals zero, the full sequence is committed. The crucial thing is this is bidirectional — when the model commits position 8, it uses information from positions 1, 2, 19, and 20 all at once. An autoregressive model can only look left.",
+
+  "Here's the full architecture. The mass spectrum enters our PeakEncoder — a learned attention module that turns raw m-over-z peaks into peak embeddings. Those embeddings condition the absorbing diffusion model on the right. We add a B/Y-ion bias term that injects physics: peaks at masses corresponding to known b and y fragment-ions get amplified. Self-conditioning is the biggest single architectural win — at each diffusion step, the model sees its own previous estimate as additional context, which costs us one extra forward pass but gives us 14.6 points of peptide accuracy. Self-conditioning was the breakthrough that took us from 33 percent to 58 percent peptide accuracy.",
+
+  "Self-conditioning works like this. Standard diffusion only sees the current noisy state x-of-t. Self-conditioned diffusion sees x-of-t AND the model's own previous estimate x-hat-zero from the prior step. It's like giving the model its own working memory across the denoising trajectory. We use it during both training — with stop-gradient on the previous estimate — and inference. It's a one-line change to the forward pass, costs us roughly two times more compute per step, and is by far the biggest single contribution in the project. In ablations, removing self-conditioning drops peptide accuracy by 14.6 points.",
+
+  "CFID — confidence-filtered iterative decoding — is what we do at inference time. Instead of committing every position in one shot, we draw eight candidate sequences from the model and run mask-predict refinement: we take the top-k most confident positions across all candidates and lock them in, then resample the rest, then repeat. This is an inference-time trick that doesn't require retraining. CFID alone over self-conditioning bumps peptide accuracy from 57.84 to 59.60 percent. It's basically an ensemble inside a single model.",
+
+  "SGIR — self-guided iterative ranking — is our final reranking step. We have eight CFID candidates. We score each one by how well its predicted fragment masses match the actual observed peaks in the spectrum. The candidate with the best fragment-match score wins. SGIR is small — adds 0.36 points on top of CFID — but it's free and stable. Combined CFID plus SGIR is our best configuration: 76.00 percent AA recall, 59.96 percent peptide accuracy.",
+
+  "And here are the headline numbers. 76.00 percent amino-acid recall. 59.96 percent peptide accuracy at five percent FDR. The published state-of-the-art for autoregressive de novo sequencing is InstaNovo at 33.1 percent peptide accuracy — we beat that by 26.9 percentage points. These are mean values across three random seeds with standard deviations of 0.19 and 3.82 respectively. This is a substantial advance, not a marginal one.",
+
+  "Here's the full ablation across ten inference strategies, all run on three seeds. CFID plus SGIR — that's our final configuration — is Pareto-optimal. Notice the negative results in red: mass correction during decoding actually hurts performance, beam search collapses everything by 45 points because autoregressive decoding is incompatible with bidirectional diffusion, and the entropy gate alone is catastrophic. We documented all nine negative results because reproducing failure modes is part of doing this rigorously.",
+
+  "We documented nine specific failure modes, all reproduced across three seeds. The most surprising one was mass correction — intuitively, filtering candidates that don't match the precursor mass should help, but it discards near-correct candidates faster than it discards wrong ones. Beam search collapses by 45 points because diffusion is bidirectional. The entropy-adaptive gate alone is worse than random. And rerank-spectral as a standalone reranker hurts by 6.3 points. These negative results are as important as the positive ones — they tell us why this architecture works the way it does.",
+
+  "Finally — the real-world application. We ran our model on a wastewater metaproteomics sample. Six peptides survived a 5% FDR filter and replicate-consistency checks across two technical replicates. We then computed ESM-2 pseudo-perplexity for each one — these are the PPL numbers you see — and they're all in the 31 to 41 range, which is consistent with real, biologically plausible peptide sequences. There's no reference proteome here. Our model identified these sequences purely from spectra. This is the kind of application that database-search methods literally cannot do.",
+
+  "To summarize. Diffusion is the right architecture for de novo peptide sequencing — not autoregression. Self-conditioning is the single most important contribution: 14.6 points of peptide accuracy from one architectural change. CFID and SGIR work because they exploit bidirectional context that autoregressive models can't access. We documented nine reproducible negative results, including the surprising finding that mass correction hurts. And the model generalizes to wastewater metaproteomics where no reference proteome exists. Thanks — happy to take questions."
+]
+</script>
+
+<deck-stage>
+
+<!-- =================================================== -->
+<!-- SLIDE 1 — TITLE                                      -->
+<!-- =================================================== -->
+<section data-screen-label="01 Title" class="s-title">
+  <div class="accent-line"></div>
+  <div class="brand-tag"><span class="cy">●</span> CSE 676 · UB · Spring 2026</div>
+  <div class="pre">Demo Day · Group Project</div>
+  <h1 class="title">Peptide<br>Diffusion<em>.</em></h1>
+  <div class="sub">Reading protein sequences<br>directly from raw spectra.</div>
+  <div class="meta">
+    <div><strong>Team:</strong> Vaishak Girish Kumar · Akshay Mohan Revankar · Sanika Vilas Nanjan</div>
+  </div>
+  <div class="ions">
+    <svg viewBox="0 0 600 600">
+      <defs>
+        <radialGradient id="ionGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#6fc3ec" stop-opacity="0.4"/>
+          <stop offset="100%" stop-color="#6fc3ec" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <circle cx="300" cy="300" r="280" fill="url(#ionGlow)"/>
+      <!-- spectrum baseline -->
+      <line x1="80" y1="500" x2="520" y2="500" stroke="#262d44" stroke-width="2"/>
+      <!-- spectrum peaks -->
+      <g stroke="#6fc3ec" stroke-width="3" stroke-linecap="round">
+        <line x1="120" y1="500" x2="120" y2="420"/>
+        <line x1="160" y1="500" x2="160" y2="320"/>
+        <line x1="200" y1="500" x2="200" y2="240"/>
+        <line x1="240" y1="500" x2="240" y2="180"/>
+        <line x1="280" y1="500" x2="280" y2="280"/>
+        <line x1="320" y1="500" x2="320" y2="160"/>
+        <line x1="360" y1="500" x2="360" y2="220"/>
+        <line x1="400" y1="500" x2="400" y2="340"/>
+        <line x1="440" y1="500" x2="440" y2="260"/>
+        <line x1="480" y1="500" x2="480" y2="400"/>
+      </g>
+      <!-- ion markers -->
+      <g fill="#d97706" font-family="JetBrains Mono" font-size="11" text-anchor="middle">
+        <text x="160" y="305">b₂</text>
+        <text x="240" y="165">b₄</text>
+        <text x="320" y="145">y₆</text>
+        <text x="440" y="245">y₈</text>
+      </g>
+      <!-- amino acid sequence above -->
+      <g font-family="JetBrains Mono" font-size="22" text-anchor="middle" fill="#e8e6e0" font-weight="600">
+        <text x="120" y="80">G</text>
+        <text x="180" y="80">S</text>
+        <text x="240" y="80">N</text>
+        <text x="300" y="80">Y</text>
+        <text x="360" y="80">N</text>
+        <text x="420" y="80">E</text>
+        <text x="480" y="80">V</text>
+      </g>
+      <!-- arrow down from sequence to spectrum -->
+      <g stroke="#7a7e90" stroke-width="1" stroke-dasharray="2,4">
+        <line x1="120" y1="100" x2="120" y2="420"/>
+        <line x1="180" y1="100" x2="180" y2="380"/>
+        <line x1="240" y1="100" x2="240" y2="280"/>
+      </g>
+      <text x="300" y="565" font-family="Instrument Serif" font-style="italic" font-size="20" fill="#7a7e90" text-anchor="middle">m/z spectrum → sequence</text>
+    </svg>
+  </div>
+  <div class="slide-num">01 / 13</div>
+</section>
+
+<!-- =================================================== -->
+<!-- SLIDE 2 — PROBLEM                                    -->
+<!-- =================================================== -->
+<section data-screen-label="02 Problem" class="s-problem">
+  <div class="brand-tag">The Problem</div>
+  <div class="eyebrow"><span class="dot"></span>De Novo Sequencing</div>
+  <h2 class="section-h">A spectrometer shatters proteins.<br>We <em>read the pieces.</em></h2>
+  <div class="grid-2">
+    <div>
+      <p class="dek">Mass spectra are sparse, noisy fingerprints — a ladder of fragment-ion masses that encode the original amino-acid sequence.</p>
+      <p class="dek" style="margin-top:24px">Existing tools depend on a known <strong>reference proteome</strong>. For wastewater, novel pathogens, or environmental samples, that database <strong>doesn't exist</strong>.</p>
+      <p class="dek" style="margin-top:24px">Classical autoregressive baselines (CasaNovo, InstaNovo) plateau at <strong>33% peptide accuracy</strong>.</p>
+    </div>
+    <div class="problem-vis">
+      <svg viewBox="0 0 700 600">
+        <!-- protein chain -->
+        <g font-family="JetBrains Mono" font-size="28" font-weight="600" fill="#e8e6e0" text-anchor="middle">
+          <rect x="50" y="50" width="50" height="50" fill="#1c2238" stroke="#6fc3ec" rx="3"/><text x="75" y="85">G</text>
+          <rect x="105" y="50" width="50" height="50" fill="#1c2238" stroke="#6fc3ec" rx="3"/><text x="130" y="85">S</text>
+          <rect x="160" y="50" width="50" height="50" fill="#1c2238" stroke="#6fc3ec" rx="3"/><text x="185" y="85">N</text>
+          <rect x="215" y="50" width="50" height="50" fill="#1c2238" stroke="#6fc3ec" rx="3"/><text x="240" y="85">Y</text>
+          <rect x="270" y="50" width="50" height="50" fill="#1c2238" stroke="#6fc3ec" rx="3"/><text x="295" y="85">N</text>
+          <rect x="325" y="50" width="50" height="50" fill="#1c2238" stroke="#6fc3ec" rx="3"/><text x="350" y="85">E</text>
+          <rect x="380" y="50" width="50" height="50" fill="#1c2238" stroke="#6fc3ec" rx="3"/><text x="405" y="85">V</text>
+          <rect x="435" y="50" width="50" height="50" fill="#1c2238" stroke="#6fc3ec" rx="3"/><text x="460" y="85">V</text>
+          <rect x="490" y="50" width="50" height="50" fill="#1c2238" stroke="#6fc3ec" rx="3"/><text x="515" y="85">T</text>
+          <rect x="545" y="50" width="50" height="50" fill="#1c2238" stroke="#6fc3ec" rx="3"/><text x="570" y="85">L</text>
+        </g>
+        <text x="350" y="30" font-family="JetBrains Mono" font-size="13" fill="#7a7e90" text-anchor="middle" letter-spacing="2">PEPTIDE SEQUENCE</text>
+        <!-- arrow + label -->
+        <g stroke="#d97706" stroke-width="2">
+          <line x1="350" y1="120" x2="350" y2="180" marker-end="url(#aRR)"/>
+        </g>
+        <defs>
+          <marker id="aRR" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L6,3 z" fill="#d97706"/>
+          </marker>
+        </defs>
+        <text x="370" y="155" font-family="Instrument Serif" font-style="italic" font-size="18" fill="#d97706">CID fragmentation</text>
+        <!-- spectrum -->
+        <text x="350" y="220" font-family="JetBrains Mono" font-size="13" fill="#7a7e90" text-anchor="middle" letter-spacing="2">MASS SPECTRUM (m/z)</text>
+        <line x1="60" y1="500" x2="640" y2="500" stroke="#262d44" stroke-width="2"/>
+        <g stroke="#6fc3ec" stroke-width="3" stroke-linecap="round">
+          <line x1="100" y1="500" x2="100" y2="450"/>
+          <line x1="135" y1="500" x2="135" y2="380"/>
+          <line x1="180" y1="500" x2="180" y2="320"/>
+          <line x1="220" y1="500" x2="220" y2="290"/>
+          <line x1="260" y1="500" x2="260" y2="270"/>
+          <line x1="300" y1="500" x2="300" y2="350"/>
+          <line x1="335" y1="500" x2="335" y2="240"/>
+          <line x1="380" y1="500" x2="380" y2="310"/>
+          <line x1="420" y1="500" x2="420" y2="380"/>
+          <line x1="465" y1="500" x2="465" y2="270"/>
+          <line x1="510" y1="500" x2="510" y2="320"/>
+          <line x1="550" y1="500" x2="550" y2="430"/>
+          <line x1="600" y1="500" x2="600" y2="380"/>
+        </g>
+        <!-- b/y ion labels -->
+        <g font-family="JetBrains Mono" font-size="14" fill="#d97706" text-anchor="middle">
+          <text x="135" y="365">b₂</text>
+          <text x="220" y="275">b₄</text>
+          <text x="335" y="225">y₆</text>
+          <text x="465" y="255">y₈</text>
+        </g>
+        <line x1="60" y1="500" x2="60" y2="220" stroke="#262d44" stroke-width="2"/>
+        <text x="320" y="555" font-family="Instrument Serif" font-style="italic" font-size="18" fill="#7a7e90" text-anchor="middle">missing peaks · charge-state noise · neutral losses</text>
+      </svg>
+    </div>
+  </div>
+  <div class="slide-num">02 / 13</div>
+</section>
+
+<!-- =================================================== -->
+<!-- SLIDE 3 — APPROACH                                   -->
+<!-- =================================================== -->
+<section data-screen-label="03 Approach" class="s-approach">
+  <div class="brand-tag">Our Approach</div>
+  <div class="eyebrow"><span class="dot"></span>Three Contributions</div>
+  <h2 class="section-h">Diffusion, not autoregression.<br><em>Bidirectional</em> context wins.</h2>
+  <div class="approach-row">
+    <div class="approach-card">
+      <div class="num-mark">i.</div>
+      <h3>Absorbing diffusion<br>over amino-acid tokens</h3>
+      <p>Every position starts as <span class="mono" style="color:var(--ink3)">[MASK]</span>. The model iteratively reveals positions in any order, using <strong style="color:var(--ink)">bidirectional</strong> context — left and right neighbors at every step.</p>
+      <div class="formula">x<sub>0</sub> ← f<sub>θ</sub>(x<sub>t</sub>, S)</div>
+    </div>
+    <div class="approach-card">
+      <div class="num-mark">ii.</div>
+      <h3>Three targeted<br>architectural contributions</h3>
+      <p><strong style="color:var(--ink)">PeakEncoder</strong> — learned attention over raw m/z peaks. <strong style="color:var(--ink)">B/Y-ion bias</strong> — physics of fragment-ion masses. <strong style="color:var(--ink)">Self-conditioning</strong> — the biggest single architectural win.</p>
+      <div class="formula">+14.6 pp from self-conditioning alone</div>
+    </div>
+    <div class="approach-card">
+      <div class="num-mark">iii.</div>
+      <h3>Iterative inference<br>with confidence ranking</h3>
+      <p><strong style="color:var(--ink)">CFID</strong> — eight-candidate mask-predict refinement. <strong style="color:var(--ink)">SGIR</strong> — score candidates by how well predicted fragments match observed peaks. Free at inference, no retraining.</p>
+      <div class="formula">CFID + SGIR → 76.00% AA · 59.96% Pep</div>
+    </div>
+  </div>
+  <div class="slide-num">03 / 13</div>
+</section>
+
+<!-- =================================================== -->
+<!-- SLIDE 4 — DIFFUSION                                  -->
+<!-- =================================================== -->
+<section data-screen-label="04 Diffusion" class="s-diffusion">
+  <div class="brand-tag">Reverse Diffusion</div>
+  <div class="eyebrow"><span class="dot"></span>Reading from Noise</div>
+  <h2 class="section-h">Watch a peptide<br><em>condense from noise.</em></h2>
+  <div class="diff-stage">
+    <div class="diff-lattice">
+      <div class="diff-tcap">
+        <span>timestep · <span class="t-val">t = 250</span> · committing</span>
+        <span>iteration 250 / 500</span>
+      </div>
+      <!-- snapshot at midpoint, several positions revealed -->
+      <div class="lattice-cells">
+        <!-- row 1: lots committed -->
+        <div class="lc committed">G</div><div class="lc committed">S</div><div class="lc committed">N</div><div class="lc partial">Y</div><div class="lc committed">N</div>
+        <div class="lc committed">E</div><div class="lc partial">V</div><div class="lc partial">V</div><div class="lc mask">·</div><div class="lc partial">L</div>
+        <div class="lc mask">·</div><div class="lc committed">D</div><div class="lc partial">V</div><div class="lc mask">·</div><div class="lc committed">I</div>
+        <div class="lc partial">V</div><div class="lc mask">·</div><div class="lc committed">G</div><div class="lc partial">I</div><div class="lc committed">R</div>
+      </div>
+      <div style="margin-top:36px;font-family:var(--mono);font-size:13px;color:var(--ink3);text-transform:uppercase;letter-spacing:0.15em;margin-bottom:12px">prior trajectories · 4 parallel paths</div>
+      <div class="lattice-strip">
+        <div class="lattice-cells">
+          <div class="lc committed">G</div><div class="lc committed">S</div><div class="lc committed">N</div><div class="lc committed">Y</div><div class="lc committed">N</div>
+          <div class="lc committed">E</div><div class="lc committed">V</div><div class="lc committed">V</div><div class="lc committed">T</div><div class="lc committed">L</div>
+          <div class="lc committed">A</div><div class="lc committed">D</div><div class="lc committed">V</div><div class="lc committed">T</div><div class="lc committed">I</div>
+          <div class="lc committed">V</div><div class="lc committed">Q</div><div class="lc committed">G</div><div class="lc committed">I</div><div class="lc committed">R</div>
+        </div>
+      </div>
+      <div style="margin-top:24px;font-family:var(--mono);font-size:12px;color:var(--cyan);text-align:center">↑ t = 0 — fully committed sequence</div>
+    </div>
+    <div class="diff-explain">
+      <h3>Bidirectional <em>by design.</em></h3>
+      <p>Every position holds a probability distribution over all 20 amino acids — and the model considers all positions at once.</p>
+      <div class="keystep">
+        <div class="step-num">step 01</div>
+        <div class="step-txt">All positions = <span class="mono">[MASK]</span> at T = 500.</div>
+      </div>
+      <div class="keystep">
+        <div class="step-num">step 02</div>
+        <div class="step-txt">At each t, model predicts a distribution per position. High-confidence ones commit.</div>
+      </div>
+      <div class="keystep">
+        <div class="step-num">step 03</div>
+        <div class="step-txt">Committed positions feed forward as context for remaining masks. Repeat to t = 0.</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num">04 / 13</div>
+</section>
+
+<!-- =================================================== -->
+<!-- SLIDE 5 — ARCHITECTURE PIPELINE                      -->
+<!-- =================================================== -->
+<section data-screen-label="05 Architecture" class="s-arch">
+  <div class="brand-tag">Architecture</div>
+  <div class="eyebrow"><span class="dot"></span>Pipeline · End-to-End</div>
+  <h2 class="section-h">Three contributions on top of <em>absorbing diffusion.</em></h2>
+  <p class="dek" style="margin-top:-12px">Each contribution is independently ablated. Together they take the model from <strong>41.88% → 76.00%</strong> AA recall.</p>
+  <div class="pipeline">
+    <div class="pipe-step">
+      <div class="icon">
+        <svg width="48" height="48" viewBox="0 0 48 48"><g stroke="#6fc3ec" stroke-width="2.2" fill="none" stroke-linecap="round"><line x1="8" y1="36" x2="40" y2="36"/><line x1="14" y1="36" x2="14" y2="22"/><line x1="20" y1="36" x2="20" y2="14"/><line x1="26" y1="36" x2="26" y2="10"/><line x1="32" y1="36" x2="32" y2="20"/><line x1="38" y1="36" x2="38" y2="26"/></g></svg>
+      </div>
+      <h4>Mass Spectrum</h4>
+      <div class="tag">m/z + intensity</div>
+      <p>Sparse fragment-ion peaks from CID dissociation. Variable-length, noisy.</p>
+    </div>
+    <div class="pipe-arrow"></div>
+    <div class="pipe-step contrib">
+      <div class="icon">
+        <svg width="48" height="48" viewBox="0 0 48 48"><g stroke="#6fc3ec" stroke-width="2.2" fill="none"><circle cx="24" cy="24" r="14"/><circle cx="24" cy="24" r="7"/><circle cx="24" cy="24" r="2" fill="#6fc3ec"/></g></svg>
+      </div>
+      <h4>PeakEncoder</h4>
+      <div class="tag">Contribution #1</div>
+      <p>Learned attention module. Processes raw peaks into 256-dim embeddings that condition diffusion.</p>
+      <div class="gain">+33 pp peptide acc</div>
+    </div>
+    <div class="pipe-arrow"></div>
+    <div class="pipe-step contrib">
+      <div class="icon">
+        <svg width="48" height="48" viewBox="0 0 48 48"><g stroke="#6fc3ec" stroke-width="2.2" fill="none"><rect x="8" y="14" width="32" height="20" rx="2"/><line x1="14" y1="20" x2="34" y2="20"/><line x1="14" y1="28" x2="34" y2="28"/><circle cx="24" cy="24" r="2" fill="#6fc3ec"/></g></svg>
+      </div>
+      <h4>Diffusion Transformer<br>+ Self-Conditioning</h4>
+      <div class="tag">Contribution #2 + #3</div>
+      <p>Bidirectional transformer. Self-conditions on its own previous estimate — biggest single win.</p>
+      <div class="gain">+14.6 pp · self-cond</div>
+    </div>
+  </div>
+  <div class="slide-num">05 / 13</div>
+</section>
+
+<!-- =================================================== -->
+<!-- SLIDE 6 — SELF-CONDITIONING                          -->
+<!-- =================================================== -->
+<section data-screen-label="06 Self-Conditioning" class="s-selfcond">
+  <div class="brand-tag">Contribution · The biggest single win</div>
+  <div class="eyebrow"><span class="dot"></span>Self-Conditioning</div>
+  <h2 class="section-h">Let the model see<br><em>its own previous answer.</em></h2>
+  <div class="sc-grid">
+    <div>
+      <p class="dek">Standard diffusion sees only the noisy state <span class="mono" style="color:var(--cyan)">x<sub>t</sub></span>.</p>
+      <p class="dek" style="margin-top:20px">Self-conditioned diffusion <strong>also</strong> sees the model's <em>own</em> previous estimate <span class="mono" style="color:var(--cyan)">x̂<sub>0</sub><sup>prev</sup></span>.</p>
+      <p class="dek" style="margin-top:24px;font-size:28px">A one-line change to the forward pass.<br>2× the compute per step.<br><strong style="color:var(--cyan)">+14.6 percentage points</strong> on peptide accuracy.</p>
+      <p class="body" style="margin-top:32px">Trained with <em>stop-gradient</em> on the previous estimate — pure inference-time memory.</p>
+    </div>
+    <div class="sc-vis">
+      <svg viewBox="0 0 600 500">
+        <!-- Standard pathway -->
+        <g font-family="JetBrains Mono" font-size="14" fill="#7a7e90">
+          <text x="40" y="55" letter-spacing="2">STANDARD</text>
+        </g>
+        <g>
+          <rect x="40" y="80" width="100" height="60" rx="3" fill="#1c2238" stroke="#262d44"/>
+          <text x="90" y="115" font-family="JetBrains Mono" font-size="20" fill="#b8b5ad" text-anchor="middle">x_t</text>
+          <line x1="140" y1="110" x2="220" y2="110" stroke="#7a7e90" stroke-width="2" marker-end="url(#aR)"/>
+          <rect x="220" y="80" width="160" height="60" rx="3" fill="#1c2238" stroke="#262d44"/>
+          <text x="300" y="115" font-family="JetBrains Mono" font-size="18" fill="#b8b5ad" text-anchor="middle">f_θ</text>
+          <line x1="380" y1="110" x2="460" y2="110" stroke="#7a7e90" stroke-width="2" marker-end="url(#aR)"/>
+          <rect x="460" y="80" width="100" height="60" rx="3" fill="#1c2238" stroke="#262d44"/>
+          <text x="510" y="115" font-family="JetBrains Mono" font-size="20" fill="#b8b5ad" text-anchor="middle">x̂_0</text>
+        </g>
+        <!-- divider -->
+        <line x1="40" y1="200" x2="560" y2="200" stroke="#262d44" stroke-dasharray="4,4"/>
+        <!-- Self-cond pathway -->
+        <g font-family="JetBrains Mono" font-size="14" fill="#6fc3ec">
+          <text x="40" y="240" letter-spacing="2">SELF-CONDITIONED</text>
+        </g>
+        <g>
+          <rect x="40" y="265" width="100" height="60" rx="3" fill="#1c2238" stroke="#6fc3ec"/>
+          <text x="90" y="300" font-family="JetBrains Mono" font-size="20" fill="#e8e6e0" text-anchor="middle">x_t</text>
+          <rect x="40" y="345" width="100" height="60" rx="3" fill="#1c2238" stroke="#6fc3ec"/>
+          <text x="90" y="370" font-family="JetBrains Mono" font-size="14" fill="#6fc3ec" text-anchor="middle">x̂_0</text>
+          <text x="90" y="390" font-family="JetBrains Mono" font-size="14" fill="#6fc3ec" text-anchor="middle">prev</text>
+          <line x1="140" y1="295" x2="220" y2="335" stroke="#6fc3ec" stroke-width="2" marker-end="url(#aRcy)"/>
+          <line x1="140" y1="375" x2="220" y2="345" stroke="#6fc3ec" stroke-width="2" marker-end="url(#aRcy)"/>
+          <rect x="220" y="305" width="160" height="60" rx="3" fill="#1c2238" stroke="#6fc3ec"/>
+          <text x="300" y="340" font-family="JetBrains Mono" font-size="18" fill="#e8e6e0" text-anchor="middle">f_θ</text>
+          <line x1="380" y1="335" x2="460" y2="335" stroke="#6fc3ec" stroke-width="2" marker-end="url(#aRcy)"/>
+          <rect x="460" y="305" width="100" height="60" rx="3" fill="#1c2238" stroke="#6fc3ec"/>
+          <text x="510" y="340" font-family="JetBrains Mono" font-size="20" fill="#e8e6e0" text-anchor="middle">x̂_0</text>
+          <!-- feedback loop -->
+          <path d="M 510 365 Q 510 440 90 440 Q 90 415 90 405" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#aRcp)"/>
+          <text x="300" y="465" font-family="Instrument Serif" font-style="italic" font-size="16" fill="#d97706" text-anchor="middle">previous estimate fed back as context (stop-grad)</text>
+        </g>
+        <defs>
+          <marker id="aR" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#7a7e90"/></marker>
+          <marker id="aRcy" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#6fc3ec"/></marker>
+          <marker id="aRcp" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#d97706"/></marker>
+        </defs>
+      </svg>
+    </div>
+  </div>
+  <div class="slide-num">06 / 13</div>
+</section>
+
+<!-- =================================================== -->
+<!-- SLIDE 7 — CFID                                       -->
+<!-- =================================================== -->
+<section data-screen-label="07 CFID" class="s-cfid">
+  <div class="brand-tag">Inference-time refinement</div>
+  <div class="eyebrow"><span class="dot"></span>CFID · Confidence-Filtered Iterative Decoding</div>
+  <h2 class="section-h">Eight candidates, mask-predict<br>refinement, <em>top-k commit.</em></h2>
+  <div class="grid-2" style="margin-top:36px">
+    <div>
+      <p class="dek">Don't commit positions all at once. Draw <strong>8 candidate sequences</strong>. Lock in the most confident positions across candidates. Resample the rest. Repeat.</p>
+      <p class="dek" style="margin-top:24px">Effectively an <strong>ensemble inside a single model</strong> — no retraining, no extra parameters.</p>
+      <p class="body" style="margin-top:30px">Self-cond argmax: <span class="mono" style="color:var(--ink)">57.84% Pep</span><br>Self-cond + CFID: <span class="mono" style="color:var(--cyan)">59.60% Pep</span></p>
+      <p class="body" style="margin-top:18px;color:var(--cyan);font-family:var(--mono);font-size:24px">+1.76 pp peptide accuracy</p>
+    </div>
+    <div class="cfid-vis">
+      <svg viewBox="0 0 700 540">
+        <text x="20" y="30" font-family="JetBrains Mono" font-size="13" fill="#7a7e90" letter-spacing="2">8 CANDIDATE DRAWS</text>
+        <!-- 8 candidate rows -->
+        <g font-family="JetBrains Mono" font-size="14" font-weight="600">
+          <!-- row template: 12 boxes -->
+          <g transform="translate(20, 50)">
+            <g><rect width="48" height="32" rx="2" fill="#1c2238" stroke="#6fc3ec"/><text x="24" y="22" fill="#6fc3ec" text-anchor="middle">G</text>
+              <rect x="52" width="48" height="32" rx="2" fill="#1c2238" stroke="#6fc3ec"/><text x="76" y="22" fill="#6fc3ec" text-anchor="middle">S</text>
+              <rect x="104" width="48" height="32" rx="2" fill="#1c2238" stroke="#262d44"/><text x="128" y="22" fill="#7a7e90" text-anchor="middle">N</text>
+              <rect x="156" width="48" height="32" rx="2" fill="#1c2238" stroke="#6fc3ec"/><text x="180" y="22" fill="#6fc3ec" text-anchor="middle">Y</text>
+              <rect x="208" width="48" height="32" rx="2" fill="#1c2238" stroke="#262d44"/><text x="232" y="22" fill="#7a7e90" text-anchor="middle">N</text>
+              <rect x="260" width="48" height="32" rx="2" fill="#1c2238" stroke="#6fc3ec"/><text x="284" y="22" fill="#6fc3ec" text-anchor="middle">E</text>
+              <rect x="312" width="48" height="32" rx="2" fill="#1c2238" stroke="#262d44"/><text x="336" y="22" fill="#7a7e90" text-anchor="middle">V</text>
+              <rect x="364" width="48" height="32" rx="2" fill="#1c2238" stroke="#6fc3ec"/><text x="388" y="22" fill="#6fc3ec" text-anchor="middle">V</text>
+              <rect x="416" width="48" height="32" rx="2" fill="#1c2238" stroke="#262d44"/><text x="440" y="22" fill="#7a7e90" text-anchor="middle">T</text>
+              <rect x="468" width="48" height="32" rx="2" fill="#1c2238" stroke="#6fc3ec"/><text x="492" y="22" fill="#6fc3ec" text-anchor="middle">L</text>
+              <rect x="520" width="48" height="32" rx="2" fill="#1c2238" stroke="#262d44"/><text x="544" y="22" fill="#7a7e90" text-anchor="middle">A</text>
+            </g>
+          </g>
+          <!-- additional rows abbreviated -->
+          <g transform="translate(20, 90)" opacity="0.7">
+            <rect width="568" height="32" rx="2" fill="none" stroke="#262d44"/>
+            <text x="284" y="22" fill="#b8b5ad" text-anchor="middle">candidate 2</text>
+          </g>
+          <g transform="translate(20, 130)" opacity="0.5">
+            <rect width="568" height="32" rx="2" fill="none" stroke="#262d44"/>
+            <text x="284" y="22" fill="#b8b5ad" text-anchor="middle">candidate 3 ...</text>
+          </g>
+          <g transform="translate(20, 170)" opacity="0.35">
+            <rect width="568" height="32" rx="2" fill="none" stroke="#262d44"/>
+            <text x="284" y="22" fill="#b8b5ad" text-anchor="middle">candidate 8</text>
+          </g>
+        </g>
+        <!-- arrow down -->
+        <line x1="304" y1="220" x2="304" y2="265" stroke="#d97706" stroke-width="2" marker-end="url(#aRcp2)"/>
+        <text x="500" y="245" font-family="Instrument Serif" font-style="italic" font-size="16" fill="#d97706">top-k commit by confidence</text>
+        <!-- consensus row -->
+        <text x="20" y="295" font-family="JetBrains Mono" font-size="13" fill="#6fc3ec" letter-spacing="2">CONSENSUS · COMMIT</text>
+        <g transform="translate(20, 310)" font-family="JetBrains Mono" font-size="14" font-weight="600">
+          <g>
+            <rect width="48" height="32" rx="2" fill="rgba(111,195,236,0.15)" stroke="#6fc3ec"/><text x="24" y="22" fill="#6fc3ec" text-anchor="middle">G</text>
+            <rect x="52" width="48" height="32" rx="2" fill="rgba(111,195,236,0.15)" stroke="#6fc3ec"/><text x="76" y="22" fill="#6fc3ec" text-anchor="middle">S</text>
+            <rect x="104" width="48" height="32" rx="2" fill="rgba(111,195,236,0.15)" stroke="#6fc3ec"/><text x="128" y="22" fill="#6fc3ec" text-anchor="middle">N</text>
+            <rect x="156" width="48" height="32" rx="2" fill="rgba(111,195,236,0.15)" stroke="#6fc3ec"/><text x="180" y="22" fill="#6fc3ec" text-anchor="middle">Y</text>
+            <rect x="208" width="48" height="32" rx="2" fill="rgba(111,195,236,0.15)" stroke="#6fc3ec"/><text x="232" y="22" fill="#6fc3ec" text-anchor="middle">N</text>
+            <rect x="260" width="48" height="32" rx="2" fill="rgba(111,195,236,0.15)" stroke="#6fc3ec"/><text x="284" y="22" fill="#6fc3ec" text-anchor="middle">E</text>
+            <rect x="312" width="48" height="32" rx="2" fill="rgba(111,195,236,0.15)" stroke="#6fc3ec"/><text x="336" y="22" fill="#6fc3ec" text-anchor="middle">V</text>
+            <rect x="364" width="48" height="32" rx="2" fill="rgba(111,195,236,0.15)" stroke="#6fc3ec"/><text x="388" y="22" fill="#6fc3ec" text-anchor="middle">V</text>
+            <rect x="416" width="48" height="32" rx="2" fill="rgba(111,195,236,0.15)" stroke="#6fc3ec"/><text x="440" y="22" fill="#6fc3ec" text-anchor="middle">T</text>
+            <rect x="468" width="48" height="32" rx="2" fill="rgba(111,195,236,0.15)" stroke="#6fc3ec"/><text x="492" y="22" fill="#6fc3ec" text-anchor="middle">L</text>
+            <rect x="520" width="48" height="32" rx="2" fill="rgba(111,195,236,0.15)" stroke="#6fc3ec"/><text x="544" y="22" fill="#6fc3ec" text-anchor="middle">A</text>
+          </g>
+        </g>
+        <!-- arrow back up — refine masked positions -->
+        <path d="M 588 326 Q 650 326 650 110 Q 650 60 605 60" fill="none" stroke="#9d7fd9" stroke-width="2" stroke-dasharray="4,4" marker-end="url(#aRv)"/>
+        <text x="660" y="220" font-family="Instrument Serif" font-style="italic" font-size="14" fill="#9d7fd9" text-anchor="middle" transform="rotate(90 660 220)">resample masks</text>
+        <text x="350" y="430" font-family="Instrument Serif" font-style="italic" font-size="20" fill="#7a7e90" text-anchor="middle">repeat until all positions committed</text>
+        <defs>
+          <marker id="aRcp2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#d97706"/></marker>
+          <marker id="aRv" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#9d7fd9"/></marker>
+        </defs>
+      </svg>
+    </div>
+  </div>
+  <div class="slide-num">07 / 13</div>
+</section>
+
+<!-- =================================================== -->
+<!-- SLIDE 8 — SGIR                                       -->
+<!-- =================================================== -->
+<section data-screen-label="08 SGIR" class="s-sgir">
+  <div class="brand-tag">Final ranking</div>
+  <div class="eyebrow"><span class="dot"></span>SGIR · Self-Guided Iterative Ranking</div>
+  <h2 class="section-h">Re-score by spectrum match.<br><em>Free win.</em></h2>
+  <div class="grid-2" style="margin-top:36px">
+    <div>
+      <p class="dek">CFID gives 8 candidate sequences. Compute the predicted fragment-ion masses for each. Score against the <strong>actual</strong> observed peaks.</p>
+      <p class="dek" style="margin-top:24px">Pick the candidate whose <em>predicted spectrum</em> matches the <em>observed spectrum</em> best.</p>
+      <p class="body" style="margin-top:30px">CFID alone: <span class="mono" style="color:var(--ink)">59.60% Pep</span><br>CFID + SGIR: <span class="mono" style="color:var(--cyan)">59.96% Pep ✦</span></p>
+      <p class="body" style="margin-top:18px;color:var(--cyan);font-family:var(--mono);font-size:24px">+0.36 pp · stable across all 3 seeds</p>
+    </div>
+    <div class="sgir-vis">
+      <svg viewBox="0 0 600 540">
+        <!-- 3 candidates with score bars -->
+        <g font-family="JetBrains Mono" font-size="13" fill="#7a7e90">
+          <text x="20" y="30" letter-spacing="2">CANDIDATE · PREDICTED FRAGMENTS · SCORE</text>
+        </g>
+        <!-- candidate 1 -->
+        <g transform="translate(20, 60)">
+          <text x="0" y="20" font-family="JetBrains Mono" font-size="16" fill="#e8e6e0">GSNYNEVVTLADVTIVQGIR</text>
+          <!-- mini spectrum -->
+          <g transform="translate(0, 32)">
+            <line x1="0" y1="60" x2="380" y2="60" stroke="#262d44"/>
+            <g stroke="#6fc3ec" stroke-width="2.5" stroke-linecap="round">
+              <line x1="20" y1="60" x2="20" y2="20"/>
+              <line x1="60" y1="60" x2="60" y2="10"/>
+              <line x1="100" y1="60" x2="100" y2="25"/>
+              <line x1="140" y1="60" x2="140" y2="15"/>
+              <line x1="180" y1="60" x2="180" y2="35"/>
+              <line x1="220" y1="60" x2="220" y2="20"/>
+              <line x1="260" y1="60" x2="260" y2="30"/>
+              <line x1="300" y1="60" x2="300" y2="22"/>
+              <line x1="340" y1="60" x2="340" y2="45"/>
+            </g>
+          </g>
+          <!-- score bar -->
+          <rect x="430" y="32" width="140" height="14" fill="#1c2238" stroke="#262d44"/>
+          <rect x="430" y="32" width="135" height="14" fill="#6fc3ec"/>
+          <text x="580" y="44" font-family="JetBrains Mono" font-size="14" fill="#6fc3ec" text-anchor="end">0.96</text>
+          <text x="430" y="74" font-family="JetBrains Mono" font-size="11" fill="#6fc3ec" letter-spacing="2">★ BEST</text>
+        </g>
+        <!-- candidate 2 -->
+        <g transform="translate(20, 200)" opacity="0.6">
+          <text x="0" y="20" font-family="JetBrains Mono" font-size="16" fill="#b8b5ad">GSNYNEVVTIADVTIVQGIR</text>
+          <g transform="translate(0, 32)">
+            <line x1="0" y1="60" x2="380" y2="60" stroke="#262d44"/>
+            <g stroke="#7a7e90" stroke-width="2.5" stroke-linecap="round">
+              <line x1="20" y1="60" x2="20" y2="25"/>
+              <line x1="60" y1="60" x2="60" y2="20"/>
+              <line x1="100" y1="60" x2="100" y2="35"/>
+              <line x1="140" y1="60" x2="140" y2="22"/>
+              <line x1="180" y1="60" x2="180" y2="40"/>
+              <line x1="220" y1="60" x2="220" y2="30"/>
+            </g>
+          </g>
+          <rect x="430" y="32" width="140" height="14" fill="#1c2238" stroke="#262d44"/>
+          <rect x="430" y="32" width="105" height="14" fill="#7a7e90"/>
+          <text x="580" y="44" font-family="JetBrains Mono" font-size="14" fill="#b8b5ad" text-anchor="end">0.78</text>
+        </g>
+        <!-- candidate 3 -->
+        <g transform="translate(20, 340)" opacity="0.4">
+          <text x="0" y="20" font-family="JetBrains Mono" font-size="16" fill="#b8b5ad">GSNYNETVTLADVTIVQGIK</text>
+          <g transform="translate(0, 32)">
+            <line x1="0" y1="60" x2="380" y2="60" stroke="#262d44"/>
+            <g stroke="#7a7e90" stroke-width="2.5" stroke-linecap="round">
+              <line x1="20" y1="60" x2="20" y2="35"/>
+              <line x1="100" y1="60" x2="100" y2="42"/>
+              <line x1="180" y1="60" x2="180" y2="48"/>
+              <line x1="260" y1="60" x2="260" y2="45"/>
+              <line x1="340" y1="60" x2="340" y2="50"/>
+            </g>
+          </g>
+          <rect x="430" y="32" width="140" height="14" fill="#1c2238" stroke="#262d44"/>
+          <rect x="430" y="32" width="65" height="14" fill="#7a7e90"/>
+          <text x="580" y="44" font-family="JetBrains Mono" font-size="14" fill="#b8b5ad" text-anchor="end">0.46</text>
+        </g>
+        <text x="290" y="510" font-family="Instrument Serif" font-style="italic" font-size="18" fill="#7a7e90" text-anchor="middle">score = match between predicted &amp; observed fragment masses</text>
+      </svg>
+    </div>
+  </div>
+  <div class="slide-num">08 / 13</div>
+</section>
+
+<!-- =================================================== -->
+<!-- SLIDE 9 — RESULTS HEADLINE                           -->
+<!-- =================================================== -->
+<section data-screen-label="09 Results" class="s-results">
+  <div class="brand-tag"><span class="cy">●</span> Results · 9-Species Benchmark</div>
+  <div class="eyebrow"><span class="dot"></span>Headline Numbers</div>
+  <h2 class="section-h" style="font-size:120px"><em>Beats</em> the published<br>2025 SOTA by <span class="copper">+26.9 pp.</span></h2>
+  <div class="hstat-row">
+    <div class="hstat">
+      <div class="num cy">76.00<span class="pct">%</span></div>
+      <div class="lbl">Amino-Acid Recall</div>
+      <div class="delta">+3.1 pp vs InstaNovo (NMI 2025)</div>
+    </div>
+    <div class="hstat">
+      <div class="num copper">59.96<span class="pct">%</span></div>
+      <div class="lbl">Peptide Accuracy</div>
+      <div class="delta copper">+26.9 pp vs InstaNovo</div>
+    </div>
+    <div class="hstat">
+      <div class="num violet">3</div>
+      <div class="lbl">Random Seeds</div>
+      <div class="delta" style="color:var(--ink3)">±0.19 AA · ±3.82 pep</div>
+    </div>
+  </div>
+  <div style="margin-top:80px;font-family:var(--mono);font-size:18px;color:var(--ink3);max-width:1500px;line-height:1.7">
+    <strong style="color:var(--ink2)">CFID + SGIR</strong> on absorbing diffusion w/ self-conditioning · <strong style="color:var(--ink2)">Nine-Species</strong> benchmark · 5% FDR
+  </div>
+  <div class="slide-num">09 / 13</div>
+</section>
+
+<!-- =================================================== -->
+<!-- SLIDE 10 — ABLATION                                  -->
+<!-- =================================================== -->
+<section data-screen-label="10 Ablation" class="s-ablation">
+  <div class="brand-tag">Ten inference strategies · 3 seeds each</div>
+  <div class="eyebrow"><span class="dot"></span>Ablation Study</div>
+  <h2 class="section-h" style="font-size:72px">Each contribution, isolated.</h2>
+  <div class="grid-4">
+    <div class="abl-card">
+      <div class="name">argmax · no reranking</div>
+      <div class="nums">
+        <div class="num-blk"><div class="num-val">76.21</div><div class="num-lbl">AA</div></div>
+        <div class="num-blk"><div class="num-val">57.84</div><div class="num-lbl">Pep</div></div>
+      </div>
+      <div class="std">±0.17 AA · ±5.30 pep</div>
+    </div>
+    <div class="abl-card">
+      <div class="name">SGIR only · NOVEL #9</div>
+      <div class="nums">
+        <div class="num-blk"><div class="num-val">76.17</div><div class="num-lbl">AA</div></div>
+        <div class="num-blk"><div class="num-val">57.63</div><div class="num-lbl">Pep</div></div>
+      </div>
+      <div class="std">±0.02 AA · ±4.16 pep</div>
+    </div>
+    <div class="abl-card">
+      <div class="name">CFID · NOVEL #11</div>
+      <div class="nums">
+        <div class="num-blk"><div class="num-val">75.93</div><div class="num-lbl">AA</div></div>
+        <div class="num-blk"><div class="num-val">59.60</div><div class="num-lbl">Pep</div></div>
+      </div>
+      <div class="std">±0.10 AA · ±3.21 pep</div>
+    </div>
+    <div class="abl-card best">
+      <div class="badge">Best ✦</div>
+      <div class="name">CFID + SGIR</div>
+      <div class="nums">
+        <div class="num-blk"><div class="num-val">76.00</div><div class="num-lbl">AA</div></div>
+        <div class="num-blk"><div class="num-val">59.96</div><div class="num-lbl">Pep</div></div>
+      </div>
+      <div class="std">±0.19 AA · ±3.82 pep</div>
+    </div>
+    <div class="abl-card">
+      <div class="name">gate + CFID + SGIR · NOVEL #1</div>
+      <div class="nums">
+        <div class="num-blk"><div class="num-val">75.99</div><div class="num-lbl">AA</div></div>
+        <div class="num-blk"><div class="num-val">59.60</div><div class="num-lbl">Pep</div></div>
+      </div>
+      <div class="std">±0.19 AA · ±3.59 pep</div>
+    </div>
+    <div class="abl-card">
+      <div class="name">rerank-spectral · NOVEL #10</div>
+      <div class="nums">
+        <div class="num-blk"><div class="num-val">73.73</div><div class="num-lbl">AA</div></div>
+        <div class="num-blk"><div class="num-val">53.67</div><div class="num-lbl">Pep</div></div>
+      </div>
+      <div class="std">±0.35 AA · ±5.02 pep</div>
+    </div>
+    <div class="abl-card neg">
+      <div class="badge">Negative</div>
+      <div class="name">CFID + mass-corr</div>
+      <div class="nums">
+        <div class="num-blk"><div class="num-val">75.15</div><div class="num-lbl">AA</div></div>
+        <div class="num-blk"><div class="num-val">50.35</div><div class="num-lbl">Pep</div></div>
+      </div>
+      <div class="std">−9.6 pp vs best</div>
+    </div>
+    <div class="abl-card neg">
+      <div class="badge">Negative</div>
+      <div class="name">beam search · NOVEL #8</div>
+      <div class="nums">
+        <div class="num-blk"><div class="num-val">48.19</div><div class="num-lbl">AA</div></div>
+        <div class="num-blk"><div class="num-val">15.04</div><div class="num-lbl">Pep</div></div>
+      </div>
+      <div class="std">−44.9 pp · arch. mismatch</div>
+    </div>
+  </div>
+  <p class="body" style="margin-top:32px;color:var(--ink3);max-width:1700px;font-family:var(--mono);font-size:16px;letter-spacing:0.05em">
+    Mean ± std across seeds 0, 1, 2. <strong style="color:var(--cyan)">CFID + SGIR is Pareto-optimal.</strong> Mass correction reproducibly hurts. Two more negative configs (gate-alone, mass-corr-only) fully documented in the explainer.
+  </p>
+  <div class="slide-num">10 / 13</div>
+</section>
+
+<!-- =================================================== -->
+<!-- SLIDE 11 — NEGATIVE RESULTS                          -->
+<!-- =================================================== -->
+<section data-screen-label="11 Negative Results" class="s-neg">
+  <div class="brand-tag">Reproducibility · 9 failure modes</div>
+  <div class="eyebrow"><span class="dot"></span>Negative Results</div>
+  <h2 class="section-h" style="font-size:80px">Nine failures, fully reproduced<br>across <em>three seeds.</em></h2>
+  <div class="neg-list">
+    <div class="neg-item">
+      <div class="neg-num">①</div>
+      <h4>Mass correction post-hoc</h4>
+      <p>50 ppm precursor-mass filter discards near-correct candidates faster than wrong ones.</p>
+      <span class="delta">−9.6 pp vs CFID+SGIR</span>
+    </div>
+    <div class="neg-item">
+      <div class="neg-num">②</div>
+      <h4>Mass-corr only (Option B)</h4>
+      <p>Without CFID safety net: even worse than #1.</p>
+      <span class="delta">−10.0 pp vs argmax</span>
+    </div>
+    <div class="neg-item">
+      <div class="neg-num">③</div>
+      <h4>Mass-constrained beam search</h4>
+      <p>Left-to-right autoregressive decoding is architecturally incompatible with bidirectional diffusion.</p>
+      <span class="delta">−44.9 pp · catastrophic</span>
+    </div>
+    <div class="neg-item">
+      <div class="neg-num">④</div>
+      <h4>Entropy-adaptive gate alone</h4>
+      <p>Aggressively skips low-confidence positions. Kills accuracy entirely (12.00% AA).</p>
+      <span class="delta">−48.1 pp · catastrophic</span>
+    </div>
+    <div class="neg-item">
+      <div class="neg-num">⑤</div>
+      <h4>Rerank-spectral as standalone</h4>
+      <p>Pure spectral-match rescoring (no CFID).</p>
+      <span class="delta">−6.3 pp</span>
+    </div>
+    <div class="neg-item">
+      <div class="neg-num">⑥–⑨</div>
+      <h4>Other documented failures</h4>
+      <p>Gate+CFID+SGIR (statistically identical to CFID+SGIR · no benefit), removing PeakEncoder, linear noise schedule, beam+SGIR (does not rescue beam).</p>
+      <span class="delta">all reproduced · 3 seeds</span>
+    </div>
+  </div>
+  <div class="slide-num">11 / 13</div>
+</section>
+
+<!-- =================================================== -->
+<!-- SLIDE 12 — WASTEWATER                                -->
+<!-- =================================================== -->
+<section data-screen-label="12 Wastewater" class="s-ww">
+  <div class="brand-tag">Real-world application</div>
+  <div class="eyebrow"><span class="dot"></span>Wastewater Metaproteomics</div>
+  <h2 class="section-h" style="font-size:80px">No reference proteome.<br><em>Six confirmed peptides.</em></h2>
+  <p class="dek" style="margin-top:-8px;max-width:1700px">Mixed-community wastewater sample · 5% FDR · replicate-consistent · ESM-2 pseudo-perplexity confirms biological plausibility.</p>
+  <div class="ww-grid">
+    <div class="ww-card">
+      <div class="ww-tag">2+</div>
+      <div class="ww-seq">FNDVIPMGEQAINTNEGAYR</div>
+      <div class="ww-stats">
+        <div class="ww-stat"><div class="ww-stat-num">41.13</div><div class="ww-stat-lbl">ESM-2 PPL</div></div>
+        <div class="ww-stat"><div class="ww-stat-num">0.85</div><div class="ww-stat-lbl">Anom. frac</div></div>
+      </div>
+    </div>
+    <div class="ww-card">
+      <div class="ww-tag">3+</div>
+      <div class="ww-seq">NNGNAIGVDLAAIPFVAGDR</div>
+      <div class="ww-stats">
+        <div class="ww-stat"><div class="ww-stat-num">31.51</div><div class="ww-stat-lbl">ESM-2 PPL</div></div>
+        <div class="ww-stat"><div class="ww-stat-num">0.85</div><div class="ww-stat-lbl">Anom. frac</div></div>
+      </div>
+    </div>
+    <div class="ww-card">
+      <div class="ww-tag">3+</div>
+      <div class="ww-seq">GSNYNEVVTLADVTIVQGIR</div>
+      <div class="ww-stats">
+        <div class="ww-stat"><div class="ww-stat-num">36.63</div><div class="ww-stat-lbl">ESM-2 PPL</div></div>
+        <div class="ww-stat"><div class="ww-stat-num">0.90</div><div class="ww-stat-lbl">Anom. frac</div></div>
+      </div>
+    </div>
+    <div class="ww-card">
+      <div class="ww-tag">2+</div>
+      <div class="ww-seq">DLDVEFTALDGASVQVIAYR</div>
+      <div class="ww-stats">
+        <div class="ww-stat"><div class="ww-stat-num">38.35</div><div class="ww-stat-lbl">ESM-2 PPL</div></div>
+        <div class="ww-stat"><div class="ww-stat-num">0.95</div><div class="ww-stat-lbl">Anom. frac</div></div>
+      </div>
+    </div>
+    <div class="ww-card">
+      <div class="ww-tag">2+</div>
+      <div class="ww-seq">ALDNAIDGGQYSFLEVAINR</div>
+      <div class="ww-stats">
+        <div class="ww-stat"><div class="ww-stat-num">37.87</div><div class="ww-stat-lbl">ESM-2 PPL</div></div>
+        <div class="ww-stat"><div class="ww-stat-num">0.90</div><div class="ww-stat-lbl">Anom. frac</div></div>
+      </div>
+    </div>
+    <div class="ww-card">
+      <div class="ww-tag">2+</div>
+      <div class="ww-seq">QLDNNCVYLGATAGVPIAK</div>
+      <div class="ww-stats">
+        <div class="ww-stat"><div class="ww-stat-num">37.42</div><div class="ww-stat-lbl">ESM-2 PPL</div></div>
+        <div class="ww-stat"><div class="ww-stat-num">0.84</div><div class="ww-stat-lbl">Anom. frac</div></div>
+      </div>
+    </div>
+  </div>
+  <p class="body" style="margin-top:18px;color:var(--ink3);font-family:var(--mono);font-size:15px;letter-spacing:0.05em;max-width:1700px">
+    Database-search methods <strong style="color:var(--ink2)">cannot identify these peptides</strong> — source organisms aren't in any reference proteome.
+  </p>
+  <div class="slide-num">12 / 13</div>
+</section>
+
+<!-- =================================================== -->
+<!-- SLIDE 13 — CLOSING                                   -->
+<!-- =================================================== -->
+<section data-screen-label="13 Conclusion" class="s-close">
+  <div class="brand-tag"><span class="cy">●</span> Conclusion</div>
+  <h1>Diffusion is the right architecture<br>for <em>de novo sequencing.</em></h1>
+  <p class="dek" style="text-align:center;max-width:1500px;margin:0 auto;font-size:36px">
+    Bidirectional context, iterative refinement, confidence-aware decoding —<br>each contribution measurable, isolated, and reproducible.
+  </p>
+  <div class="pills">
+    <span class="pill cy">76.00% AA</span>
+    <span class="pill cy">59.96% Pep</span>
+    <span class="pill">+26.9 pp vs InstaNovo</span>
+    <span class="pill">3 seeds</span>
+    <span class="pill">5% FDR</span>
+    <span class="pill">6 wastewater hits</span>
+    <span class="pill">9 negative results</span>
+  </div>
+  <div class="credits">
+    <strong>Vaishak Girish Kumar</strong> · <strong>Akshay Mohan Revankar</strong> · <strong>Sanika Vilas Nanjan</strong><br>
+    CSE 676 · Deep Learning · UB · Spring 2026
+  </div>
+</section>
+
+</deck-stage>
+
+</body>
+</html>

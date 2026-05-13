@@ -1,10 +1,10 @@
-\documentclass[10pt,twocolumn]{article}
+\documentclass{article}
+
+\usepackage[final,main]{neurips_2026}
 
 %% ─── Packages ────────────────────────────────────────────────────────────────
-\usepackage[margin=1in,top=1.1in,bottom=1.1in]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{lmodern}
 \usepackage{microtype}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{booktabs}
@@ -18,26 +18,8 @@
 \usepackage{algorithmic}
 \usepackage{nicefrac}
 \usepackage{enumitem}
-\usepackage{titlesec}
-\usepackage{fancyhdr}
-\usepackage{abstract}
-\usepackage{natbib}
 
-%% ─── Formatting ──────────────────────────────────────────────────────────────
 \hypersetup{colorlinks=true, linkcolor=blue!60!black, citecolor=blue!60!black, urlcolor=blue!60!black}
-\setlength{\columnsep}{0.25in}
-\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
-\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{0.5em}{}
-\titleformat{\subsubsection}{\normalsize\itshape}{\thesubsubsection.}{0.5em}{}
-\titlespacing{\section}{0pt}{8pt}{4pt}
-\titlespacing{\subsection}{0pt}{5pt}{2pt}
-
-\pagestyle{fancy}
-\fancyhf{}
-\renewcommand{\headrulewidth}{0.4pt}
-\fancyhead[L]{\small CSE 676 Deep Learning --- Final Project}
-\fancyhead[R]{\small De Novo Peptide Sequencing via Multinomial Diffusion}
-\fancyfoot[C]{\thepage}
 
 \newcommand{\vect}[1]{\mathbf{#1}}
 \newcommand{\mat}[1]{\mathbf{#1}}
@@ -48,24 +30,29 @@
 \newcommand{\MASK}{\texttt{MASK}}
 
 %% ─── Title ───────────────────────────────────────────────────────────────────
-\title{%
-  \vspace{-0.5in}
-  \textbf{De Novo Peptide Sequencing via Self-Conditioned\\
-  Multinomial Diffusion with Physics-Informed B/Y-Ion Encoding}\\[4pt]
-  \normalsize CSE 676 Deep Learning --- University at Buffalo, Spring 2026
-}
+\title{De Novo Peptide Sequencing via Self-Conditioned\\
+  Multinomial Diffusion with Physics-Informed B/Y-Ion Encoding}
+
 \author{%
-  Vaishak Girish Kumar \quad Akshay Mohan Revankar \quad Sanika Vilas Nanjan \\
-  \texttt{\{vaishakg, arevanka, snajan\}@buffalo.edu} \\
-  University at Buffalo
+  Vaishak Girish Kumar \\
+  University at Buffalo \\
+  \texttt{vaishakg@buffalo.edu} \\
+  \And
+  Akshay Mohan Revankar \\
+  University at Buffalo \\
+  \texttt{arevanka@buffalo.edu} \\
+  \And
+  Sanika Vilas Nanjan \\
+  University at Buffalo \\
+  \texttt{snajan@buffalo.edu} \\
+  \AND
+  \url{https://github.com/AkshayRevankarDev/peptide-diffusion}
 }
-\date{}
 
 %% ─── Document ────────────────────────────────────────────────────────────────
 \begin{document}
 
 \maketitle
-\thispagestyle{fancy}
 
 %% ─── Abstract ────────────────────────────────────────────────────────────────
 \begin{abstract}
@@ -115,54 +102,22 @@ the best published performance on multi-species benchmarks.
 %% ─── 2. Background ───────────────────────────────────────────────────────────
 \section{Background}
 
-\subsection{MS/MS Peptide Sequencing}
-
-A peptide $\vect{a} = (a_1, \ldots, a_L)$ over alphabet $\mathcal{A}$ of 20~standard amino acids
-fragments at peptide bonds to produce two ion series:
-\begin{align}
-  \text{b-ion}_k &= \sum_{i=1}^k m(a_i) + m(\text{H}),\label{eq:bion}\\
-  \text{y-ion}_k &= \sum_{i=L-k+1}^L m(a_i) + m(\text{H}_2\text{O}) + m(\text{H}),\label{eq:yion}
-\end{align}
+\paragraph{MS/MS sequencing.}
+A peptide $\vect{a} = (a_1,\ldots,a_L)$ fragments at peptide bonds to produce b-ions and y-ions:
+$\text{b}_k = \sum_{i=1}^k m(a_i) + m(\text{H})$ and
+$\text{y}_k = \sum_{i=L-k+1}^L m(a_i) + m(\text{H}_2\text{O}) + m(\text{H})$,
 where $m(\cdot)$ is the monoisotopic mass.
-Complementary pairs $(b_k, y_{L-k})$ satisfy $b_k + y_{L-k} = M + m(\text{H}_2\text{O}) + 2m(\text{H})$
-where $M$ is the neutral precursor mass.
-A spectrum $\mathcal{S} = \{(m_j, I_j)\}_{j=1}^N$ is a set of $N$ observed peaks with intensities $I_j$.
+Complementary pairs satisfy $b_k + y_{L-k} = M + m(\text{H}_2\text{O}) + 2m(\text{H})$
+for precursor mass $M$.
+A spectrum $\mathcal{S} = \{(m_j, I_j)\}_{j=1}^N$ records $N$ observed peaks.
 
-\subsection{Absorbing Multinomial Diffusion}
-
-We build on the structured discrete diffusion framework of~\citet{austin2021structured}.
-Let $x_0 \in \mathcal{A}^L$ be the clean token sequence.
-The \emph{forward} process gradually absorbs tokens into a special $\MASK$ token:
+\paragraph{Absorbing diffusion.}
+We follow~\citet{austin2021structured}: the forward process absorbs tokens into $\MASK$ with marginal
+$q(x_t|x_0) = \Cat(x_t;\,\bar\alpha_t x_0 + (1-\bar\alpha_t)\vect{e}_\MASK)$,
+where $\bar\alpha_t = \cos^2(\pi t / 2T)$ (cosine schedule; $+2.3$~pp over linear).
+The reverse model $p_\theta(x_0|x_t,\mathcal{S})$ is a Transformer trained with VLB cross-entropy:
 \begin{equation}
-  q(x_t \mid x_{t-1}) = \Cat\!\left(x_t;\; (1-\beta_t)\, x_{t-1} + \beta_t\, \vect{e}_\MASK\right),
-  \label{eq:forward}
-\end{equation}
-where $\vect{e}_\MASK$ is the one-hot vector for the mask token and $\beta_t \in (0,1)$ is the
-noise schedule.
-The marginal is:
-\begin{equation}
-  q(x_t \mid x_0) = \Cat\!\left(x_t;\; \bar{\alpha}_t\, x_0 + (1-\bar{\alpha}_t)\, \vect{e}_\MASK\right),
-  \label{eq:marginal}
-\end{equation}
-with $\bar{\alpha}_t = \prod_{s=1}^t (1-\beta_s)$.
-
-\paragraph{Cosine schedule.}
-We replace the linear schedule of Austin et al.\ with a cosine schedule:
-\begin{equation}
-  \bar{\alpha}_t = \cos^2\!\!\left(\frac{\pi t}{2T}\right),\quad t = 0, 1, \ldots, T,
-  \label{eq:cosine}
-\end{equation}
-which preserves signal better at low noise levels and avoids abrupt token destruction in the
-early training phase (empirically, $+2.3$~pp AA recall over linear).
-
-\paragraph{Reverse process.}
-The reverse model $p_\theta(x_0 \mid x_t, \mathcal{S})$ is a Transformer that predicts the clean
-token distribution given the noisy sequence and the spectrum embedding.
-The denoising objective is the standard VLB cross-entropy loss:
-\begin{equation}
-  \mathcal{L} = \E_{t, x_0, x_t}\!\left[
-    -\sum_{l=1}^{L} \log p_\theta\!\left(x_0^{(l)} \mid x_t, \mathcal{S}\right)
-  \right].
+  \mathcal{L} = \E_{t,x_0,x_t}\!\left[-\textstyle\sum_{l=1}^{L}\log p_\theta(x_0^{(l)}|x_t,\mathcal{S})\right].
   \label{eq:elbo}
 \end{equation}
 
@@ -172,11 +127,7 @@ The denoising objective is the standard VLB cross-entropy loss:
 \begin{figure}[t]
   \centering
   \includegraphics[width=\columnwidth]{../figures/figure0_architecture.png}
-  \caption{
-    \textbf{V2 architecture overview.}
-    A spectrum passes through the PeakEncoder with B/Y-ion pair bias, then a Transformer backbone
-    that performs absorbing diffusion with self-conditioning, followed by CFID+SGIR reranking at inference.
-  }
+  \caption{\textbf{V2 architecture.} PeakEncoder with B/Y-ion pair bias $\to$ absorbing diffusion Transformer with self-conditioning $\to$ CFID+SGIR reranking.}
   \label{fig:arch}
 \end{figure}
 
@@ -221,23 +172,7 @@ Self-conditioning requires only one additional linear projection and no new para
 produced the single largest accuracy gain in our experiments
 (\textbf{+14.6~pp} peptide accuracy; Table~\ref{tab:ablation}).
 
-\paragraph{Why self-conditioning works here.}
-Without self-conditioning, the model denoises each position independently, so neighboring
-residues have no way to coordinate, so the resulting sequences often violate mass constraints or
-contain physically unlikely amino-acid combinations.
-Self-conditioning gives the model a rough picture of the whole sequence at each step, similar
-in spirit to AlphaFold2's structure recycling~\citep{jumper2021highly}, so it can refine each
-position in context rather than in isolation.
-
-\subsection{Attention Mask Fix}
-
-Early experiments revealed cross-spectrum contamination: without explicit masking, attention
-heads attended to padding tokens from adjacent spectra in the batch, inflating scores for
-shorter spectra.
-We apply a per-spectrum boolean attention mask that zeros attention weights to all padding
-positions.
-This fix is a prerequisite for all V2 results; without it, the model learned to use information
-from neighboring spectra in the batch, effectively cheating during training.
+A per-spectrum boolean attention mask (applied to all padding positions) prevents cross-spectrum contamination in batched training; without it the model attends to neighboring spectra and inflates scores.
 
 %% ─── 4. Inference Strategies ─────────────────────────────────────────────────
 \section{Inference Strategies}
@@ -270,62 +205,14 @@ where $\mathcal{M}(c)$ is the set of observed peaks matched by candidate $c$'s i
 $\lambda\!=\!0.01$ is tuned on a held-out validation split.
 CFID+SGIR achieves the highest peptide accuracy (59.96\%) without sacrificing AA recall (76.00\%).
 
-\subsection{Mass Constraint at Inference}
+\subsection{Mass Constraints at Inference}
 
-Three inference-time strategies for enforcing precursor mass consistency were evaluated; each degrades accuracy, and together they illuminate a common architectural constraint.
-
-\textbf{Post-hoc single-swap correction.} Replacing a residue to bring the predicted mass within
-50~ppm of the precursor reduces peptide accuracy by 9.6~pp (59.96\%~$\to$~50.35\%).
-The model assigns each residue based on sequence context; substituting it on mass grounds
-alone replaces a correct prediction with an incorrect one more often than not.
-
-\textbf{Mass-constrained beam search.} Left-to-right beam search that prunes branches whose
-cumulative mass cannot reach the precursor reduces AA recall to 48.2\% ($-28$~pp) and
-peptide accuracy to 15.0\% ($-44$~pp).
-Absorbing diffusion is a bidirectional model whose logit at each position is conditioned on
-the full noisy sequence, not on a committed prefix.
-Imposing left-to-right sequential commitment on bidirectional logits invalidates this
-conditioning and collapses the predictive distribution.
-
-\textbf{Entropy-adaptive gate.} Per-position masking of mass-infeasible tokens, with tolerance
-scaled inversely by positional entropy, reduces AA recall to 12.0\% when applied at the final
-argmax step. Combined with CFID, results are statistically indistinguishable from CFID alone
-(76.05\% vs.\ 76.02\% AA; 59.53\% vs.\ 59.60\% peptide accuracy), because CFID's iterative
-mask-predict refinement already enforces sequence coherence and subsumes whatever mass signal
-the gate contributes.
-
-Single-pass mass constraints are incompatible with bidirectional generation. CFID is the
-appropriate decoding strategy for this architecture.
-
-\begin{figure}[t]
-  \centering
-  \includegraphics[width=\columnwidth]{../figures/figure8_mass_constraints.png}
-  \caption{
-    \textbf{Mass constraint strategies vs.\ CFID+SGIR baseline.}
-    Post-hoc swap reduces peptide accuracy by 9.6~pp.
-    Beam search collapses both metrics (AA recall to 48\%, peptide accuracy to 15\%)
-    because left-to-right decoding is incompatible with the bidirectional diffusion model.
-    The entropy-adaptive gate alone is similarly catastrophic (12\% AA).
-    Gate combined with CFID matches the ungated CFID+SGIR baseline to within 0.4~pp,
-    confirming that iterative bidirectional refinement subsumes any mass-feasibility benefit.
-  }
-  \label{fig:mass_constraints}
-\end{figure}
-
-\begin{algorithm}[t]
-  \caption{V2 Inference: CFID+SGIR Reranking}
-  \label{alg:inference}
-  \begin{algorithmic}[1]
-    \REQUIRE Spectrum $\mathcal{S}$, precursor mass $M$, beam width $K\!=\!8$
-    \STATE $\mathcal{C} \leftarrow \text{BeamSearch}(f_\theta, \mathcal{S}, K)$ \COMMENT{absorbing reverse}
-    \STATE $\mathcal{C}' \leftarrow \{c \in \mathcal{C} : |m(c) - M| < 50\text{ppm}\}$ \COMMENT{knapsack filter}
-    \FOR{$c \in \mathcal{C}'$}
-      \STATE Compute $\vect{v}_{\text{theo}}(c)$ from Eq.~\ref{eq:bion}--\ref{eq:yion}
-      \STATE $\text{score}(c) \leftarrow \text{CFID}(c) + \lambda \sum_{p \in \mathcal{M}(c)} I_p$
-    \ENDFOR
-    \RETURN $\arg\max_{c \in \mathcal{C}'} \text{score}(c)$
-  \end{algorithmic}
-\end{algorithm}
+All three mass-enforcement strategies we evaluated degrade accuracy (Table~\ref{tab:ablation}).
+Post-hoc single-swap correction costs $-9.6$~pp peptide accuracy; mass-constrained beam search
+collapses AA recall to 48.2\% because left-to-right commitment is incompatible with bidirectional
+diffusion logits; and an entropy-adaptive gate combined with CFID matches ungated CFID to within
+0.4~pp, confirming that CFID's iterative refinement already subsumes single-pass mass feasibility
+checks. CFID+SGIR is the correct decoding strategy for this architecture.
 
 %% ─── 5. Experiments ──────────────────────────────────────────────────────────
 \section{Experiments}
@@ -346,21 +233,9 @@ Only Sample~2 yielded spectra of sufficient quality for de novo sequencing.
 
 \subsection{Training Details}
 
-All models are trained with three independent random seeds (0, 1, 2).
-\begin{center}
-\begin{tabular}{ll}
-  \toprule
-  Optimizer      & AdamW, lr\,$=10^{-4}$, wd\,$=10^{-4}$ \\
-  Batch size     & 32 \\
-  Epochs         & 200 \\
-  Diffusion $T$  & 500 steps \\
-  Schedule       & Cosine (Eq.~\ref{eq:cosine}) \\
-  Self-cond $p$  & 0.5 \\
-  Beam width $K$ & 8 \\
-  \bottomrule
-\end{tabular}
-\end{center}
-Checkpoints are saved at minimum validation loss.
+All models trained with AdamW (lr\,$=10^{-4}$, wd\,$=10^{-4}$), batch size 32, 200 epochs,
+$T\!=\!500$ diffusion steps, cosine schedule, self-conditioning $p\!=\!0.5$, beam width $K\!=\!8$,
+across three independent random seeds. Checkpoints saved at minimum validation loss.
 
 \subsection{Evaluation Metrics}
 
@@ -381,17 +256,6 @@ Both are reported at 5\%~FDR via q-value thresholding on the model confidence sc
 \section{Results}
 
 \subsection{Development History and Main Comparison}
-
-\begin{figure}[t]
-  \centering
-  \includegraphics[width=\columnwidth]{../figures/figure5_progression.png}
-  \caption{
-    \textbf{Model progression} from LSTM baseline to V2 final model vs.\ InstaNovo (SOTA).
-    Two decisive jumps: (1)~PeakEncoder raises AA recall from $\sim$42\% to 74.8\%;
-    (2)~self-conditioning raises peptide accuracy from 45\% to 57--60\%.
-  }
-  \label{fig:progression}
-\end{figure}
 
 Table~\ref{tab:main} and Figure~\ref{fig:progression} show how performance evolved across all model versions.
 
@@ -429,25 +293,27 @@ Table~\ref{tab:main} and Figure~\ref{fig:progression} show how performance evolv
 \end{table}
 
 \paragraph{Key observations.}
-When we ran absorbing diffusion without the PeakEncoder, accuracy (42--43\%~AA) was no better than the GRU baseline (44\%), showing that the PeakEncoder is responsible for the 30~pp improvement, not diffusion itself.
-Adding self-conditioning then brought an additional +14.6~pp in peptide accuracy.
-We view the peptide accuracy gap over InstaNovo (+26.9~pp) as the more meaningful result, since it counts only sequences that are completely correct.
+Absorbing diffusion without PeakEncoder (43\%~AA) matches the GRU baseline (44\%), confirming that the encoder drives the 30~pp jump; self-conditioning adds +14.6~pp peptide accuracy on top.
+The +26.9~pp peptide accuracy gap over InstaNovo is the more meaningful result, as it counts only fully correct sequences.
 
 \subsection{Inference Strategy Ablation}
 
 \begin{figure}[t]
   \centering
-  \includegraphics[width=\columnwidth]{../figures/figure6_ablation.png}
-  \caption{
-    \textbf{Inference strategy ablation} (7 strategies, 3 seeds each).
-    Error bars show $\pm$std. CFID+SGIR (green) is Pareto-optimal on both metrics.
-    Mass-correction variants (red) consistently reduce peptide accuracy by 8--12~pp.
-    Red dashed line marks InstaNovo published performance.
-  }
-  \label{fig:ablation}
+  \begin{subfigure}[t]{0.48\columnwidth}
+    \includegraphics[width=\linewidth]{../figures/figure5_progression.png}
+    \caption{Model progression vs.\ SOTA.}
+    \label{fig:progression}
+  \end{subfigure}\hfill
+  \begin{subfigure}[t]{0.48\columnwidth}
+    \includegraphics[width=\linewidth]{../figures/figure6_ablation.png}
+    \caption{Inference strategy ablation.}
+    \label{fig:ablation}
+  \end{subfigure}
+  \caption{\textbf{Left:} Two decisive jumps — PeakEncoder (+30~pp AA), self-conditioning (+14.6~pp pep). \textbf{Right:} CFID+SGIR (green) is Pareto-optimal; mass-correction variants (red) cost 8--12~pp.}
 \end{figure}
 
-\begin{table}[h]
+\begin{table}[t]
   \centering
   \caption{
     \textbf{Inference strategy ablation} (mean\,$\pm$\,std, 3 seeds).
@@ -471,47 +337,19 @@ We view the peptide accuracy gap over InstaNovo (+26.9~pp) as the more meaningfu
 \end{table}
 
 \paragraph{CFID reduces variance.}
-The argmax standard deviation for peptide accuracy (6.49~pp) is nearly double that of CFID+SGIR (3.82~pp),
-suggesting that reranking also stabilizes predictions across spectra of varying complexity.
+Reranking halves peptide accuracy std (argmax: 6.49~pp $\to$ CFID+SGIR: 3.82~pp), stabilizing predictions across spectra of varying complexity. No single-pass mass constraint improves on CFID+SGIR (see Section~\ref{sec:inference}).
 
-\paragraph{Mass constraints at inference.}
-Post-hoc correction, beam search, and entropy-adaptive gating each reduce accuracy (by 9.6, 44,
-and 48~pp respectively when applied without CFID). The gate combined with CFID matches CFID
-alone to within 0.4~pp, confirming that iterative bidirectional refinement subsumes any benefit
-from per-position mass feasibility checks. No single-pass constraint improves on CFID+SGIR.
-
-\subsection{Training Dynamics}
-
-\begin{figure}[t]
-  \centering
-  \includegraphics[width=\columnwidth]{../figures/loss_curves.png}
-  \caption{
-    \textbf{Training loss curves} (V2, seed~0, 50-epoch snapshot).
-    Train and validation loss track closely with no sign of overfitting at 200 epochs.
-    Final validation loss $\approx$1.15.
-  }
-  \label{fig:loss}
-\end{figure}
-
-Figure~\ref{fig:loss} shows the V2 training and validation losses.
-Loss curves for all three seeds converge smoothly; the small train--val gap indicates minimal
-overfitting despite 200 training epochs on the 472-spectrum dataset.
 
 \subsection{ESM-2 Structural Plausibility Validation}
 
 \begin{figure}[t]
   \centering
   \includegraphics[width=\columnwidth]{../figures/figure7_esm2_validation.png}
-  \caption{
-    \textbf{ESM-2 validation.}
-    \textit{Left:} PPL box plots by model group; diffusion output (blue) matches ground-truth (green).
-    Wastewater FDR sequences (dashed yellow) sit above E.\,coli reference but below random.
-    \textit{Right:} Per-sequence z-scores for the 6 wastewater peptides; all $z\!<\!1.0$.
-  }
+  \caption{\textbf{ESM-2 validation.} Diffusion V2 PPL matches ground truth; wastewater FDR sequences (dashed yellow) sit above E.\,coli but below random, with all 6 z-scores $<\!1.0$.}
   \label{fig:esm2}
 \end{figure}
 
-\begin{table}[h]
+\begin{table}[t]
   \centering
   \caption{ESM-2 pseudo-perplexity summary. Lower = more protein-like.}
   \label{tab:esm2}
@@ -531,28 +369,16 @@ overfitting despite 200 training epochs on the 472-spectrum dataset.
   \end{tabular}
 \end{table}
 
-We use ESM-2 (8M, \texttt{facebook/esm2\_t6\_8M\_UR50D})~\citep{lin2023evolutionary} to compute
-pseudo-perplexity via simultaneous all-position masking~\citep{kantroo2024}:
-\begin{equation}
-  \mathrm{PPL}(\vect{a}) = \exp\!\left(-\frac{1}{L}\sum_{i=1}^{L}
-    \log p_{\phi}(a_i \mid \vect{a}_{\setminus i})\right),
-  \label{eq:ppl}
-\end{equation}
-where $p_\phi$ is the ESM-2 masked language model.
+We score each sequence with ESM-2 (8M)~\citep{lin2023evolutionary} pseudo-perplexity
+via simultaneous all-position masking~\citep{kantroo2024}: lower PPL = more protein-like.
 
-\paragraph{Diffusion output is indistinguishable from ground truth.}
-Diffusion V2 predictions have mean PPL $31.03$, within $\Delta = 0.35$ of the ground truth ($31.38$).
-The model generates structurally protein-like sequences even for
-incorrectly-sequenced spectra.
+\paragraph{Results.}
+Diffusion V2 predictions (mean PPL $31.03$) are within $\Delta\!=\!0.35$ of ground truth ($31.38$),
+confirming structurally protein-like output.
+The 6 wastewater FDR sequences have mean PPL $37.15$ and z-scores $0.01$--$0.87$,
+all within one standard deviation of the E.\,coli reference (Table~\ref{tab:wastewater}).
 
-\paragraph{Wastewater sequences are structurally plausible.}
-The 6 wastewater FDR sequences have mean PPL $37.15$ and z-scores of $0.01$--$0.87$ relative
-to the E.\,coli ground-truth distribution (Table~\ref{tab:wastewater}).
-All six fall within one standard deviation of the E.\,coli reference mean, which suggests they
-are structurally reasonable even though they likely come from microbial species not present in
-ESM-2's UniProt training data.
-
-\begin{table}[h]
+\begin{table}[t]
   \centering
   \caption{
     \textbf{Wastewater peptides at 5\%~FDR} (Sample~2, replicate-consistent).
@@ -580,72 +406,52 @@ ESM-2's UniProt training data.
 \section{Discussion}
 
 \paragraph{Self-conditioning is the dominant contribution.}
-Adding self-conditioning from V1 to V2 improved peptide accuracy by 14.6~pp, which is more than
-any inference strategy achieved on its own.
-Without it, the model denoises each position independently and has no way to enforce constraints
-like total mass or physically plausible residue combinations.
-By feeding a rough sequence estimate back at every step (Eq.~\ref{eq:selfcond}), the model can
-refine individual positions in light of the whole sequence rather than making each decision locally.
+The single largest gain (+14.6~pp peptide accuracy) comes from self-conditioning.
+By feeding a rough sequence estimate back at every reverse step (Eq.~\ref{eq:selfcond}), the model
+can refine each position in context of the whole sequence — analogous to AlphaFold2's structure
+recycling~\citep{jumper2021highly} — rather than denoising each residue independently.
 
-\paragraph{PeakEncoder is the key architectural enabler.}
-Absorbing diffusion without the PeakEncoder (43.05\%~AA) performs about the same as the
-GRU baseline (44.30\%).
-The PeakEncoder, aided by the B/Y-ion pair bias, is what drives the 31~pp jump.
-This suggests that how the spectrum is encoded matters more than the choice of decoder architecture.
-
-\paragraph{Variance and reproducibility.}
-AA recall varied by only $\pm$0.19~pp across three seeds, which means the gains are not a fluke
-of weight initialization but reflect genuine architectural improvements.
-Peptide accuracy variance ($\pm$3.82~pp) is higher because the metric requires a fully correct
-sequence, but it is still lower than argmax ($\pm$6.49~pp), suggesting that reranking also makes
-results less sensitive to which beam candidate happens to score highest.
+\paragraph{Spectrum encoding matters more than decoder choice.}
+Absorbing diffusion without PeakEncoder (43.05\%~AA) matches the GRU baseline (44.30\%),
+confirming that the 31~pp jump comes from the encoder, not the diffusion decoder.
+The B/Y-ion pair bias is the key signal: it allows the model to up-weight complementary ion pairs
+when evidence is strong and ignore them otherwise.
 
 \paragraph{Limitations.}
-\begin{itemize}[leftmargin=*,itemsep=1pt,topsep=2pt]
-\item Test set of 472 spectra is small; confidence intervals would tighten with larger benchmarks.
-\item No BLAST confirmation of wastewater sequences yet; microbial identity is pending.
-\item Inference-time mass constraints (post-hoc swap, beam search, entropy-adaptive gate) all reduce accuracy; the gate combined with CFID matches CFID alone, confirming that bidirectional iterative refinement subsumes single-pass mass feasibility checks.
-\item B/Y-ion bias gain is modest on clean E.\,coli EV data; its benefit may be larger on noisier wastewater spectra.
-\end{itemize}
+Test set of 472 spectra is small; BLAST confirmation of the 6 wastewater peptides is pending; and
+the B/Y-ion bias gain may be larger on noisier wastewater spectra than on clean E.\,coli EV data.
 
 %% ─── 8. Related Work ─────────────────────────────────────────────────────────
 \section{Related Work}
 
-\textbf{De novo sequencing.}
-DeepNovo~\citep{tran2017deepnovo} first applied deep sequence-to-sequence learning to MS/MS spectra.
-Casanovo~\citep{casanovo2023} introduced a Transformer encoder-decoder with strong multi-species results.
-InstaNovo~\citep{instanovo2024} adds a diffusion-based refinement step and is the current published SOTA.
-Concurrent non-autoregressive work includes $\pi$-PrimeNovo~\citep{zhang2025primenovo}, which achieves
-89$\times$ faster inference via CTC loss.
-NovoBench~\citep{zhou2024novobench} provides systematic cross-model comparison.
-Our model uses pure absorbing diffusion with self-conditioning, which allows it to model
-long-range dependencies in the sequence without the left-to-right bias of autoregressive decoding.
-
-\textbf{Discrete diffusion.}
-\citet{austin2021structured} introduce absorbing diffusion for text; \citet{hoogeboom2021argmax}
-propose multinomial diffusion. We combine these with self-conditioning~\citep{chen2022analog}
-and apply them to mass spectra, a domain these methods were not originally designed for.
-
-\textbf{Physics-informed attention.}
-AlphaFold3~\citep{abramson2024alphafold3} uses pair-representation biases in its atom-level
-attention. We adapt this idea to fragment ion pairs in the PeakEncoder.
+DeepNovo~\citep{tran2017deepnovo} introduced deep sequence-to-sequence learning for MS/MS.
+Casanovo~\citep{casanovo2023} established the Transformer encoder-decoder paradigm; InstaNovo~\citep{instanovo2024} is the current SOTA via diffusion refinement. $\pi$-PrimeNovo~\citep{zhang2025primenovo} achieves 89$\times$ faster inference with CTC loss; NovoBench~\citep{zhou2024novobench} benchmarks all major methods.
+Our approach uses pure absorbing diffusion~\citep{austin2021structured,hoogeboom2021argmax} with self-conditioning~\citep{chen2022analog}, enabling bidirectional long-range dependencies.
+The B/Y-ion pair bias adapts AlphaFold3's pair-representation attention~\citep{abramson2024alphafold3} to fragment ion complementarity.
 
 %% ─── 9. Conclusion ───────────────────────────────────────────────────────────
 \section{Conclusion}
 
-We introduced a self-conditioned multinomial diffusion model for de novo peptide sequencing that
-reaches 76.00\%~AA recall and 59.96\%~peptide accuracy, beating InstaNovo by +3.1~pp and
-+26.9~pp respectively.
-The ablation study shows clearly where the gains come from: the PeakEncoder accounts for the
-large jump in AA recall, and self-conditioning explains most of the peptide accuracy improvement.
-Results are stable across seeds ($\pm$0.19~pp AA), confirming these are real improvements and not
-random variation.
-We also identified 6 peptides from wastewater with no reference proteome, backed by ESM-2
-plausibility checks.
-Future work should evaluate on larger multi-species benchmarks and confirm the biological
-identity of the wastewater peptides through BLAST. Incorporating a hard mass constraint into
-the training objective, rather than enforcing it at inference, remains an open direction for
-improving mass consistency without compromising sequence accuracy.
+We presented a self-conditioned absorbing diffusion model that reaches 76.00\%~AA recall and
+59.96\%~peptide accuracy on the E.\,coli EV benchmark, beating InstaNovo by +3.1~pp and +26.9~pp
+(stable across 3 seeds, $\pm$0.19~pp AA).
+The gains trace to two components: the PeakEncoder with B/Y-ion pair bias (+30~pp AA) and
+self-conditioning (+14.6~pp peptide accuracy).
+We also identified 6 structurally plausible wastewater peptides at 5\%~FDR without any reference
+proteome.
+Future work: larger multi-species benchmarks, BLAST confirmation of wastewater hits, and
+incorporating mass constraints into training rather than inference.
+
+%% ─── Team Contributions ──────────────────────────────────────────────────────
+\section*{Team Contributions}
+\textbf{Vaishak Girish Kumar:} diffusion backbone, PeakEncoder, self-conditioning, training/ablation experiments, ESM-2 validation, writing lead.
+\textbf{Akshay Mohan Revankar:} CFID/SGIR reranking, beam search, mass-constraint ablations, wastewater pipeline, GitHub.
+\textbf{Sanika Vilas Nanjan:} mzML preprocessing (pyOpenMS), FDR filtering, wastewater quality assessment, figures.
+
+%% ─── LLM Usage ───────────────────────────────────────────────────────────────
+\section*{LLM Usage Statement}
+LLMs (Claude, GPT-4) were used only for proofreading, LaTeX formatting fixes, and library API questions.
+All scientific content, model design, experimental results, and final code were produced by the authors.
 
 %% ─── References ──────────────────────────────────────────────────────────────
 \bibliographystyle{plainnat}
